@@ -1,0 +1,1 @@
+document.write("<h2>&copy 2020 - ", new Date().getFullYear(),  "<br>Maydilsiel Project Group</h2><h3>Хостится на Github</h3><br><p>Автор сайта: Maydilsiel [aka. German Ramzayev]</p><p>Вы можете найти контактные данные автора сайта в разделе контакты для всех вопросов, связанных с материалами на сайте.</p><br><p>Работает на версии: May Design 2.4");

@@ -42,11 +42,8 @@
               info
               </span><span class="fontnav">Инфо</span></a></li>
             <div class="dropdown hidep">
-              <a onclick="myFunction()" class="dropbtn">Меню</a>
+              <a onclick="myFunction()" class="dropbtn">⁝</a>
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="index.html" class="active">Главная</a>
-                  <a href="projects.html">Проекты</a>
-                  <a href="guides.html">Гайды</a>
                   <a href="contacts.html">Контакты</a>
                   <a href="about.html">Инфо</a>
                 </div>
@@ -58,7 +55,12 @@
             <div class="container welcome welcome-color">
                   <script src="script/greeting.js"></script>
                   
-                  <p class="podtextwelcome shadowed-text">Добро пожаловать на сайт Maydilsiel, этот веб-сайт является официальным сайтом разработчика. Для получения более подробной информации о проекте, рекомендуется посетить раздел "Инфо".</p>
+                  <p class="podtextwelcome shadowed-text">Добро пожаловать на сайт Maydilsiel, этот веб-сайт является официальным сайтом разработчика. Для получения более подробной информации о проекте, рекомендуется посетить раздел <a href="about.html">Инфо</a>.</p>
+                  <br>
+                  <p><b>Время фактов:</b></p>
+                  <div id="fact-container">
+                  <p><b><script src="script/facts.js"></script></b></p>
+                  </div>
                   <br>
                   <p class="podtextwelcome shadowed-text">Последний вышедший проект: GenerationPassword <b>OR</b> 1.0</p>
                   <script src="script/OS.js"></script>
@@ -82,6 +84,9 @@
               </div>
               <div class="tcontainer">
                 <hr noshade size="4">
+              </div>
+              <div class="container touch" onclick="document.location='uhodizinfinityfree.html'">
+                <h3><span class="material-symbols-outlined" style="vertical-align: -5px; margin-right: 5px;">delete</span>Пока Infinity Free</h3>
               </div>
               <div class="container touch" onclick="document.location='poyavleniegaidov.html'">
                 <h3><span class="material-symbols-outlined" style="vertical-align: -5px; margin-right: 5px;">developer_guide</span>Возвращение страницы "Гайды"</h3>
@@ -135,7 +140,7 @@
                 </div>
       </main>
       <footer>
-        <div class="container">
+        <div class="container footera">
             <center>
               <script src="script/footer.js"></script>
               <ul class="footer-links">
@@ -145,6 +150,15 @@
                 <li><a href="projects.html">Проекты</a></li>
               </ul>
         </center>
+        </div>
+        <div class="mobile">
+            <nav>
+              <center>
+                <a href="index.html" class="material-symbols-outlined active"><span>home</span><br><span class="fontnav">Главная</span></a>
+                <a href="projects.html" class="material-symbols-outlined"><span>terminal</span><br><span class="fontnav">Проекты</span></a>
+                <a href="guides.html" class="material-symbols-outlined"><span> library_books</span><br><span class="fontnav">Гайды</span></a>
+            </center>
+            </nav>
         </div>
       </footer>
       <script src="script/menu.js"></script>

@@ -7,6 +7,11 @@ html {
     transition: 0.5s;
 }
 
+.welcome {
+    background: linear-gradient(#006eff, #be03af);
+}
+
+
 .hidecolor {
     transition: 0.5s;
     background-color: #ffffff00;
@@ -41,7 +46,7 @@ nav a {
 }
 
 a {
-    color: #000000;
+    color: #7b79ff;
     transition: 0.3s;
 }
 
@@ -77,7 +82,7 @@ a:hover {
 }
 
 a:active {
-    color: #7d6aff;
+    color: #9cd2ff;
 }
 
 .active {

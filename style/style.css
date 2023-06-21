@@ -115,7 +115,7 @@ nav a {
     color: #333;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: background-color 0.2s ease;
     font-size: 20px;
 }
@@ -292,8 +292,8 @@ footer {
 }
 
 .dropdown-content a {
-    margin-bottom: 8px;
-    padding: 12px 16px 0 0;
+    /*margin-bottom: 8px;
+    padding: 12px 16px 0 0;*/
     text-decoration: none;
     display: block;
 }
@@ -359,11 +359,12 @@ summary {
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+    font-size: 18px !important;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
 }
 
 .material-symbols-outlined:hover {
@@ -384,7 +385,7 @@ summary {
 
 .navigation-list-name {
     vertical-align: -3px;
-    margin: 0 -20px 0%  0;
+    margin: 0 -15px 0%  0;
 }
 
 .fontnav {
@@ -399,6 +400,15 @@ summary {
 .mobile {
     display: none;
 }
+
+.separator {
+    width: 2px;
+    height: 100%;
+    background-color: rgb(185, 185, 185);
+    margin: 0 0 0 20px;
+    padding: 20px 1px 30px 1px;
+    border-radius: 5px;
+  }
 
 @media screen and (max-width: 1110px) {
     img {max-width: 96% !important;}
@@ -471,5 +481,9 @@ summary {
 
     .footera {
         margin-bottom: 80px !important ;
+    }
+
+    .separator {
+        display: none;
     }
 }

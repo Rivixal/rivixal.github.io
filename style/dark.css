@@ -162,3 +162,7 @@ footer {
 .mobile {
     background-color: #2b2b2be5;
 }
+
+.welcome {
+    background: linear-gradient(#013e8f, #460040);
+}

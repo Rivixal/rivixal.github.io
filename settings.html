@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404</title>
+    <title>Maydilsiel | Главная страница</title>
     <link rel="shortcut icon" href="style/pictures/main.png">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/fonts.css">
@@ -22,11 +22,11 @@
     <header id="myHeader">
         <h1 class="site-title">
             <span class="logo"><img src="style/pictures/logo.png" alt="Логотип" onclick="document.location='https://youtube.com/@maydilsiel'"></span>
-            The system has been destroyed
+            Настройки
           </h1>
         <nav>
           <ul>
-            <li><a href="index.html" class="material-symbols-outlined hidem"><span class="navigation-list-name">
+            <li><a href="index.html" class="material-symbols-outlined hidem active"><span class="navigation-list-name">
               home
               </span><span class="fontnav">Главная</span></a></li>
             <li><a href="projects.html" class="material-symbols-outlined hidem"><span class="navigation-list-name">
@@ -42,48 +42,57 @@
             <li><a href="contacts.html" class="material-symbols-outlined hidem"><span class="navigation-list-name">
               contacts
               </span><span class="fontnav">Контакты</span></a></li>
-            <li><a href="about.html" class="material-symbols-outlined hidem"><span class="navigation-list-name">info</span><span class="fontnav">Инфо</span></a></li>
+            <li><a href="about.html" class="material-symbols-outlined hidem"><span class="navigation-list-name">
+              info
+              </span><span class="fontnav">Инфо</span></a></li>
             <div class="dropdown hidep">
-              <div class="dropdown hidep">
               <a onclick="myFunction()" class="dropbtn">⁝</a>
                 <div id="myDropdown" class="dropdown-content">
                   <a href="contacts.html">Контакты</a>
                   <a href="about.html">Инфо</a>
                 </div>
+              </div>
           </ul>
         </nav>
       </header>
       <main>
         <div class="tcontainer">
-          <center>
-          <h1 class="a404">404</h1>
-          <p>Извините, запрашиваемая страница не найдена.</p>
-          <p>Либо она перемещена, либо удалена.</p>
-          <p>Проверьте правильность URL-адреса или перейдите <a href="index.html">на главную страницу</a>.</p>
-        </center>
+          <h1>Настройки</h1>
+          <br><br><br>
         </div>
+        <div class="container touch" onclick="document.location='#'">
+          <h3><span class="material-symbols-outlined" style="vertical-align: -5px; margin-right: 5px;">person</span>Вы вошли как User</h3>
+          <p>Вход в аккаунт не требуется!</p>
+        </div>
+        <div class="container touch">
+          <details>
+            <summary><h3><span class="material-symbols-outlined" style="vertical-align: -5px; margin-right: 8px;">language</span>Язык системы</h3></summary>
+            <br>
+            <div class="container touch">
+              <h3>По умолчанию</h3>
+            </div>
+            <div class="container touch">
+              <h3>English</h3>
+            </div>
+            <div class="container touch">
+              <h3>Russian</h3>
+            </div>
+        </details>
+      </div>
+      <div class="container touch" onclick="document.location='about.html'">
+        <h3><span class="material-symbols-outlined" style="vertical-align: -5px; margin-right: 8px;">devices</span>О системе</h3>
+      </div>
       </main>
       <footer>
-        <div class="container">
-            <center>
-              <script src="script/footer.js"></script>
-              <ul class="footer-links">
-                <br>
-                <li><a href="about.html">Инфо</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-                <li><a href="projects.html">Проекты</a></li>
-              </ul>
-        </center>
-        </div>
         <div class="mobile">
-          <nav>
-            <center>
-              <a href="index.html" class="material-symbols-outlined active"><span>home</span><br><span class="fontnav">Главная</span></a>
-              <a href="projects.html" class="material-symbols-outlined"><span>terminal</span><br><span class="fontnav">Проекты</span></a>
-              <a href="guides.html" class="material-symbols-outlined"><span> library_books</span><br><span class="fontnav">Гайды</span></a>
-          </center>
-          </nav>
-      </div>
+            <nav>
+              <center>
+                <a href="index.html" class="material-symbols-outlined active"><span>home</span><br><span class="fontnav">Главная</span></a>
+                <a href="projects.html" class="material-symbols-outlined"><span>terminal</span><br><span class="fontnav">Проекты</span></a>
+                <a href="guides.html" class="material-symbols-outlined"><span> library_books</span><br><span class="fontnav">Гайды</span></a>
+            </center>
+            </nav>
+        </div>
       </footer>
       <script src="script/menu.js"></script>
       <script src="script/homepage.js"></script>

@@ -410,6 +410,10 @@ summary {
     border-radius: 5px;
   }
 
+.gallerey {
+    width: 20%;
+}
+
 @media screen and (max-width: 1110px) {
     img {max-width: 96% !important;}
     iframe, table, span, div, textarea, input, button, submit {max-width: 100% !important;}

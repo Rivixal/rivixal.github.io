@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maydilsiel | Главная страница</title>
+    <link rel="shortcut icon" href="style/pictures/main.png">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/scroll-changed.css">
+    <link rel="stylesheet" href="style/scroll-changed.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="style/scroll-changeddark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="style/light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="style/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="script/slider.js"></script>
+    <script src="script/scriptheader.js"></script>
+</head>
+<body>
+    <header id="myHeader">
+        <h1 class="site-title">
+            <span class="logo"><img src="style/pictures/logo.png" alt="Логотип" onclick="document.location='https://youtube.com/@maydilsiel'"></span>
+            Главная страница
+          </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="material-symbols-outlined hidem active"><span class="navigation-list-name">
+              home
+              </span><span class="fontnav">Главная</span></a></li>
+            <li><a href="projects.html" class="material-symbols-outlined hidem"><span class="navigation-list-name">
+              terminal
+              </span><span class="fontnav">Проекты</span></a></li>
+            <li><a href="guides.html" class="material-symbols-outlined hidem"><span class="navigation-list-name">
+              library_books
+              </span><span class="fontnav">Гайды</span></a></li>
+              <li><a href="gallerey.html" class="material-symbols-outlined hidem"><span class="navigation-list-name">
+                image
+                </span><span class="fontnav">Галерея</span></a></li>
+              <div class="separator"></div>
+            <li><a href="contacts.html" class="material-symbols-outlined hidem"><span class="navigation-list-name">
+              contacts
+              </span><span class="fontnav">Контакты</span></a></li>
+            <li><a href="about.html" class="material-symbols-outlined hidem"><span class="navigation-list-name">
+              info
+              </span><span class="fontnav">Инфо</span></a></li>
+            <div class="dropdown hidep">
+              <a onclick="myFunction()" class="dropbtn">⁝</a>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="contacts.html">Контакты</a>
+                  <a href="about.html">Инфо</a>
+                </div>
+              </div>
+          </ul>
+        </nav>
+      </header>
+      <main>
+            <div class="container welcome welcome-color">
+                  <script src="script/greeting.js"></script>
+                  
+                  <p class="podtextwelcome shadowed-text">Добро пожаловать на сайт Maydilsiel, этот веб-сайт является официальным сайтом разработчика. Для получения более подробной информации о проекте, рекомендуется посетить раздел <a href="about.html">Инфо</a>.</p>
+                  <br>
+                  <p><b>Время фактов:</b></p>
+                  <div id="fact-container">
+                  <p><b><script src="script/facts.js"></script></b></p>
+                  </div>
+                  <br>
+                  <p class="podtextwelcome shadowed-text">Последний вышедший проект: GenerationPassword <b>OR</b> 1.0</p>
+                  <script src="script/OS.js"></script>
+                  <br>
+                  <br>
+                  <div class="container touch-primary" onclick="document.location='projects.html'">
+                    <h3>Посмотреть проекты<span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">east</span></h3>
+                  </div>
+                </div>
+              <details open>
+              <summary><div class="tcontainer">
+                <h1>Лента новостей</h1>
+                <hr noshade size="4">
+              </div></summary>
+              <div class="tcontainer">
+              <div class="container touch" onclick="document.location='news/versionprojectsabout.html'">
+                <h3><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 5px;">developer_guide</span>Прочитать о ветках обновлений и выпусках, что они значат?</h3>
+              </div>
+              <div class="tcontainer">
+                <hr noshade size="4">
+              </div>
+              <div class="container touch" onclick="document.location='news/uhodizinfinityfree.html'">
+                <h3><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 5px;">delete</span>Пока Infinity Free</h3>
+              </div>
+              <div class="container touch" onclick="document.location='news/poyavleniegaidov.html'">
+                <h3><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 5px;">developer_guide</span>Возвращение страницы "Гайды"</h3>
+              </div>
+              <div class="container touch" onclick="document.location='news/prekrasheniepoddershkiwinmay.html'">
+                <h3><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 5px;">close</span>Прекращение поддержки WinMay</h3>
+              </div>
+              <div class="container touch" onclick="document.location='news/infinitydash.html'">
+                <h3><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 5px;">close</span>Infinity Dash больше нам не принадлежит</h3>
+              </div>
+              <div class="container touch" onclick="document.location='news/notesforsite.html'">
+                <h3><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 5px;">question_mark</span>Куда делись все страницы сайта?</h3>
+              </div>
+            </details>
+            <details open>
+              <summary><div class="tcontainer">
+                <h1>Последние видео с нашего канала</h1>
+                <hr noshade size="4">
+              </div></summary>
+              <div class="container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qIZs81KUZ84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br>
+                <h3>Что означает эти индексы в версий MIUI ?</h3>
+                <p>Описание: В этом видео мы исследуем мир MIUI и расскажем вам, что означают эти загадочные индексы в разных версиях. Если вы когда-либо задавались вопросом, что за коды и числа в названиях MIUI, то эта информация для вас...</p>
+              </div>
+              <div class="container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aLNoA11lw0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br>
+                <h3>Вертикальное видео | Установил MIUI 14 на Redmi Note 11 Pro с индексом EU, Что нового?</h3>
+                <p>Описание: Все изменения которые я нашел, если что-то упустил напишите в комментариях :)</p>
+              </div>
+              <div class="container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MGUtPjRbesA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br>
+                <h3>MIUI 13 | Как установить новые виджеты на Индонезийской прошивке MIUI? Самый простой способ на 100%</h3>
+                <p>Описание: В этом видео, я покажу вам, как добавить новые и полезные виджеты на вашу индонезийскую прошивку MIUI. Вы узнаете, как просто и быстро установить виджеты на вашем устройстве, чтобы сделать его еще более удобным и функциональным.</p>
+              </div>
+              <div class="container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SfO0-7oUSMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br>
+                <h3>отвал и я..</h3>
+                <p>Описание: Нет</p>
+              </div>
+            </details>
+              <div class="container">
+                <center>
+                    <p style="margin-bottom: 10px;">Чтобы добавить свой баннер, вы можете написать мне в комментариях <a href="https://t.me/maydilsiel">Телеграмм канале</a></p>
+                    <a href="https://ertorworld.ru"><img class="img-fluid bannerchoice" src="style/pictures/ErtorWorldbaner.png" alt="ertorcard"></a>
+                    <a href="https://nerok.ml"><img src="style/pictures/nerok_banner.png" class="img-fluid bannerchoice" alt="nerok"></a>
+                    <a href="https://lisikpng.com"><img src="http://lisikpng.com/img/baner.png" class="img-fluid bannerchoice" width="88px" height="31px"></a>            
+                    <a href="https://ost-sys.github.io/"><img src="style/pictures/ost.png" class="img-fluid bannerchoice" alt="OST"></a>
+                    <a href="https://m1chigun.nya.by/"><img src="style/pictures/MC.png" class="img-fluid bannerchoice" alt="MC"></a>
+                    <a href="http://web1.tinelix.ru/"><img src="style/pictures/tinelix.gif" class="img-fluid bannerchoice" alt="tinelix"/></a>
+                    <a href="http://thedanyaworld.epizy.com/"><img src="style/pictures/thedanyawin-banner.jpg" class="img-fluid bannerchoice" alt="TheDanyaWin"/></a>
+                    <a href="https://cawiworld.github.io"><img src="style/pictures/reloster.jpg" class="img-fluid bannerchoice" alt="Reloster" /></a>
+                </center>
+                </div>
+      </main>
+      <footer>
+        <div class="container footera">
+            <center>
+              <script src="script/footer.js"></script>
+              <ul class="footer-links">
+                <br>
+                <li><a href="about.html">Инфо</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="projects.html">Проекты</a></li>
+              </ul>
+        </center>
+        </div>
+        <div class="mobile">
+            <nav>
+              <center>
+                <a href="index.html" class="material-symbols-outlined active"><span>home</span><br><span class="fontnav">Главная</span></a>
+                <a href="projects.html" class="material-symbols-outlined"><span>terminal</span><br><span class="fontnav">Проекты</span></a>
+                <a href="guides.html" class="material-symbols-outlined"><span> library_books</span><br><span class="fontnav">Гайды</span></a>
+                <a href="gallerey.html" class="material-symbols-outlined"><span> photo</span><br><span class="fontnav">Галерея</span></a>
+            </center>
+            </nav>
+        </div>
+      </footer>
+      <script src="script/menu.js"></script>
+      <script src="script/homepage.js"></script>
+</body>
+</html>

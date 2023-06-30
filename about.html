@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style/dark.css" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,1,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script src="script/slider.js"></script>
+    <script src="script/dialog.js"></script>
     <script src="script/scriptheader.js"></script>
 </head>
 <body>
@@ -39,226 +39,380 @@
                 image
                 </span><span class="fontnav">Галерея</span></a></li>
               <div class="separator"></div>
-            <li><a href="contacts.html" class="material-symbols-outlined hidem"><span class="navigation-list-name">
-              contacts
-              </span><span class="fontnav">Контакты</span></a></li>
-            <li><a href="about.html" class="material-symbols-outlined hidem active"><span class="navigation-list-name">
-              info
-              </span><span class="fontnav">Инфо</span></a></li>
+              <li><a onclick="showDialog('dialog1')" class="material-symbols-outlined hidem"><span class="navigation-list-name">
+                apps
+                </span><span class="fontnav">Другое</span></a></li>
               <div class="dropdown hidep">
-                <a onclick="myFunction()" class="dropbtn">⁝</a>
-                  <div id="myDropdown" class="dropdown-content">
-                    <a href="contacts.html">Контакты</a>
+              <a onclick="myFunction()" class="dropbtn">⁝</a>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="apps.html">Прилож...</a>
+                    <a href="utilities.html">Утилиты</a>
+                    <a href="https://drive.google.com/drive/folders/1iWAWz8kv_49UbguHHtjCQG5qWsVvIQ1s?usp=sharing">Файлы</a>
                     <a href="about.html">Инфо</a>
-                  </div>
+                </div>
+
           </ul>
         </nav>
       </header>
       <main>
-        <div class="tcontainer">
-          <h1>Инфо о сайте</h1>
-          <hr noshade size="4">
-          <br>
-        </div>
-        <div class="container">
-          <h1><span class="material-symbols-outlined" style="vertical-align: 4px; margin-right: 8px;">info</span>Маленькая биография</h1>
-          <br>
-          <ul>
-            <li>Меня зовут Герман моя фамилия Рамзаев</li>
-            <li>Мне 17 лет, но скоро 2 июля будет 18</li>
-            <li>Живу я в Казахстане</li>
-            <li>Родной язык: Русский</li>
-            <li>Часовой пояс: UTC +06:00</li>
-            <li>Учусь на программиста и активно развиваюсь в этой области.</li>
-            <li>Мой основной язык программирования - C#, с которым я часто работаю</li>
-            <li>Python - мой второстепенный язык, немного имею опыт с ним.</li>
-            <li>Редко использую С++, так как нам её преподают, но я стараюсь осваивать и этот язык.</li>
-            <li>Я учусь писать на C# самостоятельно, самостоятельное изучение является для меня важной частью развития.</li>
-          </ul>
-        </div>
-        <div class="container">
-          <h1><span class="material-symbols-outlined" style="vertical-align: 4px; margin-right: 8px;">info</span>Обо мне и о проекте</h1>
-          <br>
-          <p><b>Приветствую вас всех!</b> Меня зовут Герман, и я - начинающий программист на C#. Разработка приложений и создание сайтов всегда было моей страстью, поэтому я решил погрузиться в мир программирования и превратить свою страсть в профессию. Сейчас я учусь в колледже на втором курсе и активно разрабатываю свои собственные проекты на C#. Мой личный сайт Maydilsiel - один из них. Я создаю его, чтобы поделиться своим опытом и знаниями, а также чтобы показать свои навыки веб-разработки. Моя цель - стать опытным программистом и воплотить свои идеи в жизнь, используя C#. Следите за моими успехами и не забудьте заглянуть на мой сайт, чтобы узнать больше о моих проектах!</p>
+
+        <div id="dialog1" class="dialog">
+          <div class="dialog-content">
+            <span class="close" onclick="closeDialog('dialog1')">&times;</span>
+            <h1><span class="material-symbols-outlined" style="font-size: 30px !important; vertical-align: -4px; margin-right: 5px;">apps</span>Другое</h1>
+            <br>
+            <hr noshade size="4">
+            <br>
+            <div class="tcontainer">
+              <nav>
+                <center>
+                  <a href="about.html" class="material-symbols-outlined active"><span><h1>info</h1></span><br><span class="fontnav"><h4>Инфо</h2></span></a>
+                    <a href="apps.html" class="material-symbols-outlined"><span><h1>apps</h1></span><br><span class="fontnav"><h4>Приложения</h2></span></a>
+                    <a href="utilities.html" class="material-symbols-outlined"><span><h1>settings</h1></span><br><span class="fontnav"><h4>Утилиты</h2></span></a>
+                    <a href="https://drive.google.com/drive/folders/1iWAWz8kv_49UbguHHtjCQG5qWsVvIQ1s?usp=drive_link" class="material-symbols-outlined"><span><h1>folder_special</h1></span><br><span class="fontnav"><h4>Файлы</h2></span></a>
+              </center>
+            </nav>
+            </div>
+            </div>
+          </div>
         </div>
 
-        <details>
-          <summary><div class="tcontainer">
-          <h1>Оборудование</h1>
-          <hr noshade size="4">
-        </summary></div>
-        <div class="container touch">
-        <details>
-          <summary><h3><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 8px;">smartphone</span>Моё текущее устройство</h3></summary>
+        <div class="container touch" onclick="showDialog('dialog2')">
+          <h1><span class="material-symbols-outlined" style="font-size: 30px !important; vertical-align: -4px; margin-right: 5px;">system_update_alt</span>May Design 2.7</h1>
+          <p>Последнее обновление 01.07.2023</p>
+          <p>Для просмотра журнала обновлений сайта, пожалуйста, нажмите сюда</p>
+          <p>Автор сайта: Maydilsiel [aka. German Ramzayev]</p>
+        </div>
+
+        <div id="dialog2" class="dialog">
+          <div class="dialog-content">
+            <span class="close" onclick="closeDialog('dialog2')">&times;</span>
+            <h1><span class="material-symbols-outlined" style="font-size: 30px !important; vertical-align: -4px; margin-right: 5px;">system_update_alt</span>May Design 2.7</h1>
+            <p>Последнее обновление 01.07.2023</p>
+            <br>
+            <hr noshade size="4">
+            <br>
+              <ul>
+                <h3>Диалоговое окно</h3>
+                <li>Мы внесли изменения в дизайн нашего диалогового окна, чтобы оно соответствовало общему стилю и отображало необходимую информацию.</li>
+                <br>
+                <h3>Оптимизация</h3>
+                <li>Благодаря внесению оптимизаций, которые были предложены и реализованы человеком под псевдонимом "OST", мы улучшили производительность нашего сайта и решили проблемы с долгой загрузкой страницы.</li>
+                <br>
+                <h3>Подсветка при нажатий на контент</h3>
+                <li>Мы внесли изменения в дизайн, добавив цветовую индикацию, чтобы пользователи могли определить, был ли нажат определенный блок или нет.</li>
+                <br>
+                <h3>Редизайн страницы "Инфо"</h3>
+                <li>Теперь страница с информацией обновлена и имеет отдельные диалоговые окна для удобного чтения информации.</li>
+                <br>
+                <h3>Cовмещение разделов</h3>
+                <li>Теперь мы объединили страницу "Контакты" с разделом "Инфо" и создали общий раздел, в котором теперь находятся информация, приложение, утилиты и файлы.</li>
+                <br>
+                <h3>Вернули страницу "Приложение для PC"</h3>
+                <li>Мы восстановили страницу ”Приложения“, однако немного переименовали его в "Утилиты". В этом разделе вы найдете все, что вам нужно.</li>
+                <br>
+                <h3>Новая страница ”Приложение“</h3>
+                <li>Мы добавили новую страницу под названием "Приложение", где вы сможете найти разнообразные забавные веб-приложения, разработанные специально для использования на нашем сайте.</li>
+                <br>
+                <h3>Добавлен раздел "Файлы"</h3>
+                <li>Мы рады сообщить, что добавили новый раздел "Файлы", где будут представлены различные файлы, включая те, которые еще не появились на сайте. В настоящее время раздел может быть временно пустым, но мы обещаем добавить еще больше крутых файлов в ближайшее время. Оставайтесь с нами и следите за обновлениями!</li>
+                <br>
+                <h3>Внимание!</h3>
+                <p>Для просмотра предыдущих изменений сайта, пожалуйста, перейдите в раздел "Список изменений сайта".</p>
+              </ul>
+          </div>
+        </div>
+
+        <div class="container touch" onclick="showDialog('dialog3')">
+          <h1><span class="material-symbols-outlined" style="font-size: 30px !important; vertical-align: -4px; margin-right: 5px;">contacts</span>Контактные данные</h1>
+          <p>Мои аккаунты в различных социальных сетях можно найти здесь.</p>
+        </div>
+        
+        <div id="dialog3" class="dialog">
+          <div class="dialog-content">
+            <span class="close" onclick="closeDialog('dialog3')">&times;</span>
+            <h1><span class="material-symbols-outlined" style="font-size: 30px !important; vertical-align: -4px; margin-right: 5px;">contacts</span>Контактные данные</h1>
+            <br>
+            <hr noshade size="4">
+            <br>
+            <div class="container touch" onclick="document.location='https://vk.com/i738263'">
+              <h3><span class="material-symbols-outlined" style="vertical-align: -5px; margin-right: 5px;">person</span>Мой страница в ВК</h3>
+            </div>
+            <div class="container touch" onclick="document.location='https://t.me/maydilsiel'">
+              <h3><span class="material-symbols-outlined" style="vertical-align: -5px; margin-right: 5px;">person</span>Мой Telegram канал</h3>
+            </div>
+            <div class="container touch" onclick="document.location='https://openvk.su/maydilsiel'">
+              <h3><span class="material-symbols-outlined" style="vertical-align: -5px; margin-right: 5px;">person</span>Моя страница в OpenVK</h3>
+            </div>
+            <div class="container touch" onclick="document.location='https://github.com/Maydilsiel'">
+              <h3><span class="material-symbols-outlined" style="vertical-align: -5px; margin-right: 5px;">person</span>Моя страница в Github</h3>
+            </div>
+            <div class="container touch" onclick="document.location='https://youtube.com/@maydilsiel'">
+              <h3><span class="material-symbols-outlined" style="vertical-align: -5px; margin-right: 5px;">smart_display</span>Мой ютуб канал</h3>
+            </div>
+            <div class="container touch" onclick="document.location='https://medium.com/@g.ramzaev'">
+              <h3><span class="material-symbols-outlined" style="vertical-align: -5px; margin-right: 5px;">post</span>Статьи в Medium</h3>
+            </div>
+            <div class="container touch" onclick="document.location='https://mastodon.ml/@Maydilsiel'">
+              <h3><span class="material-symbols-outlined" style="vertical-align: -5px; margin-right: 5px;">post</span>Мои постики в Mastodon</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="container touch" onclick="showDialog('dialog4')">
+          <h1><span class="material-symbols-outlined" style="font-size: 30px !important; vertical-align: -4px; margin-right: 5px;">account_circle</span>Обо мне и о проекте</h1>
+          <p>Описание проекта и автора сайта в более подробной форме</p>
+        </div>
+
+        <div id="dialog4" class="dialog">
+          <div class="dialog-content">
+            <span class="close" onclick="closeDialog('dialog4')">&times;</span>
+            <h1><span class="material-symbols-outlined" style="font-size: 30px !important; vertical-align: -4px; margin-right: 5px;">account_circle</span>Обо мне и о проекте</h1>
+            <br>
+            <hr noshade size="4">
+            <br>
+            <br>
+            <h2>Краткая биография:</h2>
+          <ul>
+            <li>Имя: Герман Рамзаев</li>
+            <li>Возраст: 17 (скоро 18)</li>
+            <li>Место жительства: Казахстан</li>
+            <li>Родной язык: Русский</li>
+            <li>Часовой пояс: UTC +06:00</li>
+            <li>Учусь на программиста</li>
+            <li>Основной язык программирования: C#</li>
+            <li>Дополнительный язык программирования: Python</li>
+            <li>Изредка использую С++</li>
+            <li>Самостоятельное изучение языка C# важная часть развития</li>
+          </ul>
+          <br>
+          <h2>Об авторе сайта:</h2>
+          <p>Приветствую всех! Меня зовут Герман, и я - начинающий программист на C#. У меня всегда была страсть к разработке приложений и созданию сайтов, и я решил превратить эту страсть в профессию. Сейчас я учусь на втором курсе колледжа и активно разрабатываю свои собственные проекты на C#. Один из таких проектов - мой личный сайт под названием Maydilsiel. Я создал его, чтобы поделиться своим опытом и знаниями, а также продемонстрировать свои навыки веб-разработки. Моя цель - стать опытным программистом и воплотить свои идеи в жизнь с использованием C#. Следите за моими успехами и не забудьте посетить мой сайт, чтобы узнать больше о моих проектах!</p>
+          </div>
+        </div>
+
+
+        <div class="container touch" onclick="showDialog('dialog5')">
+          <h1><span class="material-symbols-outlined" style="font-size: 30px !important; vertical-align: -4px; margin-right: 5px;">devices</span>Мои устройства</h1>
+          <p>В данный момент, вот какие гаджеты я использую на постоянной основе</p>
+        </div>
+
+        <div id="dialog5" class="dialog">
+          <div class="dialog-content">
+            <span class="close" onclick="closeDialog('dialog5')">&times;</span>
+            <h1><span class="material-symbols-outlined" style="font-size: 30px !important; vertical-align: -4px; margin-right: 5px;">devices</span>Мои устройства</h1>
+            <br>
+            <hr noshade size="4">
+            <br>
+            <br>
+            <h2><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 8px;">smartphone</span>Моё текущее устройство:</h2>
+            <br>
+            <ul>
+              <li>Имя устройства: Redmi Note 11 Pro 4G (viva)</li>
+              <li>Модель устройства: 2201116TG</li>
+              <li>Экран: 6,67-дюйм Super AMOLED </li>
+              <li>Частота обновления: 120 Гц</li> 
+              <li>Разрешение Экрана 2400×1080 пикселей,</li>
+              <li>Плотность пикселей 395 ppi</li> 
+              <li>Соотношение сторон 20:9</li>
+              <li>Защита: Corning Gorilla Glass 5</li>
+              <li>Процессор: MediaTek Helio G96 (12 нм): восьмиядерный (2×2,05 ГГц Cortex-A76 + 6×2,0 ГГц Cortex-A55)
+              <li>Графический процессор: Mali-G57 MC2</li>
+              <li>Оперативная память: 8GB</li>
+              <li>Внутренняя память: 128GB</li>
+              <li>Система: MIUI 14 на Android 13 Индонезийская версия прошивки</li>
+              <li>Прошивка: Оффициальная</li>
+              <li>Загрузчик: Заблокирован</li>
+            </ul>
+          <br>
+          <h2><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 8px;">computer</span>Мой компьютер</h2>
           <br>
           <ul>
-            <li>Имя устройства: Redmi Note 11 Pro 4G (viva)</li>
-            <li>Модель устройства: 2201116TG</li>
-            <li>Экран: 6,67-дюйм Super AMOLED </li>
-            <li>Частота обновления: 120 Гц</li> 
-            <li>Разрешение Экрана 2400×1080 пикселей,</li>
-            <li>Плотность пикселей 395 ppi</li> 
-            <li>Соотношение сторон 20:9</li>
-            <li>Защита: Corning Gorilla Glass 5</li>
-            <li>Процессор: MediaTek Helio G96 (12 нм): восьмиядерный (2×2,05 ГГц Cortex-A76 + 6×2,0 ГГц Cortex-A55)
-            <li>Графический процессор: Mali-G57 MC2</li>
-            <li>Оперативная память: 8GB</li>
-            <li>Внутренняя память: 128GB</li>
-            <li>Система: MIUI 14 на Android 13 index: ID</li>
-            <li>Прошивка: Оффициальная</li>
-            <li>Загрузчик: Заблокирован</li>
+            <li>Тип компьютера: Моноблок</li>
+            <li>Бренд: Hewlett-Packard (HP)</li>
+            <li>Серия: ENVY 23 All-in-one</li>
+            <li>Модель компьютера: 23d-103er</li>
+            <li>Процессор: Intel Core i5-3330S 2,70GHz</li>
+            <li>Видеокарта: Geforce GT 630M 2GB</li>
+            <li>ОЗУ: 8GB</li>
+            <li>ПЗУ: 1TB</li>
           </ul>
-      </details>
-    </div>
-    <div class="container touch">
-      <details>
-        <summary><h3><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 8px;">computer</span>Мой компьютер</h3></summary>
-        <br>
-        <ul>
-          <li>Тип компьютера: Моноблок</li>
-          <li>Бренд: Hewlett-Packard (HP)</li>
-          <li>Серия: ENVY 23 All-in-one</li>
-          <li>Модель компьютера: 23d-103er</li>
-          <li>Процессор: Intel Core i5-3330S 2,70GHz</li>
-          <li>Видеокарта: Geforce GT 630M 2GB</li>
-          <li>ОЗУ: 8GB</li>
-          <li>ПЗУ: 1TB</li>
-        </ul>
-    </details>
-  </div>
-  </details>
-  <details>
-    <summary><div class="tcontainer">
-      <h1>Мои друзья</h1>
-      <hr noshade size="4">
-    </summary></div>
-    <div class="container">
-      <h1>Tinelix</h1>
-      <p>Он ведет свой развлекательно-технологический YouTube-канал уже семь лет. В своих видео он путешествует по временам компьютеризации 2000-х и занимается программированием на различных языках, включая Java и Python.</p>
-      <br>
-      <div class="container touch" onclick="document.location='https://tinelix.ru/'">
-        <p>Сайт Tinelix</p>
-      </div>
-      <div class="container touch" onclick="document.location='https://www.youtube.com/channel/UCSPjn_Y0pLdPy6Ncb9NAdww'">
-        <p>Youtube Канал</p>
+          </div>
         </div>
-    </div>
-    <div class="container">
-      <h1>The Ertor</h1>
-      <p>Ertor занимается ютуб каналом он снимает обзоры систем, эксперементирует с ними. Также он делает обзоры на говносборок и еще полезный и вредоносный софт! А так-же у него есть свой сайт :) </p>
-      <br>
-      <div class="container touch" onclick="document.location='https://ertorworld.ru'">
-        <p>Сайт ErtorWorld</p>
-      </div>
-      <div class="container touch" onclick="document.location='https://www.youtube.com/c/TheErtor'">
-        <p>Youtube Канал</p>
+
+        <div class="container touch" onclick="showDialog('dialog6')">
+          <h1><span class="material-symbols-outlined" style="font-size: 30px !important; vertical-align: -4px; margin-right: 5px;">diversity_3</span>Мои друзья</h1>
+          <p>Можешь посмотреть, может кого-то тут здесь знаешь :)</p>
         </div>
-  </div>
-  <div class="container touch" onclick="document.location='https://www.youtube.com/channel/UCy0B9cQHsdk-bTXIZar-9hg'">
-      <h1>Alloyd</h1>
-      <p>Alloyd занимается ютуб каналом и пишет разные программы на Delphi</p>
-      <p>Нажмите чтобы перейти на ютуб канал</p>
-  </div>
-  <div class="container">
-      <h1>DesConnet</h1>
-      <p>Соло-разработчик, он разрабатывает вредоносное ПО ( В цели ознакомления ) и полезный софт, так-же у него есть свой сайт с проектами для ознакомления :)</p>
-      <br>
-      <div class="container touch" onclick="document.location='https://ds1nc.ru/'">
-        <p>Сайт DesConnet</p>
-      </div>
-      <div class="container touch" onclick="document.location='https://www.youtube.com/channel/UCsKC-cU51wQN_jz-jUrzu-A'">
-        <p>Youtube Канал</p>
+
+        <div id="dialog6" class="dialog">
+          <div class="dialog-content">
+            <span class="close" onclick="closeDialog('dialog6')">&times;</span>
+            <h1><span class="material-symbols-outlined" style="font-size: 30px !important; vertical-align: -4px; margin-right: 5px;">diversity_3</span>Мои друзья</h1>
+            <br>
+            <hr noshade size="4">
+            <br>
+            <br>
+            <div class="container">
+              <h1>Tinelix</h1>
+              <p>Он ведет свой развлекательно-технологический YouTube-канал уже семь лет. В своих видео он путешествует по временам компьютеризации 2000-х и занимается программированием на различных языках, включая Java и Python.</p>
+              <br>
+              <div class="container touch" onclick="document.location='https://tinelix.ru/'">
+                <p>Сайт Tinelix</p>
+              </div>
+              <div class="container touch" onclick="document.location='https://www.youtube.com/channel/UCSPjn_Y0pLdPy6Ncb9NAdww'">
+                <p>Youtube Канал</p>
+                </div>
+            </div>
+            <div class="container">
+              <h1>The Ertor</h1>
+              <p>Ertor занимается ютуб каналом он снимает обзоры систем, эксперементирует с ними. Также он делает обзоры на говносборок и еще полезный и вредоносный софт! А так-же у него есть свой сайт :) </p>
+              <br>
+              <div class="container touch" onclick="document.location='https://ertorworld.ru'">
+                <p>Сайт ErtorWorld</p>
+              </div>
+              <div class="container touch" onclick="document.location='https://www.youtube.com/c/TheErtor'">
+                <p>Youtube Канал</p>
+                </div>
+          </div>
+          <div class="container touch" onclick="document.location='https://www.youtube.com/channel/UCy0B9cQHsdk-bTXIZar-9hg'">
+              <h1>Alloyd</h1>
+              <p>Alloyd занимается ютуб каналом и пишет разные программы на Delphi</p>
+              <p>Нажмите чтобы перейти на ютуб канал</p>
+          </div>
+          <div class="container">
+              <h1>DesConnet</h1>
+              <p>Соло-разработчик, он разрабатывает вредоносное ПО ( В цели ознакомления ) и полезный софт, так-же у него есть свой сайт с проектами для ознакомления :)</p>
+              <br>
+              <div class="container touch" onclick="document.location='https://ds1nc.ru/'">
+                <p>Сайт DesConnet</p>
+              </div>
+              <div class="container touch" onclick="document.location='https://www.youtube.com/channel/UCsKC-cU51wQN_jz-jUrzu-A'">
+                <p>Youtube Канал</p>
+                </div>
+          </div>
+          <div class="container">
+              <h1>Nerok</h1>
+              <p>Nerok занимается ютуб каналом он снимает обзоры систем, эксперементирует с ними. И многое другое :)</p>
+              <br>
+              <div class="container touch" onclick="document.location='https://nerok.nya.by/'">
+                <p>Сайт Nerok</p>
+              </div>
+              <div class="container touch" onclick="document.location='https://www.youtube.com/channel/UCVSZcvDOzv8e_NftKHUj02g'">
+                <p>Youtube Канал</p>
+                </div>
+          </div>
+          <div class="container touch" onclick="document.location='https://youtube.com/channel/UCNlHE6vCLQBrlMLOWuJHUIQ'">
+              <h1>OlezhaWin</h1>
+              <p>OlezhaWin снимает разные гайды на ос Windows, Также он тестирует различные сборки, и снимает эксперементы с Windows</p>
+              <p>Нажмите чтобы перейти на ютуб канал</p>
+          </div>
+          <div class="container">
+              <h1>TheDanyaWin</h1>
+              <p>TheDanyaWin снимает различные эксперементы, делает разные туториалы, иногда стримит. Там много всякого интересного :)</p>
+              <br>
+              <div class="container touch" onclick="document.location='http://thedanyaworld.epizy.com/'">
+                <p>Сайт TheDanyaWin</p>
+              </div>
+              <div class="container touch" onclick="document.location='https://www.youtube.com/c/TheDanyaWin'">
+                <p>Youtube Канал</p>
+                </div>
+          </div>
+          <div class="container">
+              <h1>Reloster</h1>
+              <p>Reloster (Роман) это человек имеющий свою компанию, он работает над сайтом и ютубом.</p>
+              <br>
+              <div class="container touch" onclick="document.location='https://cawiworld.github.io/'">
+                <p>Сайт Cawiworld</p>
+              </div>
+              <div class="container touch" onclick="document.location='https://youtube.com/channel/UCdVIwEhqqYxEHirsvCmYrBw'">
+                <p>Youtube Канал</p>
+                </div>
+          </div>
+          <div class="container touch" onclick="document.location='https://nobootrecord.github.io'">
+              <h1>NobootRecord</h1>
+              <p>NobbotRecord владеет ютуб каналом, также он программирует на разных языках на таких как C, Delphi, flat assembler, Python3, HTML+CSS+JavaScript</p>
+              <p>Нажмите чтобы перейти на сайт</p>
+          </div>
+          <div class="container touch" onclick="document.location='https://youtube.com/@HappyWin8'">
+              <h1>HappyWin8</h1>
+              <p>Снимаю видео про ШИНДОВС</p>
+          </div>
+          <div class="container">
+              <h1>OST - Operating System Tester</h1>
+              <p>Обычный челик, которому нравится экспериментировать с операционнаыми системами)</p>
+              <br>
+              <div class="container touch" onclick="document.location='https://wt-ul.ml'">
+                <p>Сайт OST</p>
+              </div>
+              <div class="container touch" onclick="document.location='https://www.youtube.com/channel/UC6wNi6iQFVSnd-eJivuG3_Q'">
+                <p>Youtube Канал</p>
+                </div>
+          </div>
+          <div class="container">
+            <h1>Чугунный котел</h1>
+            <p>Крутой чувак, снимает прикольные видосики))</p>
+            <br>
+            <div class="container touch" onclick="document.location='https://m1chigun.nya.by/'">
+              <p>Сайт MC</p>
+            </div>
+            <div class="container touch" onclick="document.location='https://www.youtube.com/@michigun-PC'">
+              <p>Youtube Канал</p>
+              </div>
+          </div>
+          <div class="container touch" onclick="document.location='https://www.youtube.com/@DanielM'">
+              <h1>Daniel Myslivets</h1>
+              <p>Обычный человек который снимает Эксперементы с Windows ну и не только :)</p>
+              <p>Нажмите чтобы перейти на ютуб канал</p>
+          </div>
+          <div class="container touch" onclick="document.location='https://www.youtube.com/channel/UCem43zg8gE3WHwpM-lR1rhA'">
+            <h1>Vladocik 2.0</h1>
+            <p>Обычный человек который снимает Эксперементы с Windows ну и не только :)</p>
+            <p>Нажмите чтобы перейти на ютуб канал</p>
+          </div>
+          <div class="container touch" onclick="document.location='https://www.youtube.com/channel/UCWlCZoSIqf7mm167pjwIJCw'">
+          <h1>Capitan Strannik</h1>
+          <p>Обычный человек который снимает Эксперементы с Windows ну и не только :)</p>
+          <p>Нажмите чтобы перейти на ютуб канал</p>
+          </div>
+          </div>
         </div>
-  </div>
-  <div class="container">
-      <h1>Nerok</h1>
-      <p>Nerok занимается ютуб каналом он снимает обзоры систем, эксперементирует с ними. И многое другое :)</p>
-      <br>
-      <div class="container touch" onclick="document.location='https://nerok.nya.by/'">
-        <p>Сайт Nerok</p>
-      </div>
-      <div class="container touch" onclick="document.location='https://www.youtube.com/channel/UCVSZcvDOzv8e_NftKHUj02g'">
-        <p>Youtube Канал</p>
+
+        <div class="container touch" onclick="showDialog('dialog6')">
+          <h1><span class="material-symbols-outlined" style="font-size: 30px !important; vertical-align: -4px; margin-right: 5px;">ads_click</span>Баннер сайта</h1>
+          <p>Увеличьте осведомленность о нашем сайте, разместив наш баннер на вашей странице, чтобы пользователи получили больше информации о нас :)</p>
         </div>
-  </div>
-  <div class="container touch" onclick="document.location='https://youtube.com/channel/UCNlHE6vCLQBrlMLOWuJHUIQ'">
-      <h1>OlezhaWin</h1>
-      <p>OlezhaWin снимает разные гайды на ос Windows, Также он тестирует различные сборки, и снимает эксперементы с Windows</p>
-      <p>Нажмите чтобы перейти на ютуб канал</p>
-  </div>
-  <div class="container">
-      <h1>TheDanyaWin</h1>
-      <p>TheDanyaWin снимает различные эксперементы, делает разные туториалы, иногда стримит. Там много всякого интересного :)</p>
-      <br>
-      <div class="container touch" onclick="document.location='http://thedanyaworld.epizy.com/'">
-        <p>Сайт TheDanyaWin</p>
-      </div>
-      <div class="container touch" onclick="document.location='https://www.youtube.com/c/TheDanyaWin'">
-        <p>Youtube Канал</p>
+
+
+        <div id="dialog7" class="dialog">
+          <div class="dialog-content">
+            <span class="close" onclick="closeDialog('dialog7')">&times;</span>
+            <h1><span class="material-symbols-outlined" style="font-size: 30px !important; vertical-align: -4px; margin-right: 5px;">ads_click</span>Баннер сайта</h1>
+            <br>
+            <hr noshade size="4">
+            <br>
+            <br>
+            <center>
+            <h1>Наш собственный баннер!</h1>
+            <p><b>Вы можете добавить наш баннер на своем сайте :)</b></p>
+            <div class="outline"></div>
+            <br>
+            <a href="https://maydilsiel.github.io"><img class="img-fluid bannerchoice" src="style/pictures/maybanner.png" width="88px" height="31px" alt="maydilsiel" /></a>
+            <div class="outline"></div>
+            <br>
+            <textarea class="maystyletextaera touch" disabled="" rows="3" cols="60" name="text" class="aboutprojectaera">&lt;a href="https://maydilsiel.github.io"&gt;&lt;img src="https://maydilsiel.github.io/style/pictures/maybanner.png" width="88px" height="31px" alt="maydilsiel" /&gt;&lt;/a&gt;</textarea>
+            <br><br>
+            <div id="dbut" class="container touch" onclick="document.location='style/maybanner.zip'">
+              <h3><span class="material-symbols-outlined" style="vertical-align: -2px;">folder_zip</span><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 5px;">download</span>Скачать код и картинку баннера в *.zip файле</h3>
+            </div>
+          </center>
+          </div>
         </div>
-  </div>
-  <div class="container">
-      <h1>Reloster</h1>
-      <p>Reloster (Роман) это человек имеющий свою компанию, он работает над сайтом и ютубом.</p>
-      <br>
-      <div class="container touch" onclick="document.location='https://cawiworld.github.io/'">
-        <p>Сайт Cawiworld</p>
-      </div>
-      <div class="container touch" onclick="document.location='https://youtube.com/channel/UCdVIwEhqqYxEHirsvCmYrBw'">
-        <p>Youtube Канал</p>
-        </div>
-  </div>
-  <div class="container touch" onclick="document.location='https://nobootrecord.github.io'">
-      <h1>NobootRecord</h1>
-      <p>NobbotRecord владеет ютуб каналом, также он программирует на разных языках на таких как C, Delphi, flat assembler, Python3, HTML+CSS+JavaScript</p>
-      <p>Нажмите чтобы перейти на сайт</p>
-  </div>
-  <div class="container touch" onclick="document.location='https://youtube.com/@HappyWin8'">
-      <h1>HappyWin8</h1>
-      <p>Снимаю видео про ШИНДОВС</p>
-  </div>
-  <div class="container">
-      <h1>OST - Operating System Tester</h1>
-      <p>Обычный челик, которому нравится экспериментировать с операционнаыми системами)</p>
-      <br>
-      <div class="container touch" onclick="document.location='https://wt-ul.ml'">
-        <p>Сайт OST</p>
-      </div>
-      <div class="container touch" onclick="document.location='https://www.youtube.com/channel/UC6wNi6iQFVSnd-eJivuG3_Q'">
-        <p>Youtube Канал</p>
-        </div>
-  </div>
-  <div class="container">
-    <h1>Чугунный котел</h1>
-    <p>Крутой чувак, снимает прикольные видосики))</p>
-    <br>
-    <div class="container touch" onclick="document.location='https://m1chigun.nya.by/'">
-      <p>Сайт MC</p>
-    </div>
-    <div class="container touch" onclick="document.location='https://www.youtube.com/@michigun-PC'">
-      <p>Youtube Канал</p>
-      </div>
-  </div>
-  <div class="container touch" onclick="document.location='https://www.youtube.com/@DanielM'">
-      <h1>Daniel Myslivets</h1>
-      <p>Обычный человек который снимает Эксперементы с Windows ну и не только :)</p>
-      <p>Нажмите чтобы перейти на ютуб канал</p>
-  </div>
-  <div class="container touch" onclick="document.location='https://www.youtube.com/channel/UCem43zg8gE3WHwpM-lR1rhA'">
-    <h1>Vladocik 2.0</h1>
-    <p>Обычный человек который снимает Эксперементы с Windows ну и не только :)</p>
-    <p>Нажмите чтобы перейти на ютуб канал</p>
-  </div>
-  <div class="container touch" onclick="document.location='https://www.youtube.com/channel/UCWlCZoSIqf7mm167pjwIJCw'">
-  <h1>Capitan Strannik</h1>
-  <p>Обычный человек который снимает Эксперементы с Windows ну и не только :)</p>
-  <p>Нажмите чтобы перейти на ютуб канал</p>
-  </div>
-  <br>
-  </details>
+
+
   <details>
   <summary><div class="tcontainer">
-    <h1>Список изменений сайта</h1>
+    <h1><span class="material-symbols-outlined" style="font-size: 30px !important; vertical-align: -4px; margin-right: 5px;">arrow_upward</span>Список изменения сайта</h1>
     <hr noshade size="4">
   </summary></div>
   <br>
@@ -267,6 +421,35 @@
         <summary><h3><span class="material-symbols-outlined" style="vertical-align: -5px; margin-right: 8px;">comment</span>Список изменений</h3></summary>
         <ul>
           <br>
+          <div class="lcontainer">
+            <h3>Обновление сайта 01.07.2023 Версия May Design 2.7</h3>
+            <hr noshade size="4">
+            <br>
+            <h3>Диалоговое окно</h3>
+            <li>Мы внесли изменения в дизайн нашего диалогового окна, чтобы оно соответствовало общему стилю и отображало необходимую информацию.</li>
+            <br>
+            <h3>Оптимизация</h3>
+            <li>Благодаря внесению оптимизаций, которые были предложены и реализованы человеком под псевдонимом "OST", мы улучшили производительность нашего сайта и решили проблемы с долгой загрузкой страницы.</li>
+            <br>
+            <h3>Подсветка при нажатий на контент</h3>
+            <li>Мы внесли изменения в дизайн, добавив цветовую индикацию, чтобы пользователи могли определить, был ли нажат определенный блок или нет.</li>
+            <br>
+            <h3>Редизайн страницы "Инфо"</h3>
+            <li>Теперь страница с информацией обновлена и имеет отдельные диалоговые окна для удобного чтения информации.</li>
+            <br>
+            <h3>Cовмещение разделов</h3>
+            <li>Теперь мы объединили страницу "Контакты" с разделом "Инфо" и создали общий раздел, в котором теперь находятся информация, приложение, утилиты и файлы.</li>
+            <br>
+            <h3>Вернули страницу "Приложение для PC"</h3>
+            <li>Мы восстановили страницу ”Приложения“, однако немного переименовали его в "Утилиты". В этом разделе вы найдете все, что вам нужно.</li>
+            <br>
+            <h3>Новая страница ”Приложение“</h3>
+            <li>Мы добавили новую страницу под названием "Приложение", где вы сможете найти разнообразные забавные веб-приложения, разработанные специально для использования на нашем сайте.</li>
+            <br>
+            <h3>Добавлен раздел "Файлы"</h3>
+            <li>Мы рады сообщить, что добавили новый раздел "Файлы", где будут представлены различные файлы, включая те, которые еще не появились на сайте. В настоящее время раздел может быть временно пустым, но мы обещаем добавить еще больше крутых файлов в ближайшее время. Оставайтесь с нами и следите за обновлениями!</li>
+            <br>
+          </div>
           <div class="lcontainer">
             <h3>Обновление сайта 21.06.2023 Версия May Design 2.6</h3>
             <hr noshade size="4">
@@ -772,40 +955,6 @@
     </details>
   </div>
   </details>
-  <details>
-  <summary><div class="tcontainer">
-    <h1>Баннер сайта</h1>
-    <hr noshade size="4">
-  </summary></div>
-  <br>
-  <div class="content">
-  <div class="container">
-      <center>
-        <span class="material-symbols-outlined" style="font-size: 30px !important;">badge</span>
-      <h1>Наш собственный баннер!</h1>
-      <p><b>Вы можете добавить наш баннер на своем сайте :)</b></p>
-      <div class="outline"></div>
-      <br>
-      <a href="https://maydilsiel.github.io"><img class="img-fluid bannerchoice" src="style/pictures/maybanner.png" width="88px" height="31px" alt="maydilsiel" /></a>
-      <div class="outline"></div>
-      <br>
-      <textarea class="maystyletextaera touch" disabled="" rows="6" cols="60" name="text" class="aboutprojectaera">
-        
-        &lt;a href="https://maydilsiel.github.io"&gt;
-      &lt;img src="https://maydilsiel.github.io/style/pictures/maybanner.png" width="88px" height="31px" alt="maydilsiel" /&gt;
-        &lt;/a&gt;
-      </textarea>
-      <br><br>
-      <div id="dbut" class="container touch" data-path="style/pictures/maybanner.zip">
-        <h3><span class="material-symbols-outlined" style="vertical-align: -2px;">folder_zip</span><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 5px;">download</span>Скачать баннер в формате ZIP</h3>
-      </div>
-      <div class="container touch" onclick="'code.txt'">
-        <h3><span class="material-symbols-outlined" style="vertical-align: -2px;">description</span><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 5px;">download</span>Скачать код в формате txt</h3>
-      </div>
-      </center>
-      </div>
-    </div>
-    </details>
         </main>
             <footer>
         <div class="container footera">
@@ -832,5 +981,6 @@
       </footer>
       <script src="script/menu.js"></script>
       <script src="script/homepage.js"></script>
+      <script src="script/console.js"></script>
 </body>
 </html>

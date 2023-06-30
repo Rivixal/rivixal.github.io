@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="style/scroll-changed.css">
     <link rel="stylesheet" href="style/scroll-changed.css" media="(prefers-color-scheme: light)">
     <link rel="stylesheet" href="style/scroll-changeddark.css" media="(prefers-color-scheme: dark)">
-    <link rel="stylesheet" href="style/light.css" media="(prefers-color-scheme: light)">
-    <link rel="stylesheet" href="style/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="style/light.css" media="(prefers-color-scheme: light)" id="switchtheme">
+    <link rel="stylesheet" href="style/dark.css" media="(prefers-color-scheme: dark)" id="switchtheme">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,1,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="script/scriptheader.js"></script>
@@ -40,9 +40,12 @@
                 image
                 </span><span class="fontnav">Галерея</span></a></li>
               <div class="separator"></div>
-            <li><a onclick="showDialog('dialog1')" class="material-symbols-outlined hidem"><span class="navigation-list-name">
-              apps
-              </span><span class="fontnav">Другое</span></a></li>
+            <li><a href="contacts.html" class="material-symbols-outlined hidem"><span class="navigation-list-name">
+              contacts
+              </span><span class="fontnav">Контакты</span></a></li>
+            <li><a href="about.html" class="material-symbols-outlined hidem"><span class="navigation-list-name">
+              info
+              </span><span class="fontnav">Инфо</span></a></li>
             <div class="dropdown hidep">
               <a onclick="myFunction()" class="dropbtn">⁝</a>
                 <div id="myDropdown" class="dropdown-content">
@@ -56,28 +59,6 @@
         </nav>
       </header>
       <main>
-
-        <div id="dialog1" class="dialog">
-          <div class="dialog-content">
-            <span class="close" onclick="closeDialog('dialog1')">&times;</span>
-            <h1><span class="material-symbols-outlined" style="font-size: 30px !important; vertical-align: -4px; margin-right: 5px;">apps</span>Другое</h1>
-            <br>
-            <hr noshade size="4">
-            <br>
-            <div class="tcontainer">
-              <nav>
-                <center>
-              <a href="about.html" class="material-symbols-outlined"><span><h1>info</h1></span><br><span class="fontnav"><h4>Инфо</h2></span></a>
-              <a href="apps.html" class="material-symbols-outlined"><span><h1>apps</h1></span><br><span class="fontnav"><h4>Приложения</h2></span></a>
-              <a href="utilities.html" class="material-symbols-outlined"><span><h1>settings</h1></span><br><span class="fontnav"><h4>Утилиты</h2></span></a>
-              <a href="https://drive.google.com/drive/folders/1iWAWz8kv_49UbguHHtjCQG5qWsVvIQ1s?usp=drive_link" class="material-symbols-outlined"><span><h1>folder_special</h1></span><br><span class="fontnav"><h4>Файлы</h2></span></a>
-              </center>
-            </nav>
-            </div>
-            </div>
-          </div>
-        </div>
-
             <div class="container welcome welcome-color">
                   <script src="script/greeting.js"></script>
                   
@@ -88,10 +69,9 @@
                   <script src="script/facts.js"></script>
                   </div>
                   <br>
-                  <p class="podtextwelcome shadowed-text">Последний вышедший проект: Maypad <b>OR</b> 1.0</p>
+                  <p class="podtextwelcome shadowed-text">Последний вышедший проект: GenerationPassword <b>OR</b> 1.0</p>
                   <script src="script/OS.js"></script>
                   <br>
-                  <p id="daysLeftMessage">Осталось до моего дня рождения: загрузка</p>
                   <br>
                   <div class="container touch-primary" onclick="document.location='projects.html'">
                     <h3>Посмотреть проекты<span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">east</span></h3>
@@ -108,9 +88,6 @@
               </div>
               <div class="tcontainer">
                 <hr noshade size="4">
-              </div>
-              <div class="container touch" onclick="document.location='news/vernuliutiliti.html'">
-                <h3><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 5px;">settings</span>Вернули Утилиты</h3>
               </div>
               <div class="container touch" onclick="document.location='news/uhodizinfinityfree.html'">
                 <h3><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 5px;">delete</span>Пока Infinity Free</h3>
@@ -171,33 +148,6 @@
                     <a href="https://cawiworld.github.io"><img src="style/pictures/reloster.jpg" class="img-fluid bannerchoice" alt="Reloster" /></a>
                 </center>
                 </div>
-                <script>
-                  // Функция для определения разницы между двумя датами
-    function daysUntilDate(targetDate) {
-      const today = new Date();
-      const target = new Date(targetDate);
-      const diff = target - today;
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      return days;
-    }
-
-    // Задаем вашу дату рождения
-    const yourBirthday = new Date('2023-07-02');
-
-    // Получаем элемент для вывода сообщения
-    const daysLeftMessage = document.getElementById('daysLeftMessage');
-
-    // Получаем количество дней до вашего дня рождения
-    const daysUntilBirthday = daysUntilDate(yourBirthday);
-
-    if (daysUntilBirthday === 0) {
-      daysLeftMessage.textContent = 'С днем рождения меня 🎉🎂';
-    } else if (daysUntilBirthday === 1) {
-      daysLeftMessage.textContent = 'Завтра мой день рождения! 🎉🎂';
-    } else {
-      daysLeftMessage.textContent = `Осталось дней до моего дня рождения: ${daysUntilBirthday} 🎉🎂`;
-    }
-                </script>
       </main>
       <footer>
         <div class="container footera">

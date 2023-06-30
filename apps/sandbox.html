@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Песочница с CSS и HTML</title>
+  <style>
+    #sandbox {
+      width: 400px;
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Редактирование CSS и HTML</h2>
+  <div>
+    <textarea id="css-input" rows="6" cols="50" placeholder="Введите CSS стили здесь"></textarea>
+  </div>
+  <div>
+    <textarea id="html-input" rows="6" cols="50" placeholder="Введите HTML код здесь"></textarea>
+  </div>
+  <button onclick="updateSandbox()">Обновить</button>
+
+  <div id="sandbox"></div>
+
+  <script src="sandbox.js"></script>
+</body>
+</html>

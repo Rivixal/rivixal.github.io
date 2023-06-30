@@ -54,12 +54,13 @@ function getRandomFact() {
     return facts[randomIndex];
   }
   
-  // Функция для отображения факта на странице
-  function displayFact() {
-    var factContainer = document.getElementById("fact-container");
-    var fact = getRandomFact();
-    factContainer.textContent = fact;
-  }
-  
-  // Вызываем функцию при загрузке страницы
-  window.onload = displayFact;
+// Функция для отображения факта на странице
+function displayFact() {
+  var factContainer = document.querySelector(".fact-container");
+  var fact = getRandomFact();
+  factContainer.textContent = fact;
+}
+
+// Встраиваемый код
+document.write('<h3><div class="fact-container"></div></h3>');
+displayFact();

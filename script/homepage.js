@@ -13,20 +13,9 @@ function downloadFile(url){
     link.dispatchEvent(event);
   }
   
-  var but = document.getElementById('dbut')
-  but.addEventListener('click', function(){
-    downloadFile(but.getAttribute('data-path'));
-  })
-
   window.onload = function() {
     // Плавная прокрутка до верхней части страницы
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const detailsElement = document.getElementById('myDetails');
-  const summaryElement = detailsElement.querySelector('summary');
-  
-  summaryElement.addEventListener('click', () => {
-    detailsElement.toggleAttribute('open');
-  });
   

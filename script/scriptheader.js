@@ -12,8 +12,6 @@ function setHeaderTheme() {
       // Применяем соответствующий класс стилей
       header.classList.add("hidecolor");
       header.classList.remove("showcolor");
-      h1.header.classList.remove("showtext");
-      h1.header.classList.add("hidetext")
     } else {
       // Возвращаем размытие (blurring)
       header.style.backdropFilter = "";

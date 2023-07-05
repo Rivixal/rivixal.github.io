@@ -1,0 +1,10 @@
+#sandbox {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto; /* Центрирование песочницы по горизонтали */
+  }
+
+  #sandbox-container {
+    display: flex;
+    justify-content: flex-end; /* Перемещение песочницы вправо */
+  }

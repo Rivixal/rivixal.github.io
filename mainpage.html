@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style/fonts.css">
+  <title>Новая вкладка</title>
+  <style>
+    /* Стили для градиента */
+    html {
+      font-family: mulish-regular, arial, brands, webicon1, winxplogo;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-image: linear-gradient(to bottom right, #c176f1, #825ef7);
+      font-family: mulish-regular, arial, brands, webicon1, winxplogo;
+      overflow: hidden;
+    }
+
+    /* Стили для контейнера ошибки */
+    .error-container {
+      text-align: center;
+      padding: 50px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .error-container::before,
+    .error-container::after {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      top: 0;
+      background-color: rgba(255, 255, 255, 0.6);
+      z-index: -1;
+    }
+
+    .error-container::before {
+      left: -50%;
+      transform: skewX(45deg);
+      animation: tear 2s infinite;
+    }
+
+    .error-container::after {
+      right: -50%;
+      transform: skewX(-45deg);
+      animation: tear 2s infinite alternate-reverse;
+    }
+
+    @keyframes tear {
+      0% {
+        transform: skewX(45deg);
+      }
+      50% {
+        transform: skewX(-10deg);
+      }
+      100% {
+        transform: skewX(45deg);
+      }
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Стили для поиска */
+    .search-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .search-input {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .search-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #825ef7;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+
+    /* Стили для ссылок */
+    .links {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .links a {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #000000;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      margin-right: 10px;
+    }
+
+    .links a:hover {
+      color: #825ef7;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-container">
+    <h1 id="time"></h1>
+    <p style="margin-top: -20px; ">Maydilsiel MainPage</p>
+    <!-- Поиск -->
+    <div style="margin-top: 50px;" class="search-container">
+      <input type="text" class="search-input" placeholder="Введите поисковый запрос...">
+      <button class="search-button" onclick="searchGoogle()">Поиск</button>
+    </div>
+    <!-- Ссылки -->
+    <div class="links">
+      <a href="https://maydilsiel.github.io">Главный сайт Maydilsiel</a>
+      <a href="https://www.wikipedia.org/">Wikipedia</a>
+      <a href="https://stackoverflow.com/">Stack Overflow</a>
+    </div>
+  </div>
+
+  <script>
+    // Получаем текущее время
+    function getCurrentTime() {
+      var currentDate = new Date();
+      var hours = currentDate.getHours();
+      var minutes = currentDate.getMinutes();
+      var seconds = currentDate.getSeconds();
+
+      // Добавляем ведущий ноль, если число состоит из одной цифры
+      hours = (hours < 10 ? "0" : "") + hours;
+      minutes = (minutes < 10 ? "0" : "") + minutes;
+      seconds = (seconds < 10 ? "0" : "") + seconds;
+
+      // Формируем строку времени
+      var timeString = hours + ":" + minutes + ":" + seconds;
+
+      // Обновляем текст в элементе с id "time"
+      document.getElementById("time").textContent = timeString;
+
+      // Обновляем время каждую секунду
+      setTimeout(getCurrentTime, 1000);
+    }
+
+    // Запускаем функцию для получения и обновления времени
+    getCurrentTime();
+
+    // Функция поиска в Google
+    function searchGoogle() {
+      var query = document.querySelector('.search-input').value;
+      var url = "https://www.google.com/search?q=" + encodeURIComponent(query);
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+</html>

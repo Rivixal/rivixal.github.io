@@ -1,0 +1,359 @@
+/*ScrollBar*/
+::-webkit-scrollbar {
+    transition: 0.2s;
+    background: #001c37; /* Dark Blue for Snow */
+    backdrop-filter: blur(5px);
+    margin-right: 5px;
+    width: 6px;
+    overflow-y: auto;
+    scrollbar-color: transparent;
+}
+
+::-webkit-scrollbar-button {
+    background-color: #000;
+}
+
+::-webkit-scrollbar-button {
+    background: #111111; /* Almost Black */
+    box-shadow: inset 0 0 5px #111111;
+    border-radius: 4px;  
+    border: 3px solid #446699; /* Steel Blue */
+}
+
+::-webkit-scrollbar-button:hover { 
+    box-shadow: inset 0 0 3px #111111; background: #1a4876; /* Dark Sky Blue */
+}
+
+::-webkit-scrollbar-thumb {
+    border: 0.5px solid #ffffff !important;
+    border-color: #2510e5; /* Dark Magenta */
+    border-radius: 15px;
+    background: #2510e5; /* Light Magenta */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border: 0.5px solid #ffffff !important;
+    border-color: #2510e5; /* Darker Magenta */
+    border-radius: 15px;
+    background: #2510e5; /* Darkest Magenta */
+    animation-duration: 0.5s;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #2510e5; /* Dark Purple */
+}
+
+/*Ending*/
+
+:root {
+    --transition-speed: 0.5s;
+    --background-color: #001c37; /* Dark Blue for Snow */
+    --text-color: #ffffff; /* White text for better visibility on dark background */
+    --transparent-color: #1a4876; /* Dark Sky Blue for transparency */
+    --box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    --blur-filter: blur(0px);
+    --highlight-color: #446699; /* Steel Blue for highlights */
+    --box-shadow-hover: 0 2px 5px rgba(255, 255, 255, 0.2);
+    --link-color: #ffffff;
+    --link-color-hover: #94b8ff; /* Light Blue for link hover */
+    --link-color-active: #1a4876; /* Dark Sky Blue for link active */
+    --dropdown-background: #333333; /* Dark Gray for dropdown background */
+    --dropdown-border-radius: 10px;
+    --dropdown-blur-filter: blur(6px);
+    --dropdown-box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.1);
+    --dropdown-position-left: -30px;
+    --dropdown-position-top: 70px;
+    --banner-background: #111111; /* Almost Black for banner background */
+    --container-border-color: #262626; /* Medium Gray for container border */
+    --container-background: #000000; /* Black for container background */
+    --dialog-container-background: #1f1f1f; /* Dark Gray for dialog container background */
+    --dialog-container-border-color: #262626; /* Medium Gray for dialog container border */
+    --welcome-text-color: #ffffff; /* White for welcome text */
+    --touch-primary-background: rgba(197, 49, 255, 0.516);
+    --touch-primary-border: solid #94b8ff; /* Light Blue for touch primary border */
+    --touch-primary-border-hover: solid #446699; /* Steel Blue for touch primary hover border */
+    --touch-border: solid #808080; /* Gray for touch border */
+    --touch-border-hover: solid #ea00ff; /* Magenta for touch hover border */
+    --footer-text-color: #ffffff;
+    --btn-primary-color: #ffffff;
+    --btn-primary-background: #004080; /* Dark Blue for primary button background */
+    --btn-primary-border-color: #004080; /* Dark Blue for primary button border */
+    --btn-primary-background-hover: #003366; /* Darker Blue for primary button hover background */
+    --btn-primary-border-color-hover: #002147; /* Darkest Blue for primary button hover border */
+    --logo-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 13px #ffffff;
+    --bannerchoice-box-shadow: 0 0 0 1px #446699, 0 0 13px #446699;
+    --maystyletextarea-background: #444;
+    --viewer-box-shadow: 0 0 0 1px #446699, 0 0 13px #446699;
+    --selected-box-shadow: 0 0 0 1px #446699, 0 0 13px #446699;
+    --imageselect-cursor: pointer;
+    --mobile-background: #1a1a1a;
+    --welcome-background: linear-gradient(#003366, #460040); /* Gradient with Dark Blue and Dark Purple for welcome background */
+    --button-close: #ff4242;
+    --button-close-focus: #f84c4c;
+    --analog-clock-color: #ffffff; /* White for analog clock */
+    --hand-clock: #ffffff; /* White for clock hand */
+    --clock-border-radius: 2px solid #ffffff; /* White border for clock */
+    --hand-background-color: #ffffff; /* White background for clock hand */
+    --calendar-background-color: #333333; /* Dark Gray for calendar background */
+    --calendar-border: 1px solid #ffffff; /* White border for calendar */
+    --today: #94b8ff; /* Light Blue for today highlight */
+}
+
+html {
+    transition: var(--transition-speed);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.hero { 
+    background-color: #001c37;
+    background-image: linear-gradient(to top, #1a4876, #446699, #446699, #446699, #1a4876);
+}
+
+.heroproject {
+    background-image: linear-gradient(to top, #1a4876, #446699, #446699, #446699, #1a4876) !important;
+}
+
+.herocomponents {
+    background-image: linear-gradient(to top, #1a4876, #446699, #446699, #446699, #1a4876) !important;
+}
+
+.hidecolor {
+    transition: var(--transition-speed);
+    background-color: #1a4876;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(0px);
+}
+
+.hidecolor nav a {
+    color: #fff !important;
+}
+
+.hidecolor .separator {
+    background-color: #fff;
+}
+
+.showcolor {
+    transition: var(--transition-speed);
+    background-color: #44669998;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+}
+
+header {
+    transition: var(--transition-speed);
+    background-color: #446699;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+    color: #fff !important;
+}
+
+nav a {
+    color: #ffffff;
+}
+
+a {
+    color: #94b8ff;
+    transition: 0.3s;
+}
+
+/*Mobile*/
+.dropdown-content {
+    transition: 0.4s;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    background-color: #333333;
+    left: -30px;
+    top: 70px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.1);
+}
+/*End-Mobile*/
+/*PC*/
+.dropdown-pc {
+    transition: 0.4s;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    background-color: #333333;
+    left: -30px;
+    top: 70px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.1);
+}
+/*End-PC*/
+
+.show {
+    display: block;
+}
+
+.dropdown:active .dropdown-content {
+    display: block;
+}
+
+a:hover {
+    color: #94b8ff;
+}
+
+a:active {
+    color: #4193e6;
+}
+
+
+nav a:hover {
+    background-color: rgb(58, 87, 123);
+    color: #ffffff;
+}
+
+.active {
+    transition: var(--transition-speed);
+    background-color: rgb(92, 131, 179);
+    color: #ffffff;
+}
+
+.touch:active {
+    background-color: rgb(33, 33, 33);
+}
+
+.container {
+    transition: var(--transition-speed);
+    border: solid #262626;
+    background-color: #000000;
+}
+
+.welcome-color {
+    color: #ffffff;
+}
+
+.touch-primary {
+    color: #ffffff;
+    background-color: rgba(80, 49, 255, 0.516);
+    border: solid #94b8ff;
+}
+
+.touch-primary:hover {
+    border: solid #446699;
+}
+
+.touch {
+    border: solid #808080;
+}
+
+.touch:hover {
+    border: solid #1100ff;
+}
+
+footer {
+    color: #ffffff;
+}
+
+.banner {
+    background-color: #111111;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #004080;
+    border-color: #004080;
+}
+
+.btn-primary:hover {
+    background-color: #003366;
+    border-color: #002147;
+}
+
+.footer-links a {
+    color: #ffffff;
+}
+
+.logo:hover {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 13px #ffffff;
+}
+
+.bannerchoice:hover {
+    box-shadow: 0 0 0 1px #446699, 0 0 13px #446699;
+}
+
+.bannerchoice {
+    transition: 0.3s;
+}
+
+.maystyletextaera {
+    background-color: #444;
+    color: #ffffff;
+}
+
+.viewer {
+    box-shadow: 0 0 0 1px #446699, 0 0 13px #446699;
+}
+
+.selected {
+    cursor: pointer;
+    box-shadow: 0 0 0 1px #446699, 0 0 13px #446699;
+}
+
+.imageselect {
+    cursor: pointer;
+}
+
+.mobile {
+    background-color: #1a1a1a;
+}
+
+.welcome {
+    background: linear-gradient(#003366, #460040);
+}
+
+.dialog-content {
+    background-color: #202020;
+    border: 1px solid #262626;
+}
+
+.close {
+    color: #ff4242;
+}
+
+.close:hover {
+    color: #f84c4c;
+}
+
+.close:active {
+    color: #ff4242;
+}
+
+#analog-clock {
+    border: 2px solid #ffffff;
+}
+
+.hand {
+    background-color: #ffffff;
+}
+
+#calendar {
+    border-color: #ffffff;
+    background-color: #333333;
+}
+
+.today {
+    background-color: #94b8ff;
+}
+
+.dockstylemobile a {
+    color: #ffffff;
+  }
+
+  .dockstylemobile a:hover {
+    background-color: #446699;
+    color: rgb(255, 255, 255);
+  }
+
+  .dockstylemobile .active a {
+    background-color: #446699;
+  }
+
+  .dockstylemobile .active {
+    color: #ffffff;
+  }
+
+  .dockstylemobile .actived {
+    color: #ffffff !important;
+  }
+
+  .dockstylemobile .p {
+    color: #252525 !important;
+  }

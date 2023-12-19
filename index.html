@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivixal Developer</title>
+    <link rel="shortcut icon" href="style/pictures/main.png">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/scroll-changed.css">
+    <link href="style/light.css" rel="stylesheet" id="theme-link">
+    <link rel="stylesheet" href="style/scroll-changed.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="script/scriptheader.js"></script>
+    <script src="script/dialog.js"></script>
+</head>
+<body>
+    <header id="myHeader">
+        <h1 class="site-title">
+            Rivixal Developer
+          </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="material-symbols-outlined hidem active"><span class="navigation-list-name">
+              home
+              </span><span class="fontnav">Главная</span></a></li>
+            <li><a href="projects.html" class="material-symbols-outlined hidem"><span class="navigation-list-name">
+              terminal
+              </span><span class="fontnav">Проекты</span></a></li>
+            <li><a href="components.html" class="material-symbols-outlined hidem"><span class="navigation-list-name">
+              library_books
+              </span><span class="fontnav">Компоненты</span></a></li>
+              <li><a href="utilities.html" class="material-symbols-outlined hidem"><span class="navigation-list-name">
+                settings
+                </span><span class="fontnav">Утилиты</span></a></li>
+              <div class="separator"></div>
+            <li><a onclick="showDialog('dialog-header')" class="material-symbols-outlined hidem"><span class="navigation-list-name">
+              apps
+              </span><span class="fontnav">Меню</span></a></li>
+            <div class="dropdown hidep">
+              <a onclick="showDialog('dialog-header')" class="dropbtn">⁝</a>
+                </div>          
+              </ul>
+        </nav>
+      </header>
+      <main> 
+        
+        <section class="hero" id="home">
+          <br><br>
+          <div class="hero-content tcontainer">
+            <script src="script/greeting.js"></script>
+            <h5 id="podtextgreeting"></h5>
+            <script src="script/podtextgreeting.js"></script>
+              <br>
+            <h4 id="daysLeftMessage">До нового года: загрузка</h4>
+            <div class="tcontainer button300px">
+            <div class="container touch-primary" onclick="document.location='projects.html'">
+              <h4>К Проектам<span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">east</span></h4>
+            </div>
+          </div>
+          </div>
+        </section>
+
+        <br>
+        <!--main menu---->
+        <div class="dropdown" style="padding-bottom: 30px !important;">
+
+        </div>
+        <div class="container" style="text-align: center;">
+          <div id="fact-container">
+            <script src="script/facts.js"></script>
+            </div>
+          </div>
+              <details open>
+              <summary>
+                <div class="tcontainer" style="text-align: center;">
+                  <br>
+                  <br>
+                <h1>Новости сайта</h1>
+                <br>
+                <hr noshade size="4" style="border-radius: 10px;">
+              </div>
+            </summary>
+                <div class="container touch leftandright" onclick="showDialog('dialog1')">
+                  <h3><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 5px;">developer_guide</span>Прочитать о ветках обновлений и выпусках, что они значат?</h3>
+                  <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">east</span></h3>
+                </div>
+
+                <div class="container touch leftandright" onclick="showDialog('dialog8')">
+                  <h3><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 5px;">cake</span>Ребрендинг</h3>
+                  <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">east</span></h3>
+                </div>
+                <!--news-->
+              <div class="tcontainer">
+                <hr noshade size="4" style="border-radius: 10px;">
+              </div>
+
+              <div class="container touch leftandright" onclick="showDialog('dialog9')">
+                <h3><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 5px;">close</span>Временное удаление гайдов</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">east</span></h3>
+              </div>
+
+              <div class="container touch leftandright" onclick="showDialog('dialog2')">
+                <h3><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 5px;">settings</span>Вернули Утилиты</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">east</span></h3>
+              </div>
+
+              <div class="container touch leftandright" onclick="showDialog('dialog3')">
+                <h3><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 5px;">delete</span>Пока Infinity Free</h3>     
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">east</span></h3>        
+              </div>
+   
+              <div class="container touch leftandright" onclick="showDialog('dialog4')">
+                <h3><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 5px;">developer_guide</span>Возвращение страницы "Гайды"</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">east</span></h3>             
+              </div>
+
+              <div class="container touch leftandright" onclick="showDialog('dialog5')">
+                <h3><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 5px;">close</span>Прекращение поддержки WinMay</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">east</span></h3>
+              </div>
+
+              <div class="container touch leftandright" onclick="showDialog('dialog6')">
+                <h3><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 5px;">close</span>Infinity Dash больше нам не принадлежит</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">east</span></h3>
+              </div>
+
+              <div class="container touch leftandright" onclick="showDialog('dialog7')">
+                <h3><span class="material-symbols-outlined" style="vertical-align: -2px; margin-right: 5px;">question_mark</span>Куда делись все страницы сайта?</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">east</span></h3>
+              </div>
+
+              
+            </details>
+           <!---------<details open>
+              <summary><div class="tcontainer">
+                <h1>Простая заглушка</h1>
+                <hr noshade size="4" style="border-radius: 10px;">
+              </div></summary>
+              <div class="container">
+                <h1>Пока-что с ней ничего не придумали</h1>
+              </div>
+            </details>------------> 
+
+
+            <!--Window--->
+            <div id="dialog1" class="dialog">
+              <div class="dialog-content">
+                <span class="close" onclick="closeDialog('dialog1')">&times;</span>
+                <h1>Индескы и их обозначения</h1>
+                <p>Статья была созданна в 08/05/2023 Время 18:50</p>
+                <br>
+                <hr noshade size="4" style="border-radius: 10px;">
+                <br>
+                <div class="container">
+                  <h1>Индекс OR</h1>
+                  <p>Официальный релиз - обозначает окончательный релиз программного продукта или приложения, который считается стабильным и готовым к использованию. Он выпускается после тщательного тестирования и отладки всех функций.</p>
+                  <br>
+                  <h1>Индекс BR</h1>
+                  <p>Бета релиз - обозначает версию программного продукта или приложения, которая доступна для тестирования, но еще не является окончательной. В бета-релизе могут присутствовать ошибки и недоработки, которые будут исправлены в последующих версиях.</p>
+                  <br>
+                  <h1>Индекс CBR</h1>
+                  <p>Закрытое бета-тестирования - обозначает версию программного продукта или приложения, которая доступна только определенной группе пользователей для тестирования. Закрытое бета-тестирование позволяет разработчикам получить обратную связь от определенной группы пользователей, которые могут использовать продукт в реальных условиях.</p>
+                  <br>
+                  <h1>Индекс AR</h1>
+                  <p>Альфа релиз - обозначает версию программного продукта или приложения, которая находится на стадии разработки и тестирования. Альфа-релиз может содержать множество ошибок и недоработок, так как он еще не прошел полный цикл тестирования.</p>
+                  <br>
+                  <h1>Индекс LBR</h1>
+                  <p>Последний релиз бета-тестирования - обозначает последнюю версию программного продукта или приложения, которая была доступна для тестирования в рамках бета-тестирования. Это может быть версия, которая затем будет выпущена в виде официального релиза (OR), или версия, которая нуждается в дополнительной доработке перед выпуском.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="dialog2" class="dialog">
+              <div class="dialog-content">
+                <span class="close" onclick="closeDialog('dialog2')">&times;</span>
+                <h1>Мы вернули утилиты на нашу страницу</h1>
+                <p>Статья была созданна в 01/07/2023 Время 11:00</p>
+                <br>
+                <hr noshade size="4" style="border-radius: 10px;">
+                <br>
+                <div class="container">
+                  <h1>Уважаемые пользователи!</h1>
+                  <p>С радостью объявляем об обновлении нашего сайта, и теперь страница "Приложение" стала еще более функциональной, превратившись в "Утилиты". Мы добавили на сайт 4 основных раздела утилит:</p>
+                  <br>        
+                  <h2>Пак программы после установки Windows</h2>
+                  <p>Здесь собраны самые необходимые и полезные программы для вашего компьютера с операционной системой Windows. Этот раздел поможет вам быстро установить необходимые приложения после переустановки системы или при покупке нового компьютера.</p>
+                  <br>        
+                  <h2>Для перепрошивки Xiaomi/Redmi/Poco</h2>
+                  <p>В этом разделе вы найдете необходимые инструменты и прошивки для перепрошивки смартфонов Xiaomi, Redmi и Poco. Обновите ваше устройство и наслаждайтесь новыми функциями и улучшенной производительностью.</p>
+                  <br>
+                  <h2>Тестирование железа на ПК</h2>
+                  <p>Раздел, предназначенный для проверки и тестирования компонентов вашего компьютера. Вы сможете убедиться в стабильной работе системы и выявить возможные проблемы с аппаратными компонентами.</p>
+                  <br>
+                  <h2>Утилиты Windows</h2>
+                  <p>Здесь собраны разнообразные утилиты, которые помогут вам оптимизировать и настроить работу операционной системы Windows, увеличить производительность и обеспечить безопасность вашего компьютера.</p>
+                  <p>Обратите внимание, что некоторые программы доступны для скачивания из Google Drive, но для других утилит вы можете найти и скачать только с официального сайта. Благодарим вас за использование нашего сервиса и желаем приятного использования новых функций!</p>
+                  <br>
+                </div>
+              </div>
+            </div>
+
+            <div id="dialog3" class="dialog">
+              <div class="dialog-content">
+                <span class="close" onclick="closeDialog('dialog3')">&times;</span>
+                <h1>Пока Infinity Free!</h1>
+                <p>Статья была созданна в 19/06/2023 Время 10:00</p>
+                <br>
+                <hr noshade size="4" style="border-radius: 10px;">
+                <br>
+                <div class="container">
+                  <p>Мы приняли решение прекратить использование хостинга Infinity Free из-за серии проблем, с которыми мы столкнулись. Один из основных факторов - это постоянные сбои работы нашего сайта, из-за которых он становился недоступным для посетителей.</p><br>
+                  <p>Кроме того, обновления на хостинге занимали слишком много времени, что мешало нам оперативно вносить изменения на сайте. Скорость загрузки сайта также оставляла желать лучшего, и это создавало неудобства для пользователей, которые ожидали быстрого доступа к информации.</p><br>
+                  <p>Мы также сталкивались с повторяющимися проблемами, такими как сбои в работе хостинга, которые приводили к перерывам в работе нашего сайта.</p><br>
+                  <p>Кроме того, мы ограничены в размере файлов, которые можно загружать на хостинг, и это стало преградой для наших требований.</p><br>
+                  <p>В итоге, эти неполадки стали причиной для нас принять решение об изменении хостинга и найти более надежное и эффективное решение для нашего сайта.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="dialog4" class="dialog">
+              <div class="dialog-content">
+                <span class="close" onclick="closeDialog('dialog4')">&times;</span>
+                <h1>Возвращение страницы "Гайды"</h1>
+                <p>Статья была созданна в 18/06/2023 Время 15:11</p>
+                <br>
+                <hr noshade size="4" style="border-radius: 10px;">
+                <br>
+                <div class="container">
+                  <h1>Мы приняли решение вернуть страницу "Гайды"</h1> 
+                  <br>
+                  <p>Мы приняли решение вернуть страницу "Гайды" и это отличная новость для наших пользователей. Возвращение этой страницы позволит им получить доступ к ценным ресурсам, которые помогут им в различных сферах их интересов.</p><br>
+                  <p>Чтобы убедиться, что страница "Гайды" максимально полезна, стоит провести анализ предыдущего контента и оценить его эффективность. Определите, какие гайды были наиболее популярными у пользователей, и рассмотрите возможность обновления и расширения этих материалов.</p><br>
+                  <p>Также стоит привлечь внимание качественным дизайном и удобной навигацией страницы. Разделите гайды на категории или тематические разделы, чтобы пользователи могли быстро находить нужную информацию.</p><br>
+                  <p>Активно продвигайте страницу "Гайды" с помощью рассылок, социальных сетей, блогов и других маркетинговых каналов. Взаимодействуйте с пользователями, отвечайте на их вопросы и предложения, чтобы создать сообщество, основанное на обмене полезной информацией.</p><br>
+                  <p>Вернув страницу "Гайды", мы улучшаем опыт пользователей и позволяем им достичь больших успехов в своих предприниманиях.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="dialog5" class="dialog">
+              <div class="dialog-content">
+                <span class="close" onclick="closeDialog('dialog5')">&times;</span>
+                <h1>Прекращение поддержки сборок</h1>
+                <p>Статья была созданна в 29/05/2023 Время 13:58</p>
+                <br>
+                <hr noshade size="4" style="border-radius: 10px;">
+                <br>
+                <div class="container">
+                  <p>Мы приняли решение прекратить поддержку сборок WinMay 1.0, 1.1 и 1.5, которые были разработаны на основе Windows 10. Изначально эти сборки были созданы для развлечения и шуточного интереса, однако мы стремились сделать их более полезными, предоставляя набор программ для повышения их функциональности.<br><br>     
+                  Однако, ввиду ограниченных ресурсов и фокусировки на более значимых проектах, мы приняли решение прекратить разработку и поддержку данных сборок. Мы благодарны всем пользователям, которые проявили интерес и поддерживали нас в этом забавном эксперименте.<br><br> 
+                  Рекомендуем пользователям обратиться к официальным версиям Windows, которые обеспечивают надежность, безопасность и обновления. При необходимости, вы всегда можете найти альтернативные сборки, созданные сообществом, которые могут соответствовать вашим требованиям.<br><br> 
+                  Тем не менее, хочу отметить, что мы будем продолжать развивать и обновлять WinMayPE (WindowsPE) с целью создания полезных Live-CD и Live-USB инструментов. Мы стремимся сделать WinMayPE надежным и удобным для решения различных задач, предоставляя пользователю широкий набор функций на основе WindowsPE.<br><br> 
+                  Мы осознаем, что WinMayPE может представлять интерес для пользователей, и мы постараемся обновлять его, чтобы оно оставалось полезным инструментом в будущем. Мы ценим вашу поддержку и готовы предоставить вам дальнейшую информацию о развитии WinMayPE и его новых возможностях.<br><br> 
+                  Если вам требуются функции Live-CD или Live-USB, рекомендуем обратить внимание на WinMayPE, который будет продолжать развиваться и стремиться удовлетворить ваши потребности в надежных и гибких инструментах на основе WindowsPE.<br><br> 
+                  Мы благодарим вас за понимание и сожалеем, если прекращение поддержки сборок WinMay 1.0, 1.1 и 1.5 вызывает неудобства. Мы надеемся, что вы найдете альтернативные решения, которые соответствуют вашим потребностям.</p>
+              </div>
+              </div>
+            </div>
+
+            <div id="dialog6" class="dialog">
+              <div class="dialog-content">
+                <span class="close" onclick="closeDialog('dialog6')">&times;</span>
+                <h1>Закрытие приватного сервера Infinity Dash Geometry Dash</h1>
+                <p>Статья была созданна в 31/05/2023 Время 13:58</p>
+                <br>
+                <hr noshade size="4" style="border-radius: 10px;">
+                <br>
+                <div class="container">
+                  <p>С сожалением объявляем, что приватный сервер Infinity Dash Geometry Dash будет закрыт из-за неактивности игроков. Мы передаем полные права и ответственность за сервер Мичигану.</p>
+                  <br>
+                  <p>Это решение принято в связи с отсутствием достаточной активности и недостатком поддержки со стороны игроков. Мы благодарим всех, кто принимал участие и играл на нашем сервере.</p>
+                  <br>
+                  <p>Надеемся, что Мичиган возьмет на себя эту ответственность и продолжит развивать и поддерживать сервер Infinity Dash Geometry Dash. Желаем им успехов в этом новом этапе и благодарим за их готовность взять на себя эту роль.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="dialog7" class="dialog">
+              <div class="dialog-content">
+                <span class="close" onclick="closeDialog('dialog7')">&times;</span>
+                <h1>Куда делись все страницы сайта?</h1>
+                <p>Статья была созданна в 12/05/2023 Время 13:38</p>
+                <br>
+                <hr noshade size="4" style="border-radius: 10px;">
+                <br>
+                <div class="container">
+                  <p>Недавно я принял решение пересмотреть содержание моего сайта. Заметив, что некоторые страницы, такие как "Туториалы", "Блог" и "Приложения", не привлекали достаточно посетителей, я решил удалить их из-за их низкой популярности.<br><br>
+                    Однако мои друзья активно помогали мне, и мы приняли решение перенести ранее размещенный контент на страницу, посвященную моему проекту. Теперь посетители смогут найти полезную информацию о моих проектах, а также о последних разработках и идеях.<br><br>
+                    Я также решил сделать ставку на свои собственные проекты и выкладывать их на свой сайт. Планирую представлять новые разработки, делиться своими идеями и улучшать опыт моих посетителей.<br><br>
+                    В целом, я удалил непопулярные страницы, перенес контент на страницу о проекте и решил сфокусироваться на продвижении своих собственных проектов. Я уверен, что эти изменения помогут мне более эффективно представить себя и улучшить опыт посетителей моего сайта.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="dialog8" class="dialog">
+              <div class="dialog-content">
+                <span class="close" onclick="closeDialog('dialog8')">&times;</span>
+                <h1>Ребрендинг</h1>
+                <p>Статья была созданна в 20/12/2023 Время 10:00</p>
+                <br>
+                <hr noshade size="4" style="border-radius: 10px;">
+                <br>
+                <div class="container">
+                  <h1>Ребрендинг</h1>
+                  <br>
+                  Прощай, старое имя, и привет, новое!
+                  Пришло время не только изменить контент, но и обновить никнейм. Старый никнейм, безусловно, имел свой путь и, возможно, оставил разные впечатления. Были моменты конфликтов, в том числе из-за вопросов плагиата.
+                  Долго размышлял о ребрендинге канала, проектов, телеграмм и ютуб-канала. Теперь из Maydilsiel я становлюсь Rivixal. Этот никнейм легко запомнить, прост в чтении, и мы начинаем все с чистого листа!
+                </div>
+              </div>
+            </div>
+
+            <div id="dialog9" class="dialog">
+              <div class="dialog-content">
+                <span class="close" onclick="closeDialog('dialog9')">&times;</span>
+                <h1>Временное удаление гайдов</h1>
+                <p>Статья была созданна в 20/12/2023 Время 10:00</p>
+                <br>
+                <hr noshade size="4" style="border-radius: 10px;">
+                <br>
+                <div class="container">
+                  <p>Привет всем! Временно мы вынуждены были удалить руководства из-за возникших проблем. Мы приложим усилия для их решения и восстановления материалов. Все скриншоты временно потеряны, но мы стараемся решить ситуацию как можно быстрее.</p>
+                </div>
+              </div>
+            </div>
+            <!--EndWindow-->
+                <script src="script/birthday.js"></script>
+
+            <!--MAINMENU-->
+            <div id="dialog-header" class="dialog u01">
+              <div class="tcontainer centermenu">
+                <script src="script/newmenu.js"></script>
+              </div>
+            </div>
+            
+      </main>
+      <footer>
+        <br><br><br><br>
+
+        <div class="mobile dockstylemobile">
+          <ul>
+              <li><a href="index.html" class="material-symbols-outlined active"><span>home</span></a><p onclick="document.location='index.html'" class="actived">Главная</p></li> 
+              <li><a href="projects.html" class="material-symbols-outlined"><span>terminal</span></a><p onclick="document.location='projects.html'">Проекты</p></li>
+              <li><a href="components.html" class="material-symbols-outlined"><span>library_books</span></a><p onclick="document.location='components.html'">Компоненты</p></li>
+              <li><a href="utilities.html" class="material-symbols-outlined"><span>settings</span></a><p onclick="document.location='utilities.html'">Утилиты</p></li>
+          </ul>
+      </div>
+      </footer>
+      <script src="script/menu.js"></script>
+      <script src="script/homepage.js"></script>
+      <script src="script/theme.js"></script>
+</body>
+</html>

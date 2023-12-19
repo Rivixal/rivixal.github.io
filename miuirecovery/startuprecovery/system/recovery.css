@@ -1,0 +1,146 @@
+html {
+    background-color: #000;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    width: 100%;
+    max-width: 63%; /* Уменьшим ширину кнопки на телефонах */
+    border: 1px solid #8b8b8b;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    border: 1px solid #0084ff;
+    background-color: #0084ff;
+    color: #fff;
+}
+
+.mainmenu {
+    font-family: Arial;
+    font-size: 35px;
+    margin-top: -5px !important;
+}
+
+.colorwarrning {
+    color: red;
+}
+
+.colordone {
+    color: rgb(0, 255, 64);
+}
+
+.colorfastbootd {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(63, 131, 255);
+}
+
+.colorfastboot {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(248, 112, 0);
+}
+
+.mainmenup {
+    max-width: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: -16px !important;
+    margin-bottom: 88px !important;
+}
+
+.menuloop {
+    padding-top: 66px !important;
+}
+
+.hint {
+    margin-bottom: -30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5f5f5f;
+}
+
+.text1 {
+    margin-top: -5px !important ;
+}
+
+.miassistantimage {
+    width: 50%;
+}
+
+.startup {
+    font-family: Arial;
+    font-style: bold;
+}
+
+.spanot {
+    margin-left: 5px;
+}
+
+.spanot2 {
+    margin-left: 8px;
+}
+
+.stylemiboot {
+    margin-bottom: -200px;
+    width: 20%;
+}
+
+.bootinandroid {
+    padding-top: 330px;
+}
+
+/* Медиа-запрос для телефонов */
+@media screen and (max-width: 480px) {
+    .mainmenu {
+        font-size: 28px;
+        margin-top: 0;
+    }
+
+    .mainmenup {
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .menuloop {
+        padding-top: 30px;
+    }
+
+    .hint {
+        margin-bottom: 0;
+    }
+
+    .button {
+        font-size: 18px;
+    }
+}

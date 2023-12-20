@@ -317,11 +317,11 @@ footer {
 }
 
 #analog-clock {
-    border: 2px solid #ffffff;
+    border: 2px solid #ffffff !important;
 }
 
 .hand {
-    background-color: #ffffff;
+    background-color: #ffffff !important;
 }
 
 #calendar {
@@ -334,20 +334,21 @@ footer {
 }
 
 .dockstylemobile a {
-    color: #ffffff;
+    color: #ffffff !important;
   }
 
   .dockstylemobile a:hover {
-    background-color: #446699;
-    color: rgb(255, 255, 255);
+    background-color: #446699 !important;
+    color: rgb(255, 255, 255) !important;
   }
 
   .dockstylemobile .active a {
     background-color: #446699;
+    color: #fff !important;
   }
 
   .dockstylemobile .active {
-    color: #ffffff;
+    color: #ffffff !important;
   }
 
   .dockstylemobile .actived {

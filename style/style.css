@@ -1083,7 +1083,7 @@ summary {
     }
 
     .dockstylemobile .active {
-      color: #000;
+      color: #ffffff !important;
     }
 
     .dockstylemobile span {
@@ -1096,13 +1096,14 @@ summary {
       padding: 3px 20px !important;
       border-radius: 25px !important;
       background-color: rgb(235, 113, 247) !important;
-      color: #000;
+      color: #ffffff !important;
       transition: 0.3s;
     }
 
     .dockstylemobile .actived {
       color: #fff !important;
     }
+
 
     .container .touch {
       transition: 0.3s;

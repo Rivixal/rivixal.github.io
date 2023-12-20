@@ -21,5 +21,5 @@
       } else if (daysUntilBirthday === 1) {
         daysLeftMessage.textContent = 'Завтра новый год';
       } else {
-        daysLeftMessage.textContent = `Осталось дней до нового года: ${daysUntilBirthday} `;
+        daysLeftMessage.textContent = `Осталось дней до нового года: ${daysUntilBirthday}`;
       }

@@ -8,7 +8,7 @@
       }
   
       // Задаем вашу дату рождения
-      const yourBirthday = new Date('2024-01-01');
+      const yourBirthday = new Date('2024-01-02');
   
       // Получаем элемент для вывода сообщения
       const daysLeftMessage = document.getElementById('daysLeftMessage');
@@ -19,7 +19,7 @@
       if (daysUntilBirthday === 0) {
         daysLeftMessage.textContent = 'С ноыым годом!';
       } else if (daysUntilBirthday === 1) {
-        daysLeftMessage.textContent = 'Завтра новый год';
+        daysLeftMessage.textContent = 'Завтра новый 2024 год';
       } else {
         daysLeftMessage.textContent = `Осталось дней до нового года: ${daysUntilBirthday}`;
       }

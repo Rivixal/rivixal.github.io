@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Jost-bold;
+    src: url(fonts/Jost-Bold.ttf);
+}
+
+@font-face {
+    font-family: Jost-Extrabold;
+    src: url(fonts/Jost-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Jost-Regular;
+    src: url(fonts/Jost-Regular.ttf);
+}
+
+@font-face {
+    font-family: Jost-Black;
+    src: url(fonts/Jost-Black.ttf);
+}
+
+@font-face {
+    font-family: Jost-Italic;
+    src: url(fonts/Jost-Italic.ttf);
+}
+
+html, p, a {
+    font-family: 'Jost-Regular', Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, b {
+    font-family: 'Jost-bold', Arial, Helvetica, sans-serif;
+}
+
+i {
+    font-family: 'Jost-Italic' Arial, Helvetica, sans-serif;
+}
+
+.fontnav {
+    font-family: 'Jost-Regular', Arial, Helvetica, sans-serif !important;
+}
+
+

@@ -1,0 +1,125 @@
+html {
+    background-color: black;
+    color: white;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#progress-bar {
+    width: 300px;
+    height: 2px;
+    background-color: #6b6b6b;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#progress-fill {
+    height: 100%;
+    background-color: #ffffff;
+}
+
+#label {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    margin: 10px;
+    /* Устанавливаем максимальную ширину элемента */
+    max-width: 300px; /* Здесь можно установить нужную вам ширину */
+}
+
+#percent {
+    font-size: 20px; /* Размер процента */
+    text-align: center;
+    position: relative;
+}
+
+.percentspan {
+    font-size: 10px !important; /* Размер процента */
+    text-align: center !important;
+    position: relative !important;
+    top: -25px !important; /* Отступ вверх от чисел */
+}
+
+#percent-symbol {
+    position: absolute;
+    top: 0; /* Выравнивание сверху относительно цифр */
+    right: 0; /* Выравнивание справа относительно цифр */
+    font-size: 8px; /* Размер символа процента */
+}
+
+@font-face {
+    font-family: mipercent;
+    src: url(../fonts/xiaomi/MiSans-ExtraLight.ttf);
+}
+
+.percentmi {
+    font-family: mipercent !important;
+    font-size: 30px !important;
+    color: #ffffff !important;
+    margin-bottom: 10px;
+}
+
+#uppercentmi {
+    font-size: 10px !important;
+    position: relative !important;
+    top: 10px !important;
+}
+
+@font-face {
+    font-family: miuitext;
+    src: url(../fonts/xiaomi/MiSans-Medium.ttf);
+}
+
+.textmiui {
+    font-family: miuitext;
+    font-size: 15px !important;
+}
+
+.percent-container {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: -30px;
+    flex-direction: row-reverse;
+}
+
+.miper {
+    font-family: miuitext;
+}
+
+@media screen and (max-width: 280px) {
+    #progress-bar {
+        width: 200px;
+        height: 2px;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    #label {
+        font-size: 20px;
+        text-align: center;
+        line-height: 1.5;
+        margin: 10px;
+        /* Устанавливаем максимальную ширину элемента */
+        max-width: 200px; /* Здесь можно установить нужную вам ширину */
+    }
+}

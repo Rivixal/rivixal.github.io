@@ -23,7 +23,7 @@
     src: url(fonts/Jost-Italic.ttf);
 }
 
-html, p, a {
+html, p, a, li {
     font-family: 'Jost-Regular', Arial, Helvetica, sans-serif;
 }
 
@@ -36,6 +36,10 @@ i {
 }
 
 .fontnav {
+    font-family: 'Jost-Regular', Arial, Helvetica, sans-serif !important;
+}
+
+.maystyletextaera {
     font-family: 'Jost-Regular', Arial, Helvetica, sans-serif !important;
 }
 

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rivixal - Домашняя страница</title>
+  <link rel="shortcut icon" href="image/mainlogo.png">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/fonts.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,1,0" />
@@ -15,52 +16,132 @@
           <h1 class="logo">Rivixal</h1>
           <nav>
             <ul class="hidepc">
-              <li><a href="index.html" class="material-symbols-outlined navigation-list-name active">home</span><span class="fontnav">Главная</span></a></li>
-              <li><a href="projects.html" class="material-symbols-outlined navigation-list-name">terminal</span><span class="fontnav">Проекты</span></a></li>
-              <li><a href="blog.html" class="material-symbols-outlined navigation-list-name">post</span><span class="fontnav">Блог</span></a></li>
-              <li><a href="firmware.html" class="material-symbols-outlined navigation-list-name">android</span><span class="fontnav">Прошивки</span></a></li>
-              <li><a href="utilities.html" class="material-symbols-outlined navigation-list-name">settings</span><span class="fontnav">Утилиты</span></a></li>
-              <li><a href="info.html" class="material-symbols-outlined navigation-list-name">info</span><span class="fontnav">Инфо</span></a></li>
+              <li><a href="index.html" class="material-symbols-outlined navigation-list-name active">home<span class="fontnav">Главная</span></a></li>
+              <li><a href="projects.html" class="material-symbols-outlined navigation-list-name">terminal<span class="fontnav">Проекты</span></a></li>
+              <li><a href="blog.html" class="material-symbols-outlined navigation-list-name">post<span class="fontnav">Блог</span></a></li>
+              <li><a href="guides.html" class="material-symbols-outlined navigation-list-name">book<span class="fontnav">Гайды</span></a></li>
+              <li><a href="firmware.html" class="material-symbols-outlined navigation-list-name">android<span class="fontnav">Прошивки</span></a></li>
+              <li><a href="utilities.html" class="material-symbols-outlined navigation-list-name">settings<span class="fontnav">Утилиты</span></a></li>
+              <li><a href="info.html" class="material-symbols-outlined navigation-list-name">info<span class="fontnav">Инфо</span></a></li>
             </ul>
             <ul class="hidemobile">
-              <li><a class="material-symbols-outlined navigation-list-name" id="morem">menu</span><span class="fontnav">Меню</span></a></li>
+              <li><a class="material-symbols-outlined navigation-list-name" id="morem">menu<span class="fontnav">Меню</span></a></li>
             </ul>
           </nav>
         </div>
       </header>
       
   <main>
-
-    <div class="container">
-      <h1>Приветствую! Наш сайт на реконструкций</h1>
-      <p>Пока-что можете видеть прототип сайта</p>
-      <br>
-      <h1>Что случилось?</h1>
-      <p>Наш сайт оказался неоптимизированным и сильно нагруженным, поэтому решено полностью переделать его.</p>
-      <p>На данный момент мы занимаемся разработкой нового дизайна и функционала для нашего проекта Rivixal.</p>
-      <br>
-      <p>По сути, я резко потерял контроль и удалил всё содержимое сайта, поскольку оно выглядело неоптимизированным, часто тормозило, но при этом было красивым. Некоторые элементы веб-страниц отображались искажённо, и на некоторых компьютерах сайт работал крайне неудовлетворительно. Моя цель - создать сайт в стиле минимализма с минимальным использованием эффектов, но при этом сохранить его визуальное привлекательность. Поэтому я хотел бы принести извинения за то, что некоторые страницы не работали и до сих пор не функционируют должным образом. Через неделю я постараюсь исправить все недочеты. В промежутке времени вы также можете подписаться на наш канал в Telegram и YouTube, чтобы быть в курсе обновлений и получить дополнительную информацию.</p>
-      <div class="social-buttons">
-        <a href="https://www.youtube.com/@rivixal" class="button youtube">YouTube</a>
-        <a href="https://t.me/rivixal_official" class="button telegram">Telegram</a>
+    <section class="home">
+        <h2>Добро пожаловать на мой сайт!</h2>
+        <p>Здесь вы найдете информацию о моих проектах, программировании, прошивках и многом другом.</p>
+        <script src="script/facts.js"></script>
+        <br>
+        <h4 id="daysLeftMessage">Осталось дней до нового года: Загрузка</h4>
+        <div class="social-buttons">
+          <a href="https://www.youtube.com/@rivixal" class="button youtube">YouTube</a>
+          <a href="https://t.me/rivixal_official" class="button telegram">Telegram</a>
+        </div>
+      </section>
+      <section class="playlists">
+        <h2 class="text">Актуальные плейлисты</h2>
+        <div class="playlists-container">
+          <div class="playlists-card color-violet" onclick="document.location='https://www.youtube.com/playlist?list=PLnslurPptz9QRwSeeLF9imsOIH8wAcuZK'">
+            <h3>Архив старых видео</h3>
+            <p>Если вы скучаете по временам, когда вы впервые познакомились со мной, сейчас у вас есть возможность просмотреть все видео, собранные в один плейлист.</p>
+          </div>
+          <div class="playlists-card color-multicolor" onclick="document.location='https://www.youtube.com/playlist?list=PLnslurPptz9QYpRQSnoiG11fBC2CsgD_E'">
+            <h3>MIUI&Xiaomi HyperOS</h3>
+            <p>В этом плейлисте собраны видео, в которых я затрагивал темы MIUI и Xiaomi HyperOS.</p>
+          </div>
+          <div class="playlists-card color-onecolor" onclick="document.location='https://www.youtube.com/playlist?list=PLnslurPptz9S4iviNvDYu2oGhsXICO2xX'">
+            <h3>Кастомные прошивки</h3>
+            <p>Этот плейлист содержит видео, где я устанавливал на телефоны кастомные прошивки.</p>
+          </div>
+          <div class="playlists-card color-bluegradient" onclick="document.location='https://www.youtube.com/playlist?list=PLnslurPptz9SVNG4dPPHhTGRrap6YhqNM'">
+            <h3>Проекты</h3>
+            <p>Этот плейлист содержит видео, где я создавал свои разные проекты.</p>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <h2 class="text">Новости на сайте</h2>
+        <div class="news-container">
+          <div class="news-card" onclick="showDialog('dialog-indexversion')">
+            <h3>Индексы и обозначение в версиях</h3>
+            <p>Мы решили с нуля изменить индексы и полностью переделать индексы версии, нажмите сюда чтобы узнать больше </p>
+          </div>
+          <div class="news-card" onclick="document.location='info.html'">
+            <h3>Обновление сайта</h3>
+            <p>Возможно, вы устали от уведомлений о том, что мы обновили наш сайт. Но на этот раз я полностью переработал его с нуля, добавил новые страницы, которые пользуются большим спросом, а подробности об изменениях можно узнать (Страница Инфо), перейдя по нажатию на этот блок.</p>
+          </div>
+          <!--<div class="news-card">
+            <h3>Новая программа (Generator QR-Codes)</h3>
+            <p>Нажмите сюда, чтобы перейти к проектам</p>
+          </div>-->
+        </div>
+      </section>
+      <div class="container centerforbanner">
+        <h2>Баннеры друзей</h2>
+        <p>Если вы хотите быть здесь? Напишите в телеграмм <a href="https://t.me/can1lookaway">@rivixal</a></p>
+        <br>
+        <a href="https://ertorworld.com"><img class="img-fluid bg3" src="image/ErtorWorldbaner.png" alt="ertorcard"></a>
+        <a href="https://lisikpng.com"><img src="http://lisikpng.com/img/baner.png" class="img-fluid bg3"></a>            
+        <a href="https://ost-sys.github.io/"><img src="image/ost.png" class="img-fluid bg3" alt="OST"></a>
+        <a href="http://web1.tinelix.ru"><img src="http://web1.tinelix.ru/banners/default.gif" class="bg3" border="0"></a>
+        <a href="https://dsys1100.github.io"><img src="image/dsys1100.png" class="img-fluid bg3" alt="dsys1100"></a>
+        <a href="https://lgrn-arts.ru" target="_blank"><img src="https://lgrn-arts.ru/img/lgrn.gif" class="bg3" title="LGRN Arts"></a>
       </div>
-    </div>
+
+      <!--Window--->
+      <div id="dialog-indexversion" class="dialog">
+        <div class="dialog-content">
+          <span class="close" onclick="closeDialog('dialog-indexversion')">&times;</span>
+          <h1>Индескы и их обозначения</h1>
+          <p>Статья была созданна в 09/03/2024 Время 23:45</p>
+          <br>
+          <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
+          <br>
+          <div class="container">
+            <h1>Небольшое обновление релизов</h1>
+            <p>Мы решили с нуля изменить индексы и полностью переделать индексы версии, раньше у нас было OR, BR, CBR, AR, LBR. А теперь Official Release, Beta Deployment, Closed Beta Rollout, Alpha Deployment, Pre-Launch Preview.</p>
+            <br>
+            <h1>Официальный релиз (Official Release)</h1>
+            <p>Официальный релиз обозначает окончательный выпуск программного продукта или приложения, который считается стабильным и готовым к использованию. Он выпускается после тщательного тестирования и отладки всех функций.</p>
+            <br>
+            <h1>Бета развертывание (Beta Deployment)</h1>
+            <p>Бета развертывание обозначает версию программного продукта или приложения, которая доступна для тестирования, но еще не является окончательной. В бета-версии могут быть обнаружены ошибки и недоработки, которые будут исправлены в последующих версиях.</p>
+            <br>
+            <h1>Закрытый выпуск бета-версии (Closed Beta Rollout)</h1>
+            <p>Закрытый выпуск бета-версии обозначает версию программного продукта или приложения, доступную только определенной группе пользователей для тестирования. Закрытый выпуск бета-версии позволяет разработчикам получить обратную связь от выбранной группы пользователей, которые могут использовать продукт в реальных условиях.</p>
+            <br>
+            <h1>Альфа развертывание (Alpha Deployment)</h1>
+            <p>Альфа развертывание обозначает версию программного продукта или приложения, находящуюся на стадии разработки и тестирования. Альфа-версия может содержать множество ошибок и недоработок, так как она еще не прошла полный цикл тестирования.</p>
+            <br>
+            <h1>Предварительный просмотр перед запуском (Pre-Launch Preview)</h1>
+            <p>Предварительный просмотр перед запуском обозначает процесс предварительного ознакомления с продуктом или приложением до его официального запуска. В рамках этого просмотра пользователи могут оценить основные функции и интерфейс продукта, а также предоставить обратную связь разработчикам.</p>
+          </div>
+        </div>
+      </div>
 
     <div class="sidebar">
         <a id="closeBtn" onclick="closeSidebar()" class="material-symbols-outlined navigation-list-name">close<span class="fontnav">Закрыть меню</span></a>
         <br>
-        <a href="index.html" class="material-symbols-outlined navigation-list-name active">home</span><span class="fontnav">Главная</span></a>
-        <a href="projects.html" class="material-symbols-outlined navigation-list-name">terminal</span><span class="fontnav">Проекты</span></a>
-        <a href="blog.html" class="material-symbols-outlined navigation-list-name">post</span><span class="fontnav">Блог</span></a>
-        <a href="firmware.html" class="material-symbols-outlined navigation-list-name">android</span><span class="fontnav">Прошивки</span></a>
-        <a href="utilities.html" class="material-symbols-outlined navigation-list-name">settings</span><span class="fontnav">Утилиты</span></a>
-        <a href="info.html" class="material-symbols-outlined navigation-list-name">info</span><span class="fontnav">Инфо</span></a>
+        <a href="index.html" class="material-symbols-outlined navigation-list-name active">home<span class="fontnav">Главная</span></a>
+        <a href="projects.html" class="material-symbols-outlined navigation-list-name">terminal<span class="fontnav">Проекты</span></a>
+        <a href="blog.html" class="material-symbols-outlined navigation-list-name">post<span class="fontnav">Блог</span></a>
+        <a href="guides.html" class="material-symbols-outlined navigation-list-name">book<span class="fontnav">Гайды</span></a>
+        <a href="firmware.html" class="material-symbols-outlined navigation-list-name">android<span class="fontnav">Прошивки</span></a>
+        <a href="utilities.html" class="material-symbols-outlined navigation-list-name">settings<span class="fontnav">Утилиты</span></a>
+        <a href="info.html" class="material-symbols-outlined navigation-list-name">info<span class="fontnav">Инфо</span></a>
     </div>
 
     <script src="script/menu.js"></script>
+    <script src="script/dialog.js"></script>
+    <script src="script/birthday.js"></script>
   </main>
   <footer>
-    <p>&copy; 2024 Rivixal. codename: Rivixal Codename Ocean</p>
+    <p>&copy; 2024 Rivixal. Все права защищены.</p>
   </footer>
 </body>
 </html>

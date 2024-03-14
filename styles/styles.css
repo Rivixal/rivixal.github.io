@@ -16,16 +16,11 @@
 
 ::-webkit-scrollbar-button{
 background-color: #000;
+border-radius: 15px;
 }
 
-::-webkit-scrollbar-button {
-background: #fafafa;
-box-shadow: inset 0 0 5px #fafafa;
-border-radius: 4px;  
-border: 3px solid #4b4b4b;
-}
 ::-webkit-scrollbar-button:hover { 
-box-shadow: inset 0 0 3px #fafafa; background: snow;
+  background-color: #4b4b4b;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -60,6 +55,8 @@ animation-duration: 0.5s;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
   
   .button:hover {
@@ -77,15 +74,24 @@ animation-duration: 0.5s;
   .telegram {
     background-color: #0088cc; /* Цвет Telegram */
   }
+
+  .download {
+    background-color: #00a511; /* Скачать */
+  }
+
+  .download:hover {
+    background-color: #02cc16; /* Скачать */
+  }
   
   /* Обновленные стили для секции приветствия */
   
   .home {
-    background-color: #f0efef;
+    background-color: #e3e0e0;
     padding: 40px;
     border-radius: 8px;
     margin-bottom: 5px;
     text-align: center; /* Центрируем содержимое секции */
+    margin-bottom: 20px;
   }
 
   .button + .button {
@@ -152,20 +158,20 @@ animation-duration: 0.5s;
     text-decoration: none;
     color: #333; /* Цвет ссылок в меню */
     transition: 0.3s;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 10px;
   }
 
   nav ul li a:hover {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
   }
 
   .active {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
   }
 
@@ -178,11 +184,10 @@ animation-duration: 0.5s;
   
   main {
     padding: 20px;
-    margin-bottom: 100%;
   }
   
   footer {
-    background-color: #f0f0f0;
+    background-color: #ffffff00;
     text-align: center;
     padding: 20px;
   }
@@ -190,7 +195,7 @@ animation-duration: 0.5s;
   /*Новости*/
 
   .news {
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
     overflow: auto;
   }
 
@@ -260,7 +265,7 @@ animation-duration: 0.5s;
     width: 20%;
     padding: 20px;
     margin: 25px; /* Добавим небольшие отступы */
-    background-color: #e3e3e3;
+    background-color: #e3e0e0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -396,7 +401,7 @@ animation-duration: 0.5s;
   justify-content: space-between;
   align-items: center;
   padding: 50px; /* Пример отступа */
-  background-color: #eeeded;
+  background-color: #e3e0e0;
   border-radius: 8px;
 }
 
@@ -439,6 +444,20 @@ animation-duration: 0.5s;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
 }
 
+.aboutbackground {
+  background-color: #e3e0e0;
+  border-radius: 8px;
+}
+
+.leftmaintext {
+  padding: 20px !important;
+}
+
+a {
+  cursor: pointer;
+  color: blue;
+}
+
 /*Проекты*/
 
 .projects {
@@ -467,7 +486,7 @@ animation-duration: 0.5s;
   width: 20%;
   padding: 20px;
   margin: 25px; /* Добавим небольшие отступы */
-  background-color: #e3e3e3;
+  background-color: #e3e0e0;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -508,8 +527,8 @@ animation-duration: 0.5s;
 .firmware-card {
   width: 100%;
   padding: 20px;
-  margin: 25px; /* Добавим небольшие отступы */
-  background-color: #e3e3e3;
+  margin: 10px; /* Добавим небольшие отступы */
+  background-color: #e3e0e0;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -525,7 +544,7 @@ animation-duration: 0.5s;
 }
 
 .welcome-postsbanner {
-  background-color: #f0f0f0;
+  background-color: #e3e0e0;
   border-radius: 8px;
   padding: 50px 0;
   text-align: center;
@@ -551,14 +570,14 @@ animation-duration: 0.5s;
 }
 
 .post {
-  background-color: #f0f0f0; /* Цвет фона для каждого поста */
+  background-color: #e3e0e0; /* Цвет фона для каждого поста */
   padding: 20px;
   margin-bottom: 20px; /* Отступ между постами */
   border-radius: 8px;
 }
 
 .post:nth-child(even) {
-  background-color: #f0f0f0; /* Цвет фона для четных постов */
+  background-color: #e3e0e0; /* Цвет фона для четных постов */
   border-radius: 8px;
 }
 
@@ -567,7 +586,227 @@ iframe {
   height: 400px; /* Начальная высота */
 }
 
+/*Диалоговые окна*/
+.dialog {
+  display: none;
+  position: fixed;
+  z-index: 9999999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(255, 255, 255);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.dialog-open {
+  overflow: hidden;
+}
+
+.icon {
+  width: 10% !important;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.dialog-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  /*padding: 20px;*/
+  /*border: 1px solid #888;*/
+  width: 90%;
+  animation: slideIn 0.3s ease-in-out;
+  /*border-radius: 25px;*/
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.scrollable-content {
+  padding: 10px;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+
+.dialog.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/*Универсал*/
+.universal {
+  margin-bottom: 20px;
+  overflow: auto;
+  width: 100%;
+}
+
+.universal .text {
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.universal-container {
+  margin-top: 20px;
+  width: 100%;
+  height: 100% !important;
+  display: flex !important;
+  justify-content: center !important; /* Центрируем по горизонтали */
+  flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+}
+
+.universal-card {
+  width: 100%;
+  padding: 20px;
+  margin: 10px; /* Добавим небольшие отступы */
+  background-color: #e3e3e3;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.universal-card:hover {
+  transform: translateY(-5px);
+}
+
+.universal-card h3 {
+  margin-bottom: 10px;
+}
+/*EX*/
+.universalex {
+  margin-bottom: 20px;
+  overflow: auto;
+  width: 100%;
+}
+
+.universalex .text {
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.universalex-container {
+  margin-top: 20px;
+  width: 100%;
+  height: 100% !important;
+  display: flex !important;
+  justify-content: center !important; /* Центрируем по горизонтали */
+  flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+}
+
+.universalex-card {
+  width: 100%;
+  padding: 20px;
+  margin: 45px; /* Добавим небольшие отступы */
+  background-color: #e3e3e3;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.universalex-card:hover {
+  transform: translateY(-5px);
+}
+
+.universalex-card h3 {
+  margin-bottom: 10px;
+}
+
+/*Оптимизация leftandright*/
+.leftandright {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.maystyletextaera {
+  resize: none;
+  border-radius: 8px;
+  width: 100%;
+  height: 30px;
+  border: solid #000 2px;
+  text-align: center;
+  align-items: center;
+}
+
+img {
+  width: 30%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bg3 {
+  width: 88px;
+  height: 31px;
+  transition: 0.3s;
+  border: solid 1px #ffffff00;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.centerforbanner {
+  align-items: center;
+  text-align: center;
+  background-color: #e3e3e3;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.bg3:hover {
+  border: solid 1px #000000;
+}
+
+
+/*Адаптация под мобильные устройства*/
+
   @media screen and (max-width: 1250px) {
+    img {
+      width: 100%;
+    }
+
+    .icon {
+      width: 80px !important;
+    }
+
+    .maystyletextaera {
+      height: 60px;
+    }
+
+    
     iframe {
       width: 100%; /* Ширина на мобильных устройствах */
       height: auto; /* Автоматическая высота для сохранения пропорций */

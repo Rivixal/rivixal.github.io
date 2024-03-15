@@ -23,6 +23,7 @@
               <li><a href="firmware.html" class="material-symbols-outlined navigation-list-name">android<span class="fontnav">Прошивки</span></a></li>
               <li><a href="utilities.html" class="material-symbols-outlined navigation-list-name">settings<span class="fontnav">Утилиты</span></a></li>
               <li><a href="info.html" class="material-symbols-outlined navigation-list-name active">info<span class="fontnav">Инфо</span></a></li>
+              <li><a onclick="showDialog('dialog-settings')" class="material-symbols-outlined navigation-list-name">settings<span class="fontnav">Настройки</span></a></li>
             </ul>
             <ul class="hidemobile">
               <li><a class="material-symbols-outlined navigation-list-name" id="morem">menu<span class="fontnav">Меню</span></a></li>
@@ -33,8 +34,8 @@
       
   <main>
     <section class="home">
-        <h2>Rivixal Ocean UI 1.0</h2>
-        <p>Последнее обновление 14/04/2024</p>
+        <h2>Rivixal Ocean UI 1.1</h2>
+        <p>Последнее обновление 15/03/2024</p>
         <div class="social-buttons">
           <a onclick="showDialog('dialog-changelog')" class="button telegram"> Посмотреть журнал обновлений</a>
         </div>
@@ -293,7 +294,20 @@
           <br>
           <div class="container">
             <ul>
-              <h1>14/03/2024</h1>
+              <h1>15/03/2024 | Rivixal Ocean UI 1.1</h1>
+              <li>
+                <h1>Темная тема</h1>
+                <p>Теперь вместо светлой, вы можете выбрать темную и светлую тему</p>
+              </li>
+              <li>
+                <h1>Исправление и улучшение</h1>
+                <p>Были исправлены баги в интерфейсе и немного улучшили интерфейс</p>
+              </li>
+            </ul>
+          </div>
+          <div class="container">
+            <ul>
+              <h1>14/03/2024 | Rivixal Ocean UI 1.0</h1>
               <li>
                 <h2>Новый стиль!</h2>
                 <p>Весь дизайн страницы был переработан с нуля, с учетом оптимизации для устройств с ограниченными ресурсами и корректной адаптации под различные мобильные устройства.</p><br>
@@ -344,9 +358,32 @@
         <a href="firmware.html" class="material-symbols-outlined navigation-list-name">android<span class="fontnav">Прошивки</span></a>
         <a href="utilities.html" class="material-symbols-outlined navigation-list-name">settings<span class="fontnav">Утилиты</span></a>
         <a href="info.html" class="material-symbols-outlined navigation-list-name active">info<span class="fontnav">Инфо</span></a>
+        <a onclick="showDialog('dialog-settings')" class="material-symbols-outlined navigation-list-name">settings<span class="fontnav">Настройки</span></a>
     </div>
 
+
+    <div id="dialog-settings" class="dialog">
+      <div class="dialog-content">
+        <span class="close" onclick="closeDialog('dialog-settings')">&times;</span>
+        <h1>Настройки</h1>
+        <br>
+        <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
+        <br>
+        <div class="container">
+          <div class="leftandright">
+            <h1>Сменить тему</h1>
+            <label class="switch">
+              <input type="checkbox" id="themeToggle">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <script src="script/menu.js"></script>
+    <script src="script/themes.js"></script>
     <script src="script/dialog.js"></script>
     <script src="script/birthday.js"></script>
   </main>

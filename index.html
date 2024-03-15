@@ -21,8 +21,9 @@
               <li><a href="blog.html" class="material-symbols-outlined navigation-list-name">post<span class="fontnav">Блог</span></a></li>
               <li><a href="guides.html" class="material-symbols-outlined navigation-list-name">book<span class="fontnav">Гайды</span></a></li>
               <li><a href="firmware.html" class="material-symbols-outlined navigation-list-name">android<span class="fontnav">Прошивки</span></a></li>
-              <li><a href="utilities.html" class="material-symbols-outlined navigation-list-name">settings<span class="fontnav">Утилиты</span></a></li>
+              <li><a href="utilities.html" class="material-symbols-outlined navigation-list-name">view_cozy<span class="fontnav">Утилиты</span></a></li>
               <li><a href="info.html" class="material-symbols-outlined navigation-list-name">info<span class="fontnav">Инфо</span></a></li>
+              <li><a onclick="showDialog('dialog-settings')" class="material-symbols-outlined navigation-list-name">settings<span class="fontnav">Настройки</span></a></li>
             </ul>
             <ul class="hidemobile">
               <li><a class="material-symbols-outlined navigation-list-name" id="morem">menu<span class="fontnav">Меню</span></a></li>
@@ -75,10 +76,6 @@
             <h3>Обновление сайта</h3>
             <p>Возможно, вы устали от уведомлений о том, что мы обновили наш сайт. Но на этот раз я полностью переработал его с нуля, добавил новые страницы, которые пользуются большим спросом, а подробности об изменениях можно узнать (Страница Инфо), перейдя по нажатию на этот блок.</p>
           </div>
-          <!--<div class="news-card">
-            <h3>Новая программа (Generator QR-Codes)</h3>
-            <p>Нажмите сюда, чтобы перейти к проектам</p>
-          </div>-->
         </div>
       </section>
       <div class="container centerforbanner">
@@ -124,6 +121,25 @@
         </div>
       </div>
 
+      <div id="dialog-settings" class="dialog">
+        <div class="dialog-content">
+          <span class="close" onclick="closeDialog('dialog-settings')">&times;</span>
+          <h1>Настройки</h1>
+          <br>
+          <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
+          <br>
+          <div class="container">
+            <div class="leftandright">
+              <h1>Сменить тему</h1>
+              <label class="switch">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <div class="sidebar">
         <a id="closeBtn" onclick="closeSidebar()" class="material-symbols-outlined navigation-list-name">close<span class="fontnav">Закрыть меню</span></a>
         <br>
@@ -132,13 +148,16 @@
         <a href="blog.html" class="material-symbols-outlined navigation-list-name">post<span class="fontnav">Блог</span></a>
         <a href="guides.html" class="material-symbols-outlined navigation-list-name">book<span class="fontnav">Гайды</span></a>
         <a href="firmware.html" class="material-symbols-outlined navigation-list-name">android<span class="fontnav">Прошивки</span></a>
-        <a href="utilities.html" class="material-symbols-outlined navigation-list-name">settings<span class="fontnav">Утилиты</span></a>
+        <a href="utilities.html" class="material-symbols-outlined navigation-list-name">view_cozy<span class="fontnav">Утилиты</span></a>
         <a href="info.html" class="material-symbols-outlined navigation-list-name">info<span class="fontnav">Инфо</span></a>
+        <a onclick="showDialog('dialog-settings')" class="material-symbols-outlined navigation-list-name">settings<span class="fontnav">Настройки</span></a>
+
     </div>
 
     <script src="script/menu.js"></script>
     <script src="script/dialog.js"></script>
     <script src="script/birthday.js"></script>
+    <script src="script/themes.js"></script>
   </main>
   <footer>
     <p>&copy; 2024 Rivixal. Все права защищены.</p>

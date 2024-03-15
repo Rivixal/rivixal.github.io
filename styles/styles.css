@@ -177,9 +177,15 @@ animation-duration: 0.5s;
 
 
   .container {
+    border-radius: 8px;
+    background-color: #f1f1f1;
     padding: 20px;
     max-width: 100%; /* Максимальная ширина контейнера */
     margin: auto; /* Центрирование контейнера с отступами сверху и снизу */
+  }
+
+  .dialog-content .container {
+    background-color: #fff;
   }
   
   main {
@@ -544,7 +550,7 @@ a {
 }
 
 .welcome-postsbanner {
-  background-color: #e3e0e0;
+  background-color: #f1f1f1;
   border-radius: 8px;
   padding: 50px 0;
   text-align: center;
@@ -788,6 +794,274 @@ img {
 
 .bg3:hover {
   border: solid 1px #000000;
+}
+
+/*Оптимизизация темной темы*/
+
+html {
+  background-color: #ffffff; /* цвет фона для светлой темы */
+  color: #000000; /* цвет текста для светлой темы */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #000000; /* цвет фона для темной темы */
+  color: #ffffff; /* цвет текста для темной темы */
+  transition: 0.3s;
+}
+
+.dark-mode nav {
+  color: #fff !important;
+}
+
+.dark-mode header {
+  background-color: #323232cb !important;
+}
+
+.dark-mode header a {
+  color: #fff;
+}
+
+.dark-mode header a:hover{
+  color: #000;
+  background-color: #fff;
+}
+
+.dark-mode .logo {
+  color: #fff;
+}
+
+.dark-mode .active {
+  background-color: #fff;
+  color: #000;
+}
+
+
+.dark-mode .home {
+  background-color: #323232;
+  color: #fff;
+}
+
+.dark-mode .home h2 {
+  color: #fff;
+}
+
+.dark-mode .home p {
+  color: #fff;
+}
+
+.dark-mode .container {
+  background-color: #323232;
+  border-radius: 8px;
+  color: #fff !important;
+}
+
+.dark-mode a {
+  color: #2196F3;
+  transition: 0.3s;
+}
+
+.dark-mode a:hover {
+  color: #6dbafa;
+}
+
+
+.dark-mode .dialog-content {
+  background-color: #000;
+  transition: 0.3s;
+}
+
+.dark-mode .dialog-content .container {
+  background-color: #000;
+  transition: 0.3s;
+}
+
+.dark-mode .dialog {
+  background-color: #000;
+  transition: 0.3s;
+}
+
+.dark-mode .news-card {
+  background-color: #323232;
+  transition: 0.3s;
+}
+
+.dark-mode .news-card h3 {
+  color: #e6e6e6;
+}
+
+.dark-mode .news-card p {
+  color: #fff;
+}
+
+.dark-mode .projects-card {
+  background-color: #323232;
+  transition: 0.3s;
+}
+
+.dark-mode .projects-card h3 {
+  color: #e6e6e6;
+}
+
+.dark-mode .projects-card p {
+  color: #fff;
+}
+
+.dark-mode .universal-card {
+  background-color: #323232;
+  transition: 0.3s;
+}
+
+.dark-mode .universal-card h3 {
+  color: #e6e6e6;
+}
+
+.dark-mode .universal-card p {
+  color: #fff;
+}
+
+.dark-mode .firmware-card {
+  background-color: #323232;
+  transition: 0.3s;
+}
+
+.dark-mode .maystyletextaera {
+  color: #fff;
+}
+
+.bg3:hover {
+  border:  solid 1px #fff;
+}
+
+.dark-mode .firmware-card h3 {
+  color: #e6e6e6;
+}
+
+.dark-mode .firmware-card p {
+  color: #fff;
+}
+
+.dark-mode .button {
+  color: #fff;
+}
+
+.dark-mode .button:hover {
+  color: #fff;
+}
+
+.dark-mode .sidebar {
+  background-color: #323232;
+}
+
+.dark-mode .sidebar a {
+  color: #fff;
+}
+
+.dark-mode .active a {
+  color: #000 !important;
+}
+
+.dark-mode .sidebar .active {
+  background-color: #ffffff !important;
+  color: #000 !important;
+}
+
+.dark-mode .sidebar a:hover {
+  background-color: #ffffff !important;
+  color: #000 !important;
+}
+
+.dark-mode .projects-section {
+  background-color: #323232;
+  color: #ffffff;
+}
+
+.dark-mode .projects-section p {
+  color: #ffffff;
+}
+
+.dark-mode .projects-sectionp {
+  color: #ffffff;
+}
+
+.dark-mode .welcome-postsbanner {
+  background-color: #323232;
+  color: #fff;
+}
+
+.dark-mode .welcome-postsbanner p {
+  color: #fff;
+}
+
+.dark-mode .post {
+  color: #fff;
+  background-color: #1f1f1f;
+}
+
+/*Параметры темной темы*/
+
+nav .slider {
+  display: flex;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 

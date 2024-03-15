@@ -23,6 +23,7 @@
               <li><a href="firmware.html" class="material-symbols-outlined navigation-list-name">android</span><span class="fontnav">Прошивки</span></a></li>
               <li><a href="utilities.html" class="material-symbols-outlined navigation-list-name">settings</span><span class="fontnav">Утилиты</span></a></li>
               <li><a href="info.html" class="material-symbols-outlined navigation-list-name">info</span><span class="fontnav">Инфо</span></a></li>
+              <li><a onclick="showDialog('dialog-settings')" class="material-symbols-outlined navigation-list-name">settings<span class="fontnav">Настройки</span></a></li>
             </ul>
             <ul class="hidemobile">
               <li><a class="material-symbols-outlined navigation-list-name" id="morem">menu</span><span class="fontnav">Меню</span></a></li>
@@ -68,6 +69,7 @@
         <a href="firmware.html" class="material-symbols-outlined navigation-list-name">android</span><span class="fontnav">Прошивки</span></a>
         <a href="utilities.html" class="material-symbols-outlined navigation-list-name">settings</span><span class="fontnav">Утилиты</span></a>
         <a href="info.html" class="material-symbols-outlined navigation-list-name">info</span><span class="fontnav">Инфо</span></a>
+        <a onclick="showDialog('dialog-settings')" class="material-symbols-outlined navigation-list-name">settings<span class="fontnav">Настройки</span></a>
     </div>
 
 
@@ -249,8 +251,29 @@
       </div>
     </div>
 
+
+    <div id="dialog-settings" class="dialog">
+      <div class="dialog-content">
+        <span class="close" onclick="closeDialog('dialog-settings')">&times;</span>
+        <h1>Настройки</h1>
+        <br>
+        <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
+        <br>
+        <div class="container">
+          <div class="leftandright">
+            <h1>Сменить тему</h1>
+            <label class="switch">
+              <input type="checkbox" id="themeToggle">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="script/dialog.js"></script>
     <script src="script/menu.js"></script>
+    <script src="script/themes.js"></script>
   </main>
   <footer>
     <p>&copy; 2024 Rivixal. Все права защищены.</p>

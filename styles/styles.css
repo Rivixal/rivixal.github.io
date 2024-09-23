@@ -1239,8 +1239,8 @@ input:checked + .slider:before {
   }
 
   iframe {
-    width: 400px !important;
-    height: 300px;
+    width: 350px !important;
+    height: 200px !important;
   }
 
   .menu-icon {

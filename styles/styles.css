@@ -1208,7 +1208,7 @@ input:checked + .slider:before {
   }
 
   .homebanner iframe {
-    width: 100%;
+    width: 80%;
     border: none;
     transform: rotateY(0deg);
     transform-origin: right center;
@@ -1226,8 +1226,13 @@ input:checked + .slider:before {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 40px;
+    margin-bottom: 30px !important;
+  }
+
+  .homebanner .left-section {
+    padding: 0px;
+    margin-bottom: 20px !important;
   }
 
   .icon {

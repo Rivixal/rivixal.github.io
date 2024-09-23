@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="image/mainlogo.png">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/fonts.css">
+  <link href="styles/#" rel="stylesheet" id="theme-link">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,1,0" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
@@ -19,9 +20,7 @@
               <li><a href="index.html" class="material-symbols-outlined navigation-list-name active">home<span class="fontnav">Главная</span></a></li>
               <li><a href="projects.html" class="material-symbols-outlined navigation-list-name">terminal<span class="fontnav">Проекты</span></a></li>
               <li><a href="blog.html" class="material-symbols-outlined navigation-list-name">post<span class="fontnav">Блог</span></a></li>
-              <li><a href="guides.html" class="material-symbols-outlined navigation-list-name">book<span class="fontnav">Гайды</span></a></li>
-              <li><a href="firmware.html" class="material-symbols-outlined navigation-list-name">android<span class="fontnav">Прошивки</span></a></li>
-              <li><a href="utilities.html" class="material-symbols-outlined navigation-list-name">view_cozy<span class="fontnav">Утилиты</span></a></li>
+              <li><a href="soft.html" class="material-symbols-outlined navigation-list-name">view_cozy<span class="fontnav">Софт</span></a></li>
               <li><a href="info.html" class="material-symbols-outlined navigation-list-name">info<span class="fontnav">Инфо</span></a></li>
               <li><a onclick="showDialog('dialog-settings')" class="material-symbols-outlined navigation-list-name">settings<span class="fontnav">Настройки</span></a></li>
             </ul>
@@ -31,26 +30,52 @@
           </nav>
         </div>
       </header>
+
+      <div class="homebanner">
+        <div class="left-section opacity-animation">
+          <h1>Привет! Добро пожаловать на мою страницу!</h1>
+          <br>
+          <h2>Здесь вы найдете информацию о моих проектах, программировании, прошивках и многом другом.</h2>
+          <script src="script/facts.js"></script>
+          <br>
+          <h3 id="daysLeftMessage">Осталось дней до нового года: Загрузка</h3>
+          <br>
+          <div class="button-group">
+            <button class="youtube" onclick="docunment.location='https://youtube.com/@rivixal'">Youtube</button>
+            <button class="telegram" onclick="docunment.location='https://t.me/rivixal'">Telegram</button>
+            <button class="openvk" onclick="docunment.location='ovk.to/maydilsiel'">OpenVK</button>
+            <button class="github" onclick="docunment.location='#'">Github</button>
+        </div>
+        </div>
+        <div class="right-section opacity-animation">
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/J_ngHi7L4sw?si=cKe7EGgdp8TcIZy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
       
   <main>
-    <section class="home">
-        <h2>Добро пожаловать на мой сайт!</h2>
-        <p>Здесь вы найдете информацию о моих проектах, программировании, прошивках и многом другом.</p>
-        <script src="script/facts.js"></script>
-        <br>
-        <h4 id="daysLeftMessage">Осталось дней до нового года: Загрузка</h4>
-        <div class="social-buttons">
-          <a href="https://www.youtube.com/@rivixal" class="button youtube">YouTube</a>
-          <a href="https://t.me/rivixal_official" class="button telegram">Telegram</a>
+    <section class="universal">
+      <h2 style="text-align: center;">Новые посты 3/3</h2>
+      <div class="universal-container">
+        <div class="universal-card leftandright" onclick="document.location='posts/new-version-rivixal-clock-2.0.2.0.html'">
+          <h3>Вышла новая версия Rivixal Clock!</h3>
+          <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
         </div>
-      </section>
-      <section class="playlists">
+        <div class="universal-card leftandright" onclick="document.location='posts/howtousemiflash.html'">
+          <h3>Как пользоваться MiFlash</h3>
+          <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+        </div>
+        <div class="universal-card leftandright" onclick="document.location='posts/firmware-viva-risingos1.1.html'">
+          <h3>Прошиваем RisingOS 1.1 на Redmi Note 11 Pro 4G</h3>
+          <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+        </div>
+      </div>
+    </section>
+    
+      <section class="playlists opacity-animation">
         <h2 class="text">Актуальные плейлисты</h2>
         <div class="playlists-container">
-          <div class="playlists-card color-violet" onclick="document.location='https://www.youtube.com/playlist?list=PLnslurPptz9QRwSeeLF9imsOIH8wAcuZK'">
-            <h3>Архив старых видео</h3>
-            <p>Если вы скучаете по временам, когда вы впервые познакомились со мной, сейчас у вас есть возможность просмотреть все видео, собранные в один плейлист.</p>
-          </div>
           <div class="playlists-card color-multicolor" onclick="document.location='https://www.youtube.com/playlist?list=PLnslurPptz9QYpRQSnoiG11fBC2CsgD_E'">
             <h3>MIUI&Xiaomi HyperOS</h3>
             <p>В этом плейлисте собраны видео, в которых я затрагивал темы MIUI и Xiaomi HyperOS.</p>
@@ -59,66 +84,21 @@
             <h3>Кастомные прошивки</h3>
             <p>Этот плейлист содержит видео, где я устанавливал на телефоны кастомные прошивки.</p>
           </div>
-          <div class="playlists-card color-bluegradient" onclick="document.location='https://www.youtube.com/playlist?list=PLnslurPptz9SVNG4dPPHhTGRrap6YhqNM'">
-            <h3>Проекты</h3>
-            <p>Этот плейлист содержит видео, где я создавал свои разные проекты.</p>
-          </div>
         </div>
       </section>
-      <section class="news">
-        <h2 class="text">Новости на сайте</h2>
-        <div class="news-container">
-          <div class="news-card" onclick="showDialog('dialog-indexversion')">
-            <h3>Индексы и обозначение в версиях</h3>
-            <p>Мы решили с нуля изменить индексы и полностью переделать индексы версии, нажмите сюда чтобы узнать больше </p>
-          </div>
-          <div class="news-card" onclick="document.location='info.html'">
-            <h3>Обновление сайта</h3>
-            <p>Возможно, вы устали от уведомлений о том, что мы обновили наш сайт. Но на этот раз я полностью переработал его с нуля, добавил новые страницы, которые пользуются большим спросом, а подробности об изменениях можно узнать (Страница Инфо), перейдя по нажатию на этот блок.</p>
-          </div>
-        </div>
-      </section>
-      <div class="container centerforbanner">
+
+
+    
+      <div class="container centerforbanner opacity-animation">
         <h2>Баннеры друзей</h2>
-        <p>Если вы хотите быть здесь? Напишите в телеграмм <a href="https://t.me/can1lookaway">@rivixal</a></p>
+        <p>Если вы хотите быть здесь? Напишите в телеграмм <a href="https://t.me/rivixal_pm">@rivixal_pm</a></p>
         <br>
         <a href="https://ertorworld.com"><img class="img-fluid bg3" src="image/ErtorWorldbaner.png" alt="ertorcard"></a>
         <a href="https://lisikpng.com"><img src="http://lisikpng.com/img/baner.png" class="img-fluid bg3"></a>            
         <a href="https://ost-sys.github.io/"><img src="image/ost.png" class="img-fluid bg3" alt="OST"></a>
         <a href="http://web1.tinelix.ru"><img src="http://web1.tinelix.ru/banners/default.gif" class="bg3" border="0"></a>
         <a href="https://dsys1100.github.io"><img src="image/dsys1100.png" class="img-fluid bg3" alt="dsys1100"></a>
-        <a href="https://lgrn-arts.ru" target="_blank"><img src="https://lgrn-arts.ru/img/lgrn.gif" class="bg3" title="LGRN Arts"></a>
-      </div>
-
-      <!--Window--->
-      <div id="dialog-indexversion" class="dialog">
-        <div class="dialog-content">
-          <span class="close" onclick="closeDialog('dialog-indexversion')">&times;</span>
-          <h1>Индескы и их обозначения</h1>
-          <p>Статья была созданна в 09/03/2024 Время 23:45</p>
-          <br>
-          <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
-          <br>
-          <div class="container">
-            <h1>Небольшое обновление релизов</h1>
-            <p>Мы решили с нуля изменить индексы и полностью переделать индексы версии, раньше у нас было OR, BR, CBR, AR, LBR. А теперь Official Release, Beta Deployment, Closed Beta Rollout, Alpha Deployment, Pre-Launch Preview.</p>
-            <br>
-            <h1>Официальный релиз (Official Release)</h1>
-            <p>Официальный релиз обозначает окончательный выпуск программного продукта или приложения, который считается стабильным и готовым к использованию. Он выпускается после тщательного тестирования и отладки всех функций.</p>
-            <br>
-            <h1>Бета развертывание (Beta Deployment)</h1>
-            <p>Бета развертывание обозначает версию программного продукта или приложения, которая доступна для тестирования, но еще не является окончательной. В бета-версии могут быть обнаружены ошибки и недоработки, которые будут исправлены в последующих версиях.</p>
-            <br>
-            <h1>Закрытый выпуск бета-версии (Closed Beta Rollout)</h1>
-            <p>Закрытый выпуск бета-версии обозначает версию программного продукта или приложения, доступную только определенной группе пользователей для тестирования. Закрытый выпуск бета-версии позволяет разработчикам получить обратную связь от выбранной группы пользователей, которые могут использовать продукт в реальных условиях.</p>
-            <br>
-            <h1>Альфа развертывание (Alpha Deployment)</h1>
-            <p>Альфа развертывание обозначает версию программного продукта или приложения, находящуюся на стадии разработки и тестирования. Альфа-версия может содержать множество ошибок и недоработок, так как она еще не прошла полный цикл тестирования.</p>
-            <br>
-            <h1>Предварительный просмотр перед запуском (Pre-Launch Preview)</h1>
-            <p>Предварительный просмотр перед запуском обозначает процесс предварительного ознакомления с продуктом или приложением до его официального запуска. В рамках этого просмотра пользователи могут оценить основные функции и интерфейс продукта, а также предоставить обратную связь разработчикам.</p>
-          </div>
-        </div>
+        <a href="http://lgrn-arts.ch" target="_blank"><img class="img-fluid bg3" src="http://lgrn-arts.ch/img/lgrn.gif"" title="LGRN Arts"></a>
       </div>
 
       <div id="dialog-settings" class="dialog">
@@ -129,13 +109,23 @@
           <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
           <br>
           <div class="container">
-            <div class="leftandright">
-              <h1>Сменить тему</h1>
-              <label class="switch">
-                <input type="checkbox" id="themeToggle">
-                <span class="slider round"></span>
-              </label>
-            </div>
+            <h1>Сменить тему</h1>
+            <section class="universal">
+              <div class="universal-container">
+                <div class="universal-card leftandright lmode" onclick="toggleTheme('light')" id="dark-theme-container">
+                  <h3>Светлая тема</h3>
+                  <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+                </div>
+                <div class="universal-card leftandright dmode" onclick="toggleTheme('dark')" id="dark-theme-container">
+                  <h3>Темная тема</h3>
+                  <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+                </div>
+                <div class="universal-card leftandright" onclick="autoTheme('auto')" id="auto-theme-container">
+                  <h3>Автоматический выбор</h3>
+                  <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </div>
@@ -146,21 +136,22 @@
         <a href="index.html" class="material-symbols-outlined navigation-list-name active">home<span class="fontnav">Главная</span></a>
         <a href="projects.html" class="material-symbols-outlined navigation-list-name">terminal<span class="fontnav">Проекты</span></a>
         <a href="blog.html" class="material-symbols-outlined navigation-list-name">post<span class="fontnav">Блог</span></a>
-        <a href="guides.html" class="material-symbols-outlined navigation-list-name">book<span class="fontnav">Гайды</span></a>
-        <a href="firmware.html" class="material-symbols-outlined navigation-list-name">android<span class="fontnav">Прошивки</span></a>
-        <a href="utilities.html" class="material-symbols-outlined navigation-list-name">view_cozy<span class="fontnav">Утилиты</span></a>
+        <a href="soft.html" class="material-symbols-outlined navigation-list-name">view_cozy<span class="fontnav">Софт</span></a>
         <a href="info.html" class="material-symbols-outlined navigation-list-name">info<span class="fontnav">Инфо</span></a>
-        <a onclick="showDialog('dialog-settings')" class="material-symbols-outlined navigation-list-name">settings<span class="fontnav">Настройки</span></a>
-
+        <br>
+        <a onclick="toggleTheme('light')" id="dark-theme-container" class="material-symbols-outlined navigation-list-name lmode">light_mode</span><span class="fontnav">Светлая тема</span></a>
+        <a onclick="toggleTheme('dark')" id="dark-theme-container" class="material-symbols-outlined navigation-list-name dmode">dark_mode</span><span class="fontnav">Темная тема</span></a>
+        <a onclick="autoTheme('auto')" id="auto-theme-container" class="material-symbols-outlined navigation-list-name">motion_photos_auto</span><span class="fontnav">Автоматичекский выбор</span></a>
     </div>
 
     <script src="script/menu.js"></script>
     <script src="script/dialog.js"></script>
     <script src="script/birthday.js"></script>
     <script src="script/themes.js"></script>
+    <script src="script/mainscript.js"></script>
   </main>
   <footer>
-    <p>&copy; 2024 Rivixal. Все права защищены.</p>
+    <p>&copy; 2024 Rivixal. Все права защищены, исходный код в <a href="https://github.com/Rivixal/rivixal.github.io">Github</a></p>
   </footer>
 </body>
 </html>

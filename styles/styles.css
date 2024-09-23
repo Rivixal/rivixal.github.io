@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+}
 
 /*Scrollbar*/
 ::-webkit-scrollbar {
@@ -14,331 +14,550 @@
   scrollbar-color: transparent;
 }
 
-::-webkit-scrollbar-button{
-background-color: #000;
-border-radius: 15px;
+::-webkit-scrollbar-button {
+  background-color: #000;
+  border-radius: 15px;
 }
 
-::-webkit-scrollbar-button:hover { 
+::-webkit-scrollbar-button:hover {
   background-color: #4b4b4b;
 }
 
 ::-webkit-scrollbar-thumb {
-border: 0.5px solid rgb(255, 255, 255) !important;
-border-color: #4b4b4b;
-border-radius: 15px;
-background: #4b4b4b;
-  
+  border: 0.5px solid rgb(255, 255, 255) !important;
+  border-color: #4b4b4b;
+  border-radius: 15px;
+  background: #4b4b4b;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-border: 0.5px solid rgb(255, 255, 255) !important;
-border-color: #4b4b4b;
-border-radius: 15px;
-background: #4b4b4b;
-animation-duration: 0.5s;
+  border: 0.5px solid rgb(255, 255, 255) !important;
+  border-color: #4b4b4b;
+  border-radius: 15px;
+  background: #4b4b4b;
+  animation-duration: 0.5s;
 }
 
 ::-webkit-scrollbar-thumb:active {
   background: #4b4b4b;
 }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
 
-  .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  
-  .button:hover {
-    background-color: #0056b3;
-  }
-  
-  .youtube {
-    background-color: #ff0000; /* Цвет YouTube */
-  }
+body {
+  font-family: "Roboto", sans-serif;
+}
 
-  .youtube:hover {
-    background-color: #9a0202; /* Цвет YouTube */
-  }
-  
-  .telegram {
-    background-color: #0088cc; /* Цвет Telegram */
-  }
+.button {
+  display: inline-block;
+  font-size: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
-  .download {
-    background-color: #00a511; /* Скачать */
-  }
+.button-group {
+  display: flex;
+}
 
-  .download:hover {
-    background-color: #02cc16; /* Скачать */
-  }
-  
-  /* Обновленные стили для секции приветствия */
-  
-  .home {
-    background-color: #e3e0e0;
-    padding: 40px;
-    border-radius: 8px;
-    margin-bottom: 5px;
-    text-align: center; /* Центрируем содержимое секции */
-    margin-bottom: 20px;
-  }
+.button-group button {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-  .button + .button {
-    margin-left: 10px; /* Добавим небольшой отступ между кнопками */
-  }
-  
-  .home h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .home p {
-    color: #666;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  .social-buttons {
-    margin-top: 20px; /* Добавим отступ над кнопками */
-  }
-  
-  .social-buttons .button + .button {
-    margin-left: 10px; /* Добавим отступ между кнопками */
-  }
+.button-group button:hover {
+  background-color: #0056b3;
+}
 
-  header {
-    background-color: #edededcc;
-    backdrop-filter: blur(6px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* добавим тень для эффекта поднятости */
-    padding: 10px 40px; /* Увеличим отступы справа и слева */
-    position: sticky;
-    top: 0;
-    z-index: 9999;
-  }
-  
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    margin: 0;
-    color: #333; /* Цвет лого */
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-left: 20px; /* Изменим отступ слева для элементов меню */
-  }
-  
-  nav ul li:first-child {
-    margin-left: 0; /* Уберем отступ для первого элемента меню */
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333; /* Цвет ссылок в меню */
-    transition: 0.3s;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 10px;
-  }
+.button-group button:first-child {
+  border-radius: 5px 0 0 5px;
+}
 
-  nav ul li a:hover {
-    background-color: #000000;
-    color: #fff;
-  }
+.button-group button:last-child {
+  border-radius: 0 5px 5px 0;
+}
 
-  .active {
-    background-color: #000000;
-    color: #fff;
-  }
+.button-group button:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
 
+.button-group button + button {
+  margin-left: -1px;
+}
 
-  .container {
-    border-radius: 8px;
-    background-color: #f1f1f1;
-    padding: 20px;
-    max-width: 100%; /* Максимальная ширина контейнера */
-    margin: auto; /* Центрирование контейнера с отступами сверху и снизу */
-  }
+.button-group .youtube {
+  background-color: #ff0000; /* Цвет YouTube */
+}
 
-  .dialog-content .container {
-    background-color: #fff;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  footer {
-    background-color: #ffffff00;
-    text-align: center;
-    padding: 20px;
-  }
+.button-group .youtube:hover {
+  background-color: #9a0202; /* Цвет YouTube */
+}
 
-  /*Новости*/
+.button-group .telegram {
+  background-color: #0088cc; /* Цвет Telegram */
+}
 
-  .news {
-    margin-bottom: 20px !important;
-    overflow: auto;
-  }
+.button-group .openvk {
+  background-color: #656565; /* Цвет Telegram */
+}
 
-  .news .text {
-    text-align: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .news-container {
-    width: 100%;
-    height: 100% !important;
-    display: flex !important;
-    justify-content: center !important; /* Центрируем по горизонтали */
-    flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  }
-  
-  .news-card {
-    width: 20%;
-    padding: 20px;
-    margin: 25px; /* Добавим небольшие отступы */
-    background-color: #e3e3e3;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .news-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .news-card h3 {
-    margin-bottom: 10px;
-    color: #333333;
-  }
-  
-  .news-card p {
-    color: #666666;
-  }
+.button-group .openvk:hover {
+  background-color: #4e4e4e; /* Цвет Telegram */
+}
 
+.button-group .github {
+  background-color: #393838; /* Цвет Telegram */
+}
 
-  /*Плейлист*/
+.button-group .github:hover {
+  background-color: #4e4e4e; /* Цвет Telegram */
+}
 
+.social-buttons .download {
+  background-color: #00a511; /* Скачать */
+}
 
-  .playlists {
-    margin-bottom: 20px;
-    overflow: auto;
-  }
+.social-buttons .download:hover {
+  background-color: #02cc16; /* Скачать */
+}
 
-  .playlists .text {
-    text-align: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .playlists-container {
-    width: 100%;
-    height: 100% !important;
-    display: flex !important;
-    justify-content: center !important; /* Центрируем по горизонтали */
-    flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
-  }
-  
-  .playlists-card {
-    width: 20%;
-    padding: 20px;
-    margin: 25px; /* Добавим небольшие отступы */
-    background-color: #e3e0e0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .playlists-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .playlists-card h3 {
-    margin-bottom: 10px;
-  }
+/* Обновленные стили для секции приветствия */
 
-  .color-violet  {
-    background: rgb(63,9,121) !important;
-    color: #fff !important;
-    background: linear-gradient(90deg, rgba(63,9,121,1) 9%, rgba(0,0,0,1) 100%) !important;
-  }
+.welcomeclockbanner {
+  padding: 40px;
+  margin: auto;
+  max-width: 90%;
+  align-items: center;
+  text-align: center;
+}
 
-  .color-multicolor {
-    background: rgb(121,63,9);
-    background: linear-gradient(90deg, rgba(121,63,9,1) 0%, rgba(102,15,191,1) 45%, rgba(0,82,128,1) 48%, rgba(0,86,131,1) 100%); 
-    color: #fff;
-  }
+.welcomeclockbanner h1 {
+  font-size: 120px;
+}
 
-  .color-onecolor {
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,86,131,1) 100%);
-    color: #fff;
-  }
+.welcomeclockbanner p {
+  font-size: 30px;
+}
 
-  .color-bluegradient {
-    background: rgb(0,48,179);
-    background: linear-gradient(90deg, rgba(0,48,179,1) 0%, rgba(0,0,0,1) 100%);
-    color: #fff;
-  }
+.homebanner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.homebanner .left-section {
+  flex-grow: 1;
+  padding: 40px; /* Расстояние между элементами */
+}
+
+.homebanner .right-section {
+  padding: 40px;
+  flex-basis: 60%; /* Ширина правой части */
+}
+
+.homebanner .video-container {
+  position: relative;
+  perspective: 1000px; /* Задаем значение перспективы */
+}
+
+.homebanner iframe {
+  width: 100%;
+  border: none;
+  transform: rotateY(-10deg);
+  transform-origin: right center;
+  transition: 0.5s;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.728);
+}
+
+.homebanner iframe:hover {
+  width: 100%; /* Заполнение всей доступной ширины */
+  border: none; /* Убираем рамку у iframe */
+  transform: rotateY(0deg); /* Поворачиваем iframe по оси Y на -10 градусов */
+  transform-origin: right center; /* Определяем точку применения трансформации */
+}
+
+.homebanner .video-angle {
+  position: absolute;
+  top: 10px; /* Выравнивание по верхнему краю */
+  left: -20px; /* Отступ от левого края */
+  background-color: #ffffff; /* Цвет фона */
+  padding: 5px 10px; /* Поля внутри элемента */
+  border: 1px solid #000000; /* Граница */
+}
+
+.homebanner .social-buttons {
+  margin-top: 20px; /* Отступ сверху */
+}
+
+/*infobanner*/
+.infobanner {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.infobanner .left-section {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  padding: 30px; /* Расстояние между элементами */
+  background-color: #e5e5e5;
+  border-radius: 10px;
+}
+
+.infobanner .right-section {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  flex-basis: 45%; /* Ширина правой части */
+  background-color: #e5e5e5;
+  border-radius: 10px;
+}
+
+.infobanner .video-container {
+  position: relative;
+  perspective: 1000px; /* Задаем значение перспективы */
+}
+
+.infobanner iframe {
+  width: 100%; /* Заполнение всей доступной ширины */
+  border: none; /* Убираем рамку у iframe */
+  transform: rotateY(-10deg); /* Поворачиваем iframe по оси Y на -10 градусов */
+  transform-origin: right center; /* Определяем точку применения трансформации */
+  transition: 0.5s;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.728); /* добавим тень для эффекта поднятости */
+}
+
+.infobanner iframe:hover {
+  width: 100%; /* Заполнение всей доступной ширины */
+  border: none; /* Убираем рамку у iframe */
+  transform: rotateY(0deg); /* Поворачиваем iframe по оси Y на -10 градусов */
+  transform-origin: right center; /* Определяем точку применения трансформации */
+}
+
+.infobanner .video-angle {
+  position: absolute;
+  top: 10px; /* Выравнивание по верхнему краю */
+  left: -20px; /* Отступ от левого края */
+  background-color: #ffffff; /* Цвет фона */
+  padding: 5px 10px; /* Поля внутри элемента */
+  border: 1px solid #000000; /* Граница */
+}
+
+.infobanner .social-buttons {
+  margin-top: 20px; /* Отступ сверху */
+}
+
+.infobanner .left-section img {
+  width: 100px;
+  height: 100px;
+}
+/*end-infobanner*/
+
+.button {
+  font-size: 13px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px; /* Размер кнопок */
+  margin-right: 10px; /* Отступ между кнопками */
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #007bff; /* Цвет кнопок */
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button:hover {
+  color: #ffffff;
+  background-color: #16dcff; /* Цвет кнопок */
+}
+
+.button + .button {
+  margin-left: 10px; /* Добавим небольшой отступ между кнопками */
+}
+
+.home h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.home p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.social-buttons {
+  margin-top: 20px; /* Добавим отступ над кнопками */
+}
+
+.social-buttons .button + .button {
+  margin-left: 10px; /* Добавим отступ между кнопками */
+}
+
+header {
+  background-color: #edededcc;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* добавим тень для эффекта поднятости */
+  padding: 10px 40px; /* Увеличим отступы справа и слева */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  color: #333; /* Цвет лого */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px; /* Изменим отступ слева для элементов меню */
+}
+
+nav ul li:first-child {
+  margin-left: 0; /* Уберем отступ для первого элемента меню */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333; /* Цвет ссылок в меню */
+  transition: 0.3s;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.active {
+  background-color: #000000;
+  color: #fff;
+}
+
+.container {
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  max-width: 100%; /* Максимальная ширина контейнера */
+  margin: auto; /* Центрирование контейнера с отступами сверху и снизу */
+}
+
+.trcontainer {
+  padding: 20px;
+  max-width: 100%; /* Максимальная ширина контейнера */
+  margin: auto; /* Центрирование контейнера с отступами сверху и снизу */
+}
+
+.containermax1200 {
+  background-color: #f8f4f4;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 1700px; /* Максимальная ширина контейнера */
+  margin: auto; /* Центрирование контейнера с отступами сверху и снизу */
+}
+
+.menuw-card {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #e3e3e3;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menuw-card:hover {
+  color: #fff;
+  background-color: #007bff;
+}
+
+.container li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #ffffff00;
+  text-align: center;
+  padding: 20px;
+}
+
+/*Новости*/
+
+.news {
+  margin-bottom: 20px !important;
+  overflow: auto;
+}
+
+.news .text {
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.news-container {
+  width: 100%;
+  height: 100% !important;
+  display: flex !important;
+  justify-content: center !important; /* Центрируем по горизонтали */
+  flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+}
+
+.news-card {
+  width: 20%;
+  padding: 20px;
+  margin: 25px; /* Добавим небольшие отступы */
+  background-color: #e3e3e3;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.news-card h3 {
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.news-card p {
+  color: #666666;
+}
+
+/*Плейлист*/
+
+.playlists {
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+.playlists .text {
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.playlists-container {
+  width: 100%;
+  height: 100% !important;
+  display: flex !important;
+  justify-content: center !important; /* Центрируем по горизонтали */
+  flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+}
+
+.playlists-card {
+  width: 20%;
+  padding: 20px;
+  margin: 25px; /* Добавим небольшие отступы */
+  background-color: #e3e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.playlists-card:hover {
+  transform: translateY(-5px);
+}
+
+.playlists-card h3 {
+  margin-bottom: 10px;
+}
+
+.color-violet {
+  background: rgb(63, 9, 121) !important;
+  color: #fff !important;
+  background: linear-gradient(
+    90deg,
+    rgba(63, 9, 121, 1) 9%,
+    rgba(0, 0, 0, 1) 100%
+  ) !important;
+}
+
+.color-multicolor {
+  background: rgb(121, 63, 9);
+  background: linear-gradient(
+    90deg,
+    rgba(121, 63, 9, 1) 0%,
+    rgba(102, 15, 191, 1) 45%,
+    rgba(0, 82, 128, 1) 48%,
+    rgba(0, 86, 131, 1) 100%
+  );
+  color: #fff;
+}
+
+.color-onecolor {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 86, 131, 1) 100%
+  );
+  color: #fff;
+}
+
+.color-bluegradient {
+  background: rgb(0, 48, 179);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 48, 179, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: #fff;
+}
 
 /*Google-icons*/
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
   font-size: 20px !important;
 }
 
 .material-symbols-outlined:hover {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 300, 
-  'GRAD' 0,
-  'opsz' 48
+  font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 0, "opsz" 48;
 }
 
 .material-symbols-outlined.active {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 300, 
-  'GRAD' 0,
-  'opsz' 48
+  font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 0, "opsz" 48;
 }
 
 .navigation-list-name {
   vertical-align: -5px;
-  margin: 0 3px 0%  0;
+  margin: 0 3px 0% 0;
 }
 
 /* Боковое меню */
@@ -392,7 +611,7 @@ animation-duration: 0.5s;
 }
 
 .fontnav {
-  font-family: 'Arial', sans-serif !important;
+  font-family: "Arial", sans-serif !important;
   font-size: 20px;
   margin-left: 5px;
   vertical-align: 3px;
@@ -593,10 +812,14 @@ iframe {
 }
 
 /*Диалоговые окна*/
+.dialog-content .container {
+  background-color: #fff;
+}
+
 .dialog {
   display: none;
   position: fixed;
-  z-index: 9999999;
+  z-index: 1000 !important;
   left: 0;
   top: 0;
   width: 100%;
@@ -613,7 +836,6 @@ iframe {
 .icon {
   width: 10% !important;
 }
-
 
 @keyframes fadeIn {
   0% {
@@ -663,7 +885,6 @@ iframe {
   height: 100%;
   overflow-y: scroll;
 }
-
 
 .dialog.fade-out {
   opacity: 0;
@@ -796,210 +1017,6 @@ img {
   border: solid 1px #000000;
 }
 
-/*Оптимизизация темной темы*/
-
-html {
-  background-color: #ffffff; /* цвет фона для светлой темы */
-  color: #000000; /* цвет текста для светлой темы */
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.dark-mode {
-  background-color: #000000; /* цвет фона для темной темы */
-  color: #ffffff; /* цвет текста для темной темы */
-  transition: 0.3s;
-}
-
-.dark-mode nav {
-  color: #fff !important;
-}
-
-.dark-mode header {
-  background-color: #323232cb !important;
-}
-
-.dark-mode header a {
-  color: #fff;
-}
-
-.dark-mode header a:hover{
-  color: #000;
-  background-color: #fff;
-}
-
-.dark-mode .logo {
-  color: #fff;
-}
-
-.dark-mode .active {
-  background-color: #fff;
-  color: #000;
-}
-
-
-.dark-mode .home {
-  background-color: #323232;
-  color: #fff;
-}
-
-.dark-mode .home h2 {
-  color: #fff;
-}
-
-.dark-mode .home p {
-  color: #fff;
-}
-
-.dark-mode .container {
-  background-color: #323232;
-  border-radius: 8px;
-  color: #fff !important;
-}
-
-.dark-mode a {
-  color: #2196F3;
-  transition: 0.3s;
-}
-
-.dark-mode a:hover {
-  color: #6dbafa;
-}
-
-
-.dark-mode .dialog-content {
-  background-color: #000;
-  transition: 0.3s;
-}
-
-.dark-mode .dialog-content .container {
-  background-color: #000;
-  transition: 0.3s;
-}
-
-.dark-mode .dialog {
-  background-color: #000;
-  transition: 0.3s;
-}
-
-.dark-mode .news-card {
-  background-color: #323232;
-  transition: 0.3s;
-}
-
-.dark-mode .news-card h3 {
-  color: #e6e6e6;
-}
-
-.dark-mode .news-card p {
-  color: #fff;
-}
-
-.dark-mode .projects-card {
-  background-color: #323232;
-  transition: 0.3s;
-}
-
-.dark-mode .projects-card h3 {
-  color: #e6e6e6;
-}
-
-.dark-mode .projects-card p {
-  color: #fff;
-}
-
-.dark-mode .universal-card {
-  background-color: #323232;
-  transition: 0.3s;
-}
-
-.dark-mode .universal-card h3 {
-  color: #e6e6e6;
-}
-
-.dark-mode .universal-card p {
-  color: #fff;
-}
-
-.dark-mode .firmware-card {
-  background-color: #323232;
-  transition: 0.3s;
-}
-
-.dark-mode .maystyletextaera {
-  color: #fff;
-}
-
-.bg3:hover {
-  border:  solid 1px #fff;
-}
-
-.dark-mode .firmware-card h3 {
-  color: #e6e6e6;
-}
-
-.dark-mode .firmware-card p {
-  color: #fff;
-}
-
-.dark-mode .button {
-  color: #fff;
-}
-
-.dark-mode .button:hover {
-  color: #fff;
-}
-
-.dark-mode .sidebar {
-  background-color: #323232;
-}
-
-.dark-mode .sidebar a {
-  color: #fff;
-}
-
-.dark-mode .active a {
-  color: #000 !important;
-}
-
-.dark-mode .sidebar .active {
-  background-color: #ffffff !important;
-  color: #000 !important;
-}
-
-.dark-mode .sidebar a:hover {
-  background-color: #ffffff !important;
-  color: #000 !important;
-}
-
-.dark-mode .projects-section {
-  background-color: #323232;
-  color: #ffffff;
-}
-
-.dark-mode .projects-section p {
-  color: #ffffff;
-}
-
-.dark-mode .projects-sectionp {
-  color: #ffffff;
-}
-
-.dark-mode .welcome-postsbanner {
-  background-color: #323232;
-  color: #fff;
-}
-
-.dark-mode .welcome-postsbanner p {
-  color: #fff;
-}
-
-.dark-mode .post {
-  color: #fff;
-  background-color: #1f1f1f;
-}
-
-/*Параметры темной темы*/
-
 nav .slider {
   display: flex;
 }
@@ -1025,8 +1042,8 @@ nav .slider {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -1037,16 +1054,16 @@ nav .slider {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #2196f3;
 }
 
 input:checked + .slider:before {
@@ -1064,127 +1081,338 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+.infoblock {
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+.infoblock img {
+  width: 200px;
+  height: 200px;
+}
+
+.helloimg {
+  width: 50px;
+  height: 50px;
+  vertical-align: -5px;
+}
+
+.infoblock h1 {
+  font-size: 40px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* Анимация для появления элемента слева */
+@keyframes leftMove {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.left-animation {
+  overflow: hidden !important;
+  animation: leftMove 2s ease-in-out forwards;
+}
+
+/* Анимация для появления элемента справа */
+@keyframes rightMove {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.right-animation {
+  overflow: hidden !important;
+  animation: rightMove 2s ease-in-out forwards;
+}
+
+/* Анимация для появления элемента сверху */
+@keyframes topMove {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.top-animation {
+  overflow: hidden !important;
+  animation: topMove 2s ease-in-out forwards;
+}
+
+.posttitle {
+  font-size: 40px;
+}
+
+.containermax1200 ul {
+  margin: 10px;
+}
+
+/* Анимация для появления элемента снизу */
+@keyframes bottomMove {
+  from {
+    overflow: hidden;
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.bottom-animation {
+  overflow: hidden !important;
+  animation: bottomMove 2s ease-in-out forwards;
+}
+
+@keyframes opcanimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.opacity-animation {
+  overflow: hidden !important;
+  animation: opcanimation 0.5s ease-in-out forwards;
+}
+
+.overflow-hidden {
+  overflow-x: hidden;
+}
 
 /*Адаптация под мобильные устройства*/
 
-  @media screen and (max-width: 1250px) {
-    img {
-      width: 100%;
-    }
+@media screen and (max-width: 1250px) {
+  img {
+    width: 100%;
+  }
 
-    .icon {
-      width: 80px !important;
-    }
+  .homebanner iframe {
+    width: 100%;
+    border: none;
+    transform: rotateY(0deg);
+    transform-origin: right center;
+  }
 
-    .maystyletextaera {
-      height: 60px;
-    }
+  .homebanner .right-section {
+    padding: 0 !important;
+  }
 
-    
-    iframe {
-      width: 100%; /* Ширина на мобильных устройствах */
-      height: auto; /* Автоматическая высота для сохранения пропорций */
-    }
-    
-    .menu-icon {
-      display: block;
-      cursor: pointer;
-    }
-  
-    input[type="checkbox"] {
-      display: none;
-    }
-  
-    input[type="checkbox"]:checked ~ nav {
-      display: block;
-    }
-  
-    nav ul {
-      display: block;
-      text-align: center;
-    }
-  
-    nav ul li {
-      display: block;
-      margin: 10px 0;
-    }
+  .infoblock h1 {
+    font-size: 35px;
+  }
 
-    header {
-      padding: 1px 40px;
-    }
+  .homebanner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
 
-    .news-card {
-      margin: 0 10px 20px;
-      width: 100% !important;
-    }
+  .icon {
+    width: 80px !important;
+  }
 
-    .playlists-card {
-      margin: 0 10px 20px;
-      width: 100% !important;
-    }
+  .maystyletextaera {
+    height: 60px;
+  }
 
-    .projects-card {
-      margin: 0 10px 20px;
-      width: 100% !important;
-    }
+  iframe {
+    width: 400px !important;
+    height: 300px;
+  }
 
-    .hidepc {
-      display: none !important
-    }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
 
-    .hidemobile {
-      display: flex;
-      flex-direction: row-reverse;
-      cursor: pointer;
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked ~ nav {
+    display: block;
+  }
+
+  nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  header {
+    padding: 1px 40px;
+  }
+
+  .news-card {
+    margin: 0 10px 20px;
+    width: 100% !important;
+  }
+
+  .playlists-card {
+    margin: 0 10px 20px;
+    width: 100% !important;
+  }
+
+  .projects-card {
+    margin: 0 10px 20px;
+    width: 100% !important;
+  }
+
+  .hidepc {
+    display: none !important;
+  }
+
+  .hidemobile {
+    display: flex;
+    flex-direction: row-reverse;
+    cursor: pointer;
   }
 
   .projects-section {
-    padding: 15px; /* Отступы */
+    padding: 15px;
     border-radius: 8px;
   }
-  
+
   .projects-info {
     max-width: 80%;
     text-align: start;
   }
-  
+
   .projects-info h1 {
     font-size: 20px;
     margin-bottom: 10px;
   }
-  
+
   .projects-info p {
     font-size: 16px;
     color: #666666;
     margin-bottom: 20px;
   }
-  
+
   .projects-info a {
     font-size: 14px;
     color: #007bff;
     text-decoration: none;
     transition: color 0.3s;
   }
-  
+
   .projects-info a:hover {
     color: #0056b3;
   }
-  
+
   .project-image {
     max-width: 50%;
     text-align: center;
   }
-  
+
   .project-image img {
     align-items: center;
-    width: 100%; /* Занимает всю доступную ширину */
-    max-width: 200px; /* Ограничиваем максимальную ширину изображения */
+    width: 100%;
+    max-width: 200px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; /* Отступ сверху */
-  }
-  
-  
+    margin-top: 20px;
   }
 
-  
+  .mynameis,
+  .ageandcity,
+  .learnandlanguage,
+  .titlesteck,
+  .steck {
+    width: 100%;
+  }
+
+  /*infobanner*/
+  .infobanner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .infobanner .left-section {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+  }
+
+  .infobanner .right-section {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    flex-basis: 45%;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+  }
+
+  .infobanner .video-container {
+    position: relative;
+    perspective: 1000px;
+  }
+
+  .infobanner iframe {
+    width: 100%;
+    border: none;
+    transform: rotateY(-10deg);
+    transform-origin: right center;
+    transition: 0.5s;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.728);
+  }
+
+  .infobanner iframe:hover {
+    width: 100%;
+    border: none;
+    transform: rotateY(0deg);
+    transform-origin: right center;
+  }
+
+  .infobanner .video-angle {
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border: 1px solid #000000;
+  }
+
+  .infobanner .social-buttons {
+    margin-top: 20px;
+  }
+
+  .infobanner .left-section img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .button-group {
+    justify-content: center;
+  }
+  /*end-infobanner*/
+}

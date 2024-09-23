@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="image/mainlogo.png">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/fonts.css">
+  <link href="styles/#" rel="stylesheet" id="theme-link">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,1,0" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
@@ -19,9 +20,7 @@
               <li><a href="index.html" class="material-symbols-outlined navigation-list-name">home<span class="fontnav">Главная</span></a></li>
               <li><a href="projects.html" class="material-symbols-outlined navigation-list-name">terminal<span class="fontnav">Проекты</span></a></li>
               <li><a href="blog.html" class="material-symbols-outlined navigation-list-name active">post<span class="fontnav">Блог</span></a></li>
-              <li><a href="guides.html" class="material-symbols-outlined navigation-list-name">book<span class="fontnav">Гайды</span></a></li>
-              <li><a href="firmware.html" class="material-symbols-outlined navigation-list-name">android<span class="fontnav">Прошивки</span></a></li>
-              <li><a href="utilities.html" class="material-symbols-outlined navigation-list-name">view_cozy<span class="fontnav">Утилиты</span></a></li>
+              <li><a href="soft.html" class="material-symbols-outlined navigation-list-name">view_cozy<span class="fontnav">Софт</span></a></li>
               <li><a href="info.html" class="material-symbols-outlined navigation-list-name">info<span class="fontnav">Инфо</span></a></li>
               <li><a onclick="showDialog('dialog-settings')" class="material-symbols-outlined navigation-list-name">settings<span class="fontnav">Настройки</span></a></li>
             </ul>
@@ -33,105 +32,258 @@
       </header>
       
   <main>
-    <section class="welcome-postsbanner">
-      <div class="container">
-        <h1>Добро пожаловать на наш блог!</h1>
-        <p>Здесь вы найдете последние новости, интересные статьи и многое другое.</p>
+    <section class="infoblock opacity-animation">
+      <img src="image/logo_about.png" alt="logo">
+      <h1>Добро пожаловать на наш блог!</h1>
+      <p>Здесь вы найдете последние новости, интересные статьи и многое другое.</p>
+    </section>
+
+    <section class="universal">
+      <div class="universal-container">
+        <div class="universal-card leftandright" onclick="document.location='posts/howtousemiflash.html'">
+          <h3>Как пользоваться MiFlash</h3>
+          <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+        </div>
+        <div class="universal-card leftandright" onclick="showDialog('dialog-risingos')">
+          <h3>Как прошиться на RisingOS 1.1</h3>
+          <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+        </div>
+        <div class="universal-card leftandright" onclick="showDialog('dialog-arrowos')">
+          <h3>Как прошиться на ArrowOS 13.1 Android 13</h3>
+          <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+        </div>
       </div>
     </section>
-  
 
-    <section class="posts-section">
-      <div class="container">
-        <h2>Последние посты</h2>
-        <div class="post">
-          <h1>Как использовать MiFlash и где скачать прошивку на свой Xiaomi, Redmi и POCO</h1>
-          <br>
-          <iframe src="https://www.youtube.com/embed/XxRn7fhNuag?si=_IKc8zz0zZW7RrY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-
-        <div class="post">
-          <h1>Прошиваем Redmi 9A на Arrow OS 13.1 VANILLA UNOFFICIAL</h1>
-          <br>
-          <iframe src="https://www.youtube.com/embed/0PxVyRSF-K8?si=CWtqGtzGKokzmi4a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-
-      <div class="post">
-        <h1>Моё первое приложение Rivixal Clock 1.0 Official Release</h1>
-        <br>
-        <iframe src="https://www.youtube.com/embed/_setl1Mi6Fs?si=axtWxxlZccjMinsU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-
-      <div class="post">
-        <h1>MIUI Recovery Simulator на JS + CSS + HTML</h1>
-        <br>
-        <iframe src="https://www.youtube.com/embed/049mCzeF2-Q?si=G2WL81hA2VMcyA8n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-
-      <div class="post">
-        <h1>Прошился на RisingOS 1.1 на телефоне Redmi Note 11 Pro 4G • Как прошить Redmi Note 11 Pro 4G ?</h1>
-        <br>
-        <iframe src="https://www.youtube.com/embed/0LFrmC2SXBw?si=RWfCCkysZzbG0jj-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-
-      <div class="post">
-        <h1>Что означает эти индексы в версий MIUI ?</h1>
-        <br>
-        <iframe src="https://www.youtube.com/embed/qIZs81KUZ84?si=O6kki0njIMDi-Xr3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-
-      <div class="post">
-        <h1>Вертикальное видео | Установил MIUI 14 на Redmi Note 11 Pro с индексом EU, Что нового?</h1>
-        <br>
-        <iframe src="https://www.youtube.com/embed/aLNoA11lw0E?si=1RGFYCpJemaCxxiq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-
-      <div class="post">
-        <h1>MIUI 13 | Как установить новые виджеты на Индонезийской прошивке MIUI? Самый простой способ на 100%</h1>
-        <br>
-        <iframe src="https://www.youtube.com/embed/MGUtPjRbesA?si=TYQ64ihMD4qerlh7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-      </div>
-    </section>
-    
-    <div class="sidebar">
-        <a id="closeBtn" onclick="closeSidebar()" class="material-symbols-outlined navigation-list-name">close<span class="fontnav">Закрыть меню</span></a>
-        <br>
-        <a href="index.html" class="material-symbols-outlined navigation-list-name">home<span class="fontnav">Главная</span></a>
-        <a href="projects.html" class="material-symbols-outlined navigation-list-name">terminal<span class="fontnav">Проекты</span></a>
-        <a href="blog.html" class="material-symbols-outlined navigation-list-name active">post<span class="fontnav">Блог</span></a>
-        <a href="guides.html" class="material-symbols-outlined navigation-list-name">book<span class="fontnav">Гайды</span></a>
-        <a href="firmware.html" class="material-symbols-outlined navigation-list-name">android<span class="fontnav">Прошивки</span></a>
-        <a href="utilities.html" class="material-symbols-outlined navigation-list-name">view_cozy<span class="fontnav">Утилиты</span></a>
-        <a href="info.html" class="material-symbols-outlined navigation-list-name">info<span class="fontnav">Инфо</span></a>
-        <a onclick="showDialog('dialog-settings')" class="material-symbols-outlined navigation-list-name">settings<span class="fontnav">Настройки</span></a>
-    </div>
-
-    <div id="dialog-settings" class="dialog">
+    <!--Window--->
+    <div id="dialog-kakispolzovatmiflash" class="dialog">
       <div class="dialog-content">
-        <span class="close" onclick="closeDialog('dialog-settings')">&times;</span>
-        <h1>Настройки</h1>
+        <span class="close" onclick="closeDialog('dialog-kakispolzovatmiflash')">&times;</span>
+        <h1>Как использовать MiFlash</h1>
+        <p>Статья была созданна в 11/03/2024 Время 23:45</p>
         <br>
         <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
         <br>
         <div class="container">
-          <div class="leftandright">
-            <h1>Сменить тему</h1>
-            <label class="switch">
-              <input type="checkbox" id="themeToggle">
-              <span class="slider round"></span>
-            </label>
-          </div>
+          <h1>Для начала давайте разберем что за программа MiFlash и для чего она нужна?</h1>
+          <br>
+          <p>MiFlash - это официальное программное обеспечение, созданное компанией Xiaomi для прошивки и восстановления их устройств. Она предоставляет пользователям возможность обновления операционной системы, установки стоковой прошивки, а также восстановления устройства после возможных сбоев в работе. Это полезный инструмент для тех, кто хочет осуществлять техническое обслуживание и модификации своих устройств Xiaomi.</p>
+          <br>
+          <h1>Что для этого требуется?</h1>
+          <br>
+          <ul>
+            <li>Иметь разблокированный загрузчик</li>
+            <li>Иметь силы и терпения</li>
+            <li>И не паниковать, когда идет процесс прошивки</li>
+          </ul>
+          <br>
+          <h1>1. Переход в режим Fastboot</h1>
+          <br>
+          <p>Шаг 1: Перезагрузите устройство</p>
+          <p>Шаг 2: Если экран потемнел, зажмите кнопку качели громкости вниз и включения</p>
+          <p>Шаг 3: Если вы увидели синюю надпись с кролликом (на старых моделях) или просто надпись Fastboot (в новых моделях), то сразу подключаем к компьютеру</p>
+          <img src="assets/kak-ispolzovat'miflash/1.png" alt="Fastboot">
+          <br>
+          <h1>2. Подготовка к прошивке</h1>
+          <br>
+          <p>Шаг 1: Скачиваем подходящую прошивку с сайта <a href="https://miuirom.org">miuirom.org</a></p>
+          <img src="assets/kak-ispolzovat'miflash/2.jpg" alt="MIUIROM">
+          <p>Шаг 2: Открываем TGZ архив с помощью 7Zip</p>
+          <img src="assets/kak-ispolzovat'miflash/3.jpg" alt="Open file with 7Zip">
+          <p>Шаг 3: Открываем архив TAR в 7Zip</p>
+          <img src="assets/kak-ispolzovat'miflash/4.jpg" alt="Open TAR archive">
+          <img src="assets/kak-ispolzovat'miflash/5.jpg" alt="Progress open file">
+          <p>Шаг 4: После чего вы увидете папку с прошивкой, она нам и нужна</p>
+          <img src="assets/kak-ispolzovat'miflash/6.jpg" alt="forder sw">
+          <p>Шаг 5: Создаём прошивку в диске "C:\" и любую папку, называть папку нужно именно английскими буквами папку с русскими буквами называть нельзя, можно так окирпичеть устройство</p>
+          <p>Шаг 6: В Созданную папку, мы перетаскиваем папку с архива. После завершение копирования не трогаем папку</p>
+          <img src="assets/kak-ispolzovat'miflash/7.jpg" alt="created folder for disk C:\">
+          <br>
+          <h1>3. Начинаем процедуру</h1>
+          <br>
+          <p>Шаг 1: Открываем MiFlash, расположение MiFlash также обязательна быть на диске C:\</p>
+          <img src="assets/kak-ispolzovat'miflash/8.jpg" alt="MiFlash">
+          <p>Шаг 2: После открытия, нам нужно нажать на кнопку "refresh" если вы находитесь в режиме Fastboot</p>
+          <img src="assets/kak-ispolzovat'miflash/9.jpg" alt="Refresh">
+          <p>Шаг 3: Когда наше устройство определилось, нам нужно сделать следующее, нам нужно нажать на "select"</p>
+          <p>Шаг 4: Выбираем папку, куда мы её с вами распаковали, у меня к примеру "C:\firmware\name-firmware"</p>
+          <img src="assets/kak-ispolzovat'miflash/10.jpg" alt="sw">
+          <br>
+          <h1>ОЧЕНЬ ВАЖНО!</h1>
+          <br>
+          <h2>clean all and lock - Означает то, что программа после окончания прошивки очищает данные и <b style="color: red;">блокирует загрузчик</b></h2>
+          <h2>save user data - Означает то, что программа после окончания прошивки сохраняет данные, но после перезагрузки <b style="color: red;">вас выкенет в MIUI/ Xiaomi HyperOS Recovery и вам придется очищать данные уже там</b></h2>
+          <h2>clean all - Означает то, что программа после окончания прошивки очищает данные, <b style="color: red;">но не блокирует загрузчик</b></h2>
+          <br>
+          <h1>3. Продолжаем</h1>
+          <br>
+          <p>Шаг 5: После выбора прошивки, мы выбираем пункты "clean all" для очистки данных, но не блокируя загрузчик. Если вам требуется заблокировать загрузчик после прошивки, то нам нужно перевести пункт в "clean all and lock", что это все означает прочтите выше</p>
+          <img src="assets/kak-ispolzovat'miflash/11.jpg" alt="mode">
+          <p>Шаг 6: Если уже все готово, жмем на "flash", чтобы начать процедуру прошивки. Прошивка займет около 550 секунд если не больше или не меньше</p>
+          <img src="assets/kak-ispolzovat'miflash/12.jpg" alt="flash">
+          <br>
+          <h1>Вы можете просмотреть видео на эту тему!</h1>
+          <br>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/XxRn7fhNuag?si=b6FXsjXbI34Fxied" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
         </div>
       </div>
     </div>
 
+    <div id="dialog-risingos" class="dialog">
+      <div class="dialog-content">
+        <span class="close" onclick="closeDialog('dialog-risingos')">&times;</span>
+        <h1>Как прошиться на RisingOS 1.1</h1>
+        <p>Статья была созданна в 11/03/2024 Время 10:45</p>
+        <br>
+        <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
+        <br>
+        <div class="container">
+          <h1>Что для этого требуется?</h1>
+          <br>
+          <ul>
+            <li>Иметь разблокированный загрузчик</li>
+            <li>Иметь силы и терпения</li>
+            <li>И не паниковать, когда идет процесс прошивки</li>
+          </ul>
+          <br>
+          <h1>1. Переход в режим Fastboot</h1>
+          <br>
+          <p>Шаг 1: Перезагрузите устройство</p>
+          <p>Шаг 2: Если экран потемнел, зажмите кнопку качели громкости вниз и включения</p>
+          <p>Шаг 3: Если вы увидели синюю надпись с кролликом (на старых моделях) или просто надпись Fastboot (в новых моделях), то сразу подключаем к компьютеру</p>
+          <br>
+          <h1>2. Подготовка к прошивке</h1>
+          <br>
+          <ul>
+            <li>Шаг 1: Скачайте ADB SDK Platforms tools в <a href="utilities.html">утилитах (Для прошивки Xiaomi, Redmi и POCO)</a></li>
+            <li>Шаг 2: Создайте папку "ADB" в диск "C:\"</li>
+            <li>Шаг 3: Распакуйте ADB SDK Platforms tools в эту же папку</li>
+            <li>Шаг 4: После распаковки в ADB закидываем boot.img в эту же папку</li>
+            <li>Шаг 5: Архив прошивки "risingOS-v1.1-Babylon-202307022242-viva-CORE-COMMUNITY.zip" не распаковываем, нам нужно переименовать её в "flash.zip"</li>
+          </ul>
+          <br>
+          <h1>3. Начинаем процедуру</h1>
+          <br>
+          <ul>
+            <li>Шаг 1: Пишем "fastboot devices" - для определения устройства, если оно определилось, то можно переходить ко второму шагу (если ничего не вышло, вы можете найти в <a href="utilities.html">утилитах (Для прошивки Xiaomi, Redmi и POCO), те самые необходиммые драйвера</a>)</li>
+            <li>Шаг 2: Пишем "fastboot flash boot boot.img" и ждем окончания</li>
+            <li>Шаг 3: После этого мы перезагружаемся в рекавери через команду "fastboot reboot recovery"</li>
+            <li>Шаг 4: Когда мы перешли в Recovery, то мы нажимаем на "Apply update" - "Apply from ADB" и после этих действий, мы переходим к компьютеру</li>
+            <li>Шаг 5: Пишем "adb sideload flash.zip" и ждем окончания установки</li>
+            <li>Шаг 6: После всех этих действий нам нужно выполнить "Factory reset" - "Format data/factory reset" - "Format Data"</li>
+            <li>Последний шаг: Нам нужно нажать на "Reboot system now" и ждать перезагрузки девайса</li>
+          </ul>
+          <br>
+          <h1>Вы можете просмотреть видео на эту тему!</h1>
+          <br>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/0LFrmC2SXBw?si=91vnK271rAM2t3I1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="dialog-arrowos" class="dialog">
+      <div class="dialog-content">
+        <span class="close" onclick="closeDialog('dialog-arrowos')">&times;</span>
+        <h1>Как прошиться на ArrowOS 13.1 Android 13</h1>
+        <p>Статья была созданна в 11/03/2024 Время 10:45</p>
+        <br>
+        <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
+        <br>
+        <div class="container">
+          <h1>Что для этого требуется?</h1>
+          <br>
+          <ul>
+            <li>Иметь разблокированный загрузчик</li>
+            <li>Иметь силы и терпения</li>
+            <li>И не паниковать, когда идет процесс прошивки</li>
+          </ul>
+          <br>
+          <h1>1. Переход в режим Fastboot</h1>
+          <br>
+          <p>Шаг 1: Перезагрузите устройство</p>
+          <p>Шаг 2: Если экран потемнел, зажмите кнопку качели громкости вниз и включения</p>
+          <p>Шаг 3: Если вы увидели синюю надпись с кролликом (на старых моделях) или просто надпись Fastboot (в новых моделях), то сразу подключаем к компьютеру</p>
+          <br>
+          <h1>2. Подготовка к прошивке</h1>
+          <br>
+          <ul>
+            <li>Шаг 1: Скачайте ADB SDK Platforms tools в <a href="utilities.html">утилитах (Для прошивки Xiaomi, Redmi и POCO)</a></li>
+            <li>Шаг 2: Создайте папку "ADB" в диск "C:\"</li>
+            <li>Шаг 3: Распакуйте ADB SDK Platforms tools в эту же папку</li>
+            <li>Шаг 4: После распаковки в ADB закидываем recovery.img в эту же папку</li>
+          </ul>
+          <br>
+          <h1>3. Начинаем процедуру</h1>
+          <br>
+          <ul>
+            <li>Шаг 1: Пишем "fastboot devices" - для определения устройства, если оно определилось, то можно переходить ко второму шагу (если ничего не вышло, вы можете найти в <a href="utilities.html">утилитах (Для прошивки Xiaomi, Redmi и POCO), те самые необходиммые драйвера</a>)</li>
+            <li>Шаг 2: Пишем "fastboot flash recovery recovery.img" и ждем окончания</li>
+            <li>Шаг 3: После этого мы перезагружаемся в рекавери через команду "fastboot reboot recovery"</li>
+            <li>Шаг 4: После загрузки рекавери нам нужно подключить устройство к компьютеру и скинуть в папку "Fox" 3 Архива кроме "OrangeFox"</li>
+            <li>Шаг 5: Сначала нужно шить архив "fw_dandelion_V12.5.9.0.RCDINXM", потом "Arrow-v13.1-blossom-UNOFFICIAL-20230910-VANILLA"</li>
+            <li>Шаг 6: После этого нам нужно вновь перезагрузиться в рекавери</li>
+            <li>Шаг 7: Теперь остались гаппсы прошить "NikGapps-core-arm64-13-20231107-signed"</li>
+            <li>Шаг 8: Остались последние штрихи, нам нужно перейти в "Очистка" - "Очистить Data" - Написать "yes". Потом переходим в "Очистка" - "Cache" и подтверждаем это действие, после чего мы перезагружаем наш телефон.</li>
+          </ul>
+          <br>
+          <h1>Вы можете просмотреть видео на эту тему!</h1>
+          <br>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/0PxVyRSF-K8?si=NwjIu9yzINYZ0C57" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="sidebar">
+      <a id="closeBtn" onclick="closeSidebar()" class="material-symbols-outlined navigation-list-name">close<span class="fontnav">Закрыть меню</span></a>
+      <br>
+      <a href="index.html" class="material-symbols-outlined navigation-list-name">home<span class="fontnav">Главная</span></a>
+      <a href="projects.html" class="material-symbols-outlined navigation-list-name">terminal<span class="fontnav">Проекты</span></a>
+      <a href="blog.html" class="material-symbols-outlined navigation-list-name active">post<span class="fontnav">Блог</span></a>
+      <a href="soft.html" class="material-symbols-outlined navigation-list-name">view_cozy<span class="fontnav">Софт</span></a>
+      <a href="info.html" class="material-symbols-outlined navigation-list-name">info<span class="fontnav">Инфо</span></a>
+      <br>
+      <a onclick="toggleTheme('light')" id="dark-theme-container" class="material-symbols-outlined navigation-list-name lmode">light_mode</span><span class="fontnav">Светлая тема</span></a>
+      <a onclick="toggleTheme('dark')" id="dark-theme-container" class="material-symbols-outlined navigation-list-name dmode">dark_mode</span><span class="fontnav">Темная тема</span></a>
+      <a onclick="autoTheme('auto')" id="auto-theme-container" class="material-symbols-outlined navigation-list-name">motion_photos_auto</span><span class="fontnav">Автоматичекский выбор</span></a>
+  </div>
+
+  <div id="dialog-settings" class="dialog">
+    <div class="dialog-content">
+      <span class="close" onclick="closeDialog('dialog-settings')">&times;</span>
+      <h1>Настройки</h1>
+      <br>
+      <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
+      <br>
+      <div class="container">
+        <h1>Сменить тему</h1>
+        <section class="universal">
+          <div class="universal-container">
+            <div class="universal-card leftandright lmode" onclick="toggleTheme('light')" id="dark-theme-container">
+              <h3>Светлая тема</h3>
+              <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+            </div>
+            <div class="universal-card leftandright dmode" onclick="toggleTheme('dark')" id="dark-theme-container">
+              <h3>Темная тема</h3>
+              <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+            </div>
+            <div class="universal-card leftandright" onclick="autoTheme('auto')" id="auto-theme-container">
+              <h3>Автоматический выбор</h3>
+              <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
     <script src="script/menu.js"></script>
     <script src="script/themes.js"></script>
     <script src="script/dialog.js"></script>
+    <script src="script/mainscript.js"></script>
   </main>
   <footer>
-    <p>&copy; 2024 Rivixal. Все права защищены.</p>
+    <p>&copy; 2024 Rivixal. Все права защищены, исходный код в <a href="https://github.com/Rivixal/rivixal.github.io">Github</a></p>
   </footer>
 </body>
 </html>

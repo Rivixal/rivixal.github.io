@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rivixal - Софт</title>
+  <link rel="shortcut icon" href="image/mainlogo.png">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/fonts.css">
+  <link href="styles/#" rel="stylesheet" id="theme-link">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,1,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <div class="header-container">
+          <h1 class="logo">Rivixal</h1>
+          <nav>
+            <ul class="hidepc">
+              <li><a href="index.html" class="material-symbols-outlined navigation-list-name">home<span class="fontnav">Главная</span></a></li>
+              <li><a href="projects.html" class="material-symbols-outlined navigation-list-name">terminal<span class="fontnav">Проекты</span></a></li>
+              <li><a href="blog.html" class="material-symbols-outlined navigation-list-name">post<span class="fontnav">Блог</span></a></li>
+              <li><a href="soft.html" class="material-symbols-outlined navigation-list-name active">view_cozy<span class="fontnav">Софт</span></a></li>
+              <li><a href="info.html" class="material-symbols-outlined navigation-list-name">info<span class="fontnav">Инфо</span></a></li>
+              <li><a onclick="showDialog('dialog-settings')" class="material-symbols-outlined navigation-list-name">settings<span class="fontnav">Настройки</span></a></li>
+            </ul>
+            <ul class="hidemobile">
+              <li><a class="material-symbols-outlined navigation-list-name" id="morem">menu<span class="fontnav">Меню</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+  <main>
+    <section class="infoblock opacity-animation">
+      <img src="image/utilities.png" alt="logo">
+      <h1>Софт</h1>
+      <p>На данной странице вы обнаружите требуемое программное обеспечение.</p>
+    </section>
+    <section class="universal">
+      <br><br>
+      <div class="universal-container">
+        <div class="universal-card leftandright" onclick="showDialog('dialog-kitstart')">
+          <h3>Начальный пак для Windows</h3>
+          <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+        </div>
+        <div class="universal-card leftandright" onclick="showDialog('dialog-viafirmware')">
+          <h3>Для прошивки Xiaomi, Redmi и POCO</h3>
+          <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+        </div>
+        <div class="universal-card leftandright" onclick="showDialog('dialog-testforwindows')">
+          <h3>Тестирование железа ПК</h3>
+          <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+        </div>
+        <div class="universal-card leftandright" onclick="showDialog('dialog-utilitiesforwindows')">
+          <h3>Утилиты для Windows</h3>
+          <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+        </div>
+        <div class="universal-card leftandright" onclick="showDialog('dialog-drivers')">
+          <h3>Драйвера</h3>
+          <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+        </div>
+        <div class="universal-card leftandright" onclick="showDialog('dialog-firmware')">
+          <h3>Прошивки из канала Rivixal</h3>
+          <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+        </div>
+      </div>
+    </section>
+
+    <div class="sidebar">
+      <a id="closeBtn" onclick="closeSidebar()" class="material-symbols-outlined navigation-list-name">close<span class="fontnav">Закрыть меню</span></a>
+      <br>
+      <a href="index.html" class="material-symbols-outlined navigation-list-name">home<span class="fontnav">Главная</span></a>
+      <a href="projects.html" class="material-symbols-outlined navigation-list-name">terminal<span class="fontnav">Проекты</span></a>
+      <a href="blog.html" class="material-symbols-outlined navigation-list-name">post<span class="fontnav">Блог</span></a>
+      <a href="soft.html" class="material-symbols-outlined navigation-list-name active">view_cozy<span class="fontnav">Софт</span></a>
+      <a href="info.html" class="material-symbols-outlined navigation-list-name">info<span class="fontnav">Инфо</span></a>
+      <br>
+      <a onclick="toggleTheme('light')" id="dark-theme-container" class="material-symbols-outlined navigation-list-name lmode">light_mode</span><span class="fontnav">Светлая тема</span></a>
+      <a onclick="toggleTheme('dark')" id="dark-theme-container" class="material-symbols-outlined navigation-list-name dmode">dark_mode</span><span class="fontnav">Темная тема</span></a>
+      <a onclick="autoTheme('auto')" id="auto-theme-container" class="material-symbols-outlined navigation-list-name">motion_photos_auto</span><span class="fontnav">Автоматичекский выбор</span></a>
+  </div>
+
+    <!--Window--->
+    <div id="dialog-kitstart" class="dialog">
+      <div class="dialog-content">
+        <span class="close" onclick="closeDialog('dialog-kitstart')">&times;</span>
+        <h1>Начальный пак для Windows</h1>
+        <br>
+        <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
+        <br>
+        <div class="container">
+          <h1>Браузеры</h1>
+          <p>На ваш любой вкус</p>
+          <section class="universal">
+            <div class="universal-container">
+              <div class="universal-card leftandright" onclick="document.location='https://www.google.com/intl/ru/chrome/'">
+                <h3>Google Chrome</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://www.mozilla.org/ru/firefox/new/'">
+                <h3>Firefox</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://www.waterfox.net/'">
+                <h3>Waterfox</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://www.mypal-browser.org/'">
+                <h3>MyPal</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+            </div>
+          </section>
+          <h1>Остальные программы</h1>
+          <section class="universal">
+            <div class="universal-container">
+              <div class="universal-card leftandright" onclick="document.location='https://www.videolan.org/vlc/index.ru.html'">
+                <h3>VLC (Видео/Аудиоплеер)</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://www.7-zip.org/'">
+                <h3>7Zip (Архиватор)</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://www.qbittorrent.org/'">
+                <h3>qBittorrent (Торрент-трекер)</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://ru.libreoffice.org/'">
+                <h3>Libreoffice (Пакет офисных программ)</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://www.xnview.com/en/'">
+                <h3>XnView (Просмотр фото)</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div id="dialog-viafirmware" class="dialog">
+      <div class="dialog-content">
+        <span class="close" onclick="closeDialog('dialog-viafirmware')">&times;</span>
+        <h1>Для перепрошивки Xiaomi, Redmi и POCO</h1>
+        <br>
+        <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
+        <br>
+          <section class="universal">
+            <div class="universal-container">
+              <div class="universal-card leftandright" onclick="document.location='https://drive.google.com/file/d/1fY9eTrv2B5yXJKio0RYuIFTPK6HiCtoE/view'">
+                <h3>MiFlash <br> Для установки стоковой прошивки MIUI / Xiaomi HyperOS</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://drive.google.com/file/d/1Ru51cL9v63sNq0vCsHiqJWMg3cEGP4Bh/view'">
+                <h3>MiFlashUnlock <br> Для разблокировки загрузчика официальным путем</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://miuirom.org/ru'">
+                <h3>MIUIROM <br> Сайт для скачивания оригинальных прошивок</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://drive.google.com/file/d/1-HdPQ5QAgwX4xYVRrG3r1zf64VxZlhtz/view'">
+                <h3>Android SDK Platform Tools <br> Установка кастомных прошивок</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://drive.google.com/file/d/1rFPD0FfVUuIfR5UBBaQqSBsiF6t15_YD/view'">
+                <h3>Android ADB Driver <br> Драйвера для работы с Android Debug Bridge</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://drive.google.com/file/d/17s4BmqXYjZYdF1VOwaiAU57OY706QbdR/view?pli=1'">
+                <h3>Mediatek Unlocker bootloader <br> <a href="https://4pda.to/forum/index.php?act=findpost&pid=114068420&anchor=Spoil-114068420-1">Перед применением, стоит посетить 4PDA</a></h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+    <div id="dialog-testforwindows" class="dialog">
+      <div class="dialog-content">
+        <span class="close" onclick="closeDialog('dialog-testforwindows')">&times;</span>
+        <h1>Тестирование железа ПК</h1>
+        <br>
+        <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
+        <br>
+          <section class="universal">
+            <div class="universal-container">
+              <div class="universal-card leftandright" onclick="document.location='https://crystalmark.info/en/software/crystaldiskinfo/'">
+                <h3>Crystaldiskinfo <br> Отображение здоровья на жестком диске и на SSD</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://www.cpuid.com/softwares/cpu-z.html'">
+                <h3>CPU-Z <br> Отображает расширенные характеристики</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://www.aida64.com/downloads'">
+                <h3>AIDA64<br> Отображает расширенные характеристики</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://geeks3d.com/furmark/'">
+                <h3>FurMark <br> Стресс-тест для видеокарты</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://crystalmark.info/en/software/crystaldiskmark/'">
+                <h3>Crystaldiskmark <br> Тестирование производительности носителей информаций</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+    <div id="dialog-utilitiesforwindows" class="dialog">
+      <div class="dialog-content">
+        <span class="close" onclick="closeDialog('dialog-utilitiesforwindows')">&times;</span>
+        <h1>Утилиты для Windows</h1>
+        <br>
+        <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
+        <br>
+          <section class="universal">
+            <div class="universal-container">
+              <div class="universal-card leftandright" onclick="document.location='http://wntsetup.ru/'">
+                <h3>WinNTSetup <br> Альтернативный установщик Windows, можно установить из Windows PE или внутри системы на другой диск</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='http://cdslow.org.ru/ntpwedit/'">
+                <h3>NTPWEdit <br> Предназначен для смены паролей Windows на случай если вы забыли его, её можно исопльзовать только через Windows PE и рекомендую использовать его не во вред другим пользователям.</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='http://emptyloop.com/unlocker/'">
+                <h3>Unlocker <br> Снимает блокировку на удаление или изменение определенного файла</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://simpleunlocker.ds1nc.ru/'">
+                <h3>SimpleUnlocker <br> Программа "Мултитул" предназначенная для простой разблокировки Windows от вирусов (Вкратце, это почти один и тот-же Unlocker но с расширенным функционалом)</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='http://www.angusj.com/resourcehacker/'">
+                <h3>Resource Hacker <br> Программа предназначенна для редактирования ресурсов в исполняемых файлах формата PE, которые используется в ОС Windows *.exe *.dll</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://explorerplusplus.com/download'">
+                <h3>Explorer++ <br> Программа предназначена для открытий директорий, файлов внутри WindowsPE и является альтернативным проводником Windows</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://processhacker.sourceforge.io/'">
+                <h3>Process Hacker <br> Улучшенная дистепчер задач с большими фунциями, но многие вирусы блокируют эту программу.</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://notepad-plus-plus.org/downloads/'">
+                <h3>Notepad++ <br> Улучшенная версия блокнота с огромным функционалом</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div id="dialog-firmware" class="dialog">
+        <div class="dialog-content">
+          <span class="close" onclick="closeDialog('dialog-firmware')">&times;</span>
+          <h1>Прошивки из канала Rivixal</h1>
+          <p>Прошивки которые использовались в видео на канале Rivixal</p>
+          <br>
+          <h2><b>Помните! Если что-то случится с вашим устройством, то я не несу никакой отвественности за ваше устройство!</b></h2>
+          <br>
+          <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
+          <br>
+          <section class="universal">
+            <div class="universal-container">
+              <div class="universal-card" onclick="document.location='https://t.me/Blossom_Roms/844'">
+                <h3>ArrowOS 13.1 | Android 13</h3>
+                <p>Архитектура: 32-bit</p>
+                <p>Модель: Redmi 9A</p>
+                <p>Совпровождающий: Adarsh x Atul</p>
+                <p>Кодовое имя: Blossom - Dandelion</p>
+                <p>Для платы: Dandelion</p>
+                <p>Баги: Незамеченно</p>
+                <p>Для установки требуется MIUI fw_dandelion_V12.5.9.0.RCDMIXM и Recovery OrangeFox</p>
+              </div>
+              <div class="universal-card" onclick="document.location='https://github.com/Emiferpro/releases/releases/tag/1688337599'">
+                <h3>RisingOS 1.1 | Android 13</h3>
+                <p>Архитектура: 64-bit</p>
+                <p>Модель: Redmi Note 11 Pro 4G</p>
+                <p>Совпровождающий: Emiferpro</p>
+                <p>Кодовое имя: Viva - Babylon</p>
+                <p>Для платы: Viva</p>
+                <p>Баги: 2</p>
+                <br>
+                <p>1 Баг) Forgot to add camera, next build fixed - Emiferpro</p>
+                <p>2 Баг) Происходит постоянная перезагрузка пользовательского интерфейса (SystemUI) и самой операционной системы. - Rivixal</p>
+              </div>
+            </div>
+          </section>
+          </div>
+        </div>
+
+    <div id="dialog-drivers" class="dialog">
+      <div class="dialog-content">
+        <span class="close" onclick="closeDialog('dialog-drivers')">&times;</span>
+        <h1>Драйвера</h1>
+        <br>
+        <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
+        <br>
+          <section class="universal">
+            <div class="universal-container">
+              <div class="universal-card leftandright" onclick="document.location='https://www.acer.com/ac/en/US/content/drivers'">
+                <h3>Acer</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://www.asus.com/support/'">
+                <h3>Asus</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://www.dell.com/support/home/en-us'">
+                <h3>Dell</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://support.hp.com/us-en/drivers'">
+                <h3>HP (Hewlett-Packard)</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://support.lenovo.com/'">
+                <h3>Lenovo</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://www.lg.com/us/support/software-firmware-drivers'">
+                <h3>LG</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://www.msi.com/support/download/'">
+                <h3>MSI</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://pc-dl.panasonic.co.jp/itn/drivers/'">
+                <h3>Panasonic</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://support.razer.com/gaming-laptops'">
+                <h3>Razer</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://www.samsung.com/us/support/downloads/'">
+                <h3>Samsung</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='http://support.toshiba.com/drivers'">
+                <h3>Toshiba</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://www.gigabyte.com/Support'">
+                <h3>Gigabyte</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="document.location='https://www.asrock.com/support'">
+                <h3>ASRock</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div id="dialog-settings" class="dialog">
+        <div class="dialog-content">
+          <span class="close" onclick="closeDialog('dialog-settings')">&times;</span>
+          <h1>Настройки</h1>
+          <br>
+          <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
+          <br>
+          <div class="container">
+            <h1>Сменить тему</h1>
+            <section class="universal">
+              <div class="universal-container">
+                <div class="universal-card leftandright lmode" onclick="toggleTheme('light')" id="dark-theme-container">
+                  <h3>Светлая тема</h3>
+                  <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+                </div>
+                <div class="universal-card leftandright dmode" onclick="toggleTheme('dark')" id="dark-theme-container">
+                  <h3>Темная тема</h3>
+                  <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+                </div>
+                <div class="universal-card leftandright" onclick="autoTheme('auto')" id="auto-theme-container">
+                  <h3>Автоматический выбор</h3>
+                  <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+    <script src="script/menu.js"></script>
+    <script src="script/themes.js"></script>
+    <script src="script/dialog.js"></script>
+    <script src="script/mainscript.js"></script>
+  </main>
+  <footer>
+    <p>&copy; 2024 Rivixal. Все права защищены, исходный код в <a href="https://github.com/Rivixal/rivixal.github.io">Github</a></p>
+  </footer>
+</body>
+</html>

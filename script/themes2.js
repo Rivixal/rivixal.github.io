@@ -21,7 +21,7 @@ function toggleTheme(theme) {
     targetStyleSheet.disabled = true;
 
     // Обновляем атрибут href
-    themeLink.href = `styles/${theme}.css`;
+    themeLink.href = `../styles/${theme}.css`;
 
     // Включаем таблицу стилей немедленно
     targetStyleSheet.disabled = false;

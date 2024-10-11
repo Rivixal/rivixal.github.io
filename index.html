@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реконструкция</title>
+    <link rel="stylesheet" href="system/recovery.css">
+    <style>
+        .reconstruction-message {
+            display: none;
+            opacity: 0;
+            font-size: 10px;
+            color: #ffffff;
+            text-align: center;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: opacity 3s ease-in-out;
+            font-family: monospace;
+        }
+        .show-message {
+            display: block;
+            opacity: 0.3; /* Полупрозрачность */
+        }
+        .hide-message {
+            display: block;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>
+            <img width="30px" src="sample.png" alt="">
+        </center>
+    </div>
+
+    <div id="message" class="reconstruction-message">
+        * Я на реконструкции, <br>
+                            Скоро все починим!
+    </div>
+
+    <script>
+        function toggleMessage() {
+            const message = document.getElementById('message');
+            if (message.classList.contains('show-message')) {
+                message.classList.remove('show-message');
+                message.classList.add('hide-message');
+            } else {
+                message.classList.remove('hide-message');
+                message.classList.add('show-message');
+            }
+        }
+
+        // Показать сообщение через 5 секунд, затем циклически показывать и скрывать
+        setTimeout(function() {
+            document.getElementById('message').classList.add('show-message');
+            
+            setInterval(toggleMessage, 5000); // каждые 5 секунд переключать отображение
+        }, 5000);
+    </script>
+</body>
+</html>

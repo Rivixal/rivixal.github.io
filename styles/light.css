@@ -1,0 +1,584 @@
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+transition: 0.2s;
+background: #f3f3ffc9;
+backdrop-filter: blur(5px);
+}
+
+::-webkit-scrollbar-button{
+background-color: #000;
+}
+
+::-webkit-scrollbar-button:hover { 
+background-color: #4b4b4b;
+}
+
+::-webkit-scrollbar-thumb {
+border: 0.5px solid rgb(255, 255, 255) !important;
+border-color: #4b4b4b;
+background: #4b4b4b;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+border: 0.5px solid rgb(255, 255, 255) !important;
+border-color: #4b4b4b;
+background: #4b4b4b;
+animation-duration: 0.5s;
+}
+
+::-webkit-scrollbar-thumb:active {
+background: #4b4b4b;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-buttons .button:hover {
+  background-color: #0056b3;
+}
+
+.social-buttons .youtube {
+  background-color: #ff0000; /* Цвет YouTube */
+}
+
+.social-buttons .youtube:hover {
+  background-color: #9a0202; /* Цвет YouTube */
+}
+
+.social-buttons .telegram {
+  background-color: #0088cc; /* Цвет Telegram */
+}
+
+.social-buttons .download {
+  background-color: #00a511; /* Скачать */
+}
+
+.social-buttons .download:hover {
+  background-color: #02cc16; /* Скачать */
+}
+
+/* Обновленные стили для секции приветствия */
+
+.homebanner iframe {
+  transition: .5s;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.728);
+}
+
+.homebanner .video-angle {
+  background-color: #ffffff; /* Цвет фона */
+  border: 1px solid #000000; /* Граница */
+}
+
+.infobanner .left-section {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #e5e5e5;
+  border-radius: 10px;
+}
+
+.infobanner .right-section {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #e5e5e5;
+  border-radius: 10px;
+}
+
+.infobanner iframe {
+  transition: .5s;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.728); /* добавим тень для эффекта поднятости */
+}
+
+.infobanner iframe:hover {
+  width: 100%; /* Заполнение всей доступной ширины */
+  border: none; /* Убираем рамку у iframe */
+}
+
+.infobanner .video-angle {
+  background-color: #ffffff; /* Цвет фона */
+  border: 1px solid #000000; /* Граница */
+}
+
+.infobanner .social-buttons {
+  margin-top: 20px; /* Отступ сверху */
+}
+
+.infobanner .left-section img {
+  width: 100px;
+  height: 100px;
+}
+/*end-infobanner*/
+
+.button {
+  color: #ffffff;
+  background-color: #007bff; /* Цвет кнопок */
+  transition: 0.5s;
+}
+
+.button:hover {
+  color: #ffffff;
+  background-color: #16dcff; /* Цвет кнопок */
+}
+
+.home h2 {
+  color: #333;
+}
+
+.home p {
+  color: #666;
+}
+
+header {
+  background-color: #edededcc;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* добавим тень для эффекта поднятости */
+}
+
+.logo {
+  color: #333; /* Цвет лого */
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333; /* Цвет ссылок в меню */
+}
+
+nav ul li a:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.active {
+  background-color: #000000;
+  color: #fff;
+}
+
+
+.container {
+  border-radius: 8px;
+  background-color: #f1f1f1;
+}
+
+.containermax1200 {
+  background-color: #f8f4f4;
+}
+
+.menuw-card {
+  background-color: #e3e3e3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.menuw-card:hover {
+  color: #fff;
+  background-color: #007bff;
+}
+
+footer {
+  background-color: #ffffff00;
+}
+
+/*Новости*/
+.news-card {
+  background-color: #e3e3e3;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-card h3 {
+  color: #333333;
+}
+
+.news-card p {
+  color: #666666;
+}
+
+
+/*Плейлист*/
+
+
+.playlists-card {
+  background-color: #e3e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.color-violet  {
+  background: rgb(63,9,121) !important;
+  color: #fff !important;
+  background: linear-gradient(90deg, rgba(63,9,121,1) 9%, rgba(0,0,0,1) 100%) !important;
+}
+
+.color-multicolor {
+  background: rgb(121,63,9);
+  background: linear-gradient(90deg, rgba(121,63,9,1) 0%, rgba(102,15,191,1) 45%, rgba(0,82,128,1) 48%, rgba(0,86,131,1) 100%); 
+  color: #fff;
+}
+
+.color-onecolor {
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,86,131,1) 100%);
+  color: #fff;
+}
+
+.lmode, .sidebar .lmode {
+  background-color: #434343 !important;
+  color: #fff !important;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 300, 
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.color-bluegradient {
+  background: rgb(0,48,179);
+  background: linear-gradient(90deg, rgba(0,48,179,1) 0%, rgba(0,0,0,1) 100%);
+  color: #fff;
+}
+
+/*Google-icons*/
+.material-symbols-outlined {
+font-variation-settings:
+'FILL' 0,
+'wght' 400,
+'GRAD' 0,
+'opsz' 48;
+font-size: 20px !important;
+}
+
+.material-symbols-outlined:hover {
+font-variation-settings:
+'FILL' 1,
+'wght' 300, 
+'GRAD' 0,
+'opsz' 48
+}
+
+.material-symbols-outlined.active {
+font-variation-settings:
+'FILL' 1,
+'wght' 300, 
+'GRAD' 0,
+'opsz' 48
+}
+
+.navigation-list-name {
+vertical-align: -5px;
+margin: 0 3px 0%  0;
+}
+
+/* Боковое меню */
+.sidebar {
+background-color: #f0f0f0;
+box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+transition: right 0.3s ease-in-out;
+color: #000000;
+}
+
+.sidebar-group {
+  background-color: #f6f6f6;
+}
+
+
+.sidebar a {
+color: #000000;
+transition: 0.3s;
+cursor: pointer;
+}
+
+.sidebar a:hover {
+background-color: #333;
+color: #fff !important;
+}
+
+.sidebar .active {
+background-color: #333;
+color: #fff !important;
+}
+
+.projects-section {
+background-color: #e3e0e0;
+}
+
+.projects-info p {
+color: #666666; /* Цвет текста */
+}
+
+.projects-info a {
+color: #007bff; /* Цвет ссылки */
+transition: color 0.3s; /* Плавное изменение цвета */
+}
+
+.projects-info a:hover {
+color: #0056b3; /* Цвет ссылки при наведении */
+}
+
+.project-image img {
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+.aboutbackground {
+background-color: #e3e0e0;
+}
+
+a {
+  color: rgb(67, 67, 255);
+}
+
+/*Проекты*/
+
+
+.projects-card {
+background-color: #e3e0e0;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+}
+
+.firmware-card {
+background-color: #e3e0e0;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+}
+
+.welcome-postsbanner {
+background-color: #f1f1f1;
+border-radius: 8px;
+}
+
+.welcome-postsbanner p {
+color: #555;
+}
+
+.post {
+background-color: #e3e0e0; /* Цвет фона для каждого поста */
+border-radius: 8px;
+}
+
+.post:nth-child(even) {
+background-color: #e3e0e0; /* Цвет фона для четных постов */
+border-radius: 8px;
+}
+
+/*Диалоговые окна*/
+.dialog-content .container {
+background-color: #fff;
+}
+
+.dialog {
+background-color: rgb(255, 255, 255);
+animation: fadeIn 0.5s ease-in-out;
+}
+
+.dialog-content {
+background-color: #fefefe;
+animation: slideIn 0.3s ease-in-out;
+}
+
+
+.close {
+color: #aaa;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+}
+
+
+/*Универсал*/
+
+
+.universal-card {
+background-color: #e3e3e3;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+}
+
+/*EX*/
+.universalex {
+margin-bottom: 20px;
+overflow: auto;
+width: 100%;
+}
+
+
+.universalex-card {
+background-color: #e3e3e3;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+}
+
+
+.maystyletextaera {
+border-radius: 8px;
+border: solid #000 2px;
+}
+
+.bg3 {
+transition: 0.3s;
+border: solid 1px #ffffff00;
+}
+
+.centerforbanner {
+background-color: #e3e3e3;
+border-radius: 8px;
+transition: 0.3s;
+}
+
+.bg3:hover {
+border: solid 1px #000000;
+}
+
+.slider {
+background-color: #ccc;
+}
+
+.slider:before {
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+input:checked + .slider {
+background-color: #2196F3;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #2196F3;
+}
+
+@media screen and (max-width: 1250px) {
+
+.projects-info p {
+  color: #666666;
+}
+
+.projects-info a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.projects-info a:hover {
+  color: #0056b3;
+}
+
+.project-image {
+  max-width: 50%;
+  text-align: center;
+}
+
+.project-image img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mynameis, .ageandcity, .learnandlanguage, .titlesteck, .steck {
+  width: 100%;
+}
+
+.infobanner .left-section {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #e5e5e5;
+  border-radius: 10px;
+}
+
+.infobanner .right-section {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  flex-basis: 45%;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+}
+
+.infobanner iframe {
+  transform-origin: right center;
+  transition: .5s;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.728);
+}
+
+.infobanner .video-angle {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+/*end-infobanner*/
+}
+
+/* Баннер */
+.banner {
+  background-color: #e6e6e6; /* Более темный фон */
+  color: #000000; /* Контрастный белый текст */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Тень для выделения */
+}
+
+/* Стиль для текста и ссылки в баннере */
+.banner a {
+  color: #362fca; /* Синий цвет для ссылок */
+  text-decoration: none;
+}
+
+.banner a:hover {
+  text-decoration: underline;
+}
+
+/* Стиль для кнопки закрытия */
+.close-btn {
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.dialog-setttings {
+  background-color: rgba(0, 0, 0, 0.733);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.dialog-content-settings {
+  background-color: #fefefe;
+  animation: slideIn 0.3s ease-in-out;
+  border: 1px solid #888;
+}
+
+.logo img {
+  filter: invert(0%);
+  transition: 0.3s;
+}
+
+.logoabout img {
+  filter: invert(0%);
+  transition: 0.3s;
+}
+
+.logo img:hover {
+  filter: invert(100%); /* Инвертировать цвета изображения при наведении */
+}
+
+.projectslogo {
+  filter: invert(0%);
+}
+
+.warning {
+  fill: #000;
+}
+
+.dialog-content-settings .container {
+  background-color: #fff;
+}
+

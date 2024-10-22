@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rivixal - Инфо</title>
+  <link rel="shortcut icon" class="theme-fav" href="image/favicon.svg" media="(prefers-color-scheme: light)">
+  <link rel="shortcut icon" class="theme-fav" href="image/favicon-dark.svg" media="(prefers-color-scheme: dark)">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/fonts.css">
+  <link href="styles/#" rel="stylesheet" id="theme-link">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,1,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+          <a href="https://rivixal.github.io" class="logo">
+            <img src="image/logo.svg" alt="Rivixal">
+          </a>
+      <nav>
+        <ul class="hidepc">
+          <li><a href="index.html" class="material-symbols-outlined navigation-list-name">home<span class="fontnav">Главная</span></a></li>
+          <li><a href="projects.html" class="material-symbols-outlined navigation-list-name">terminal<span class="fontnav">Проекты</span></a></li>
+          <li><a href="blog.html" class="material-symbols-outlined navigation-list-name">post<span class="fontnav">Блог</span></a></li>
+          <li><a href="soft.html" class="material-symbols-outlined navigation-list-name">view_cozy<span class="fontnav">Софт</span></a></li>
+          <li><a href="info.html" class="material-symbols-outlined navigation-list-name active">info<span class="fontnav">Инфо</span></a></li>
+          <li><a onclick="showDialog('dialog-settings')" class="material-symbols-outlined navigation-list-name">settings<span class="fontnav">Настройки</span></a></li>
+        </ul>
+        <ul class="hidemobile">
+          <li><a class="material-symbols-outlined navigation-list-name" id="morem">menu</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+      
+  <main>
+    <div class="infobanner">
+      <div class="left-section opacity-animation" onclick="showDialog('dialog-changelog')">
+        <div class="logo-about">
+          <img src="image/logo.svg" alt="Rivixal">
+        </div>
+        <h1>Версия сайта: 1.3</h1>
+        <p>Последнее обновление 01/10/2024</p>
+        <br>
+        <p>Нажмите сюда, чтобы прочесть список изменений сайта</p>
+      </div>
+      <div class="right-section opacity-animation" onclick="showDialog('dialog-aboutme')">
+        <h1>Привет!</h1>
+        <br>
+        <p>Меня зовут Герман (Мой псевдоним Rivixal, но некоторые знают меня как Maydilsiel), я создатель этого сайта. Данный сайт будет посвящен моему творчеству, моему контенту и многое другое.
+        В основном я выкладываю сюда свои приложения, свои веб-приложения. Также публикую различные прошивки для девайсов, которые подойдут на отлично на ваше устройство и все что связанное с контентом.</p><br>
+        <p>Также я занимаюсь версткой сайтов, учусь на программиста, учусь на Front-End.</p>
+        <br>
+        <p>Нажми сюда, чтобы узнать обо мне подробнее</p>
+      </div>
+    </div>
+
+    <section class="infoblock opacity-animation">
+    <!---->
+
+    </section>
+    <!---->
+          <div class="menuw-card" onclick="showDialog('dialog-myfriends')">
+            <h3>Мои друзья</h3>
+          </div>
+          <div class="menuw-card" onclick="showDialog('dialog-socialmedia')">
+            <h3>Социальные сети</h3>
+          </div>
+          <div class="menuw-card" onclick="showDialog('dialog-addbaner')">
+            <h3>Добавить баннер на свой сайт</h3>
+          </div>
+      </section>
+
+      <section class="gadgets">
+        <div class="leftmaintext">
+          <h1>Мои гаджеты</h1>
+        </div>
+          <div class="menuw-card" onclick="showDialog('dialog-mydevices')">
+            <h3>Телефоны</h3>
+          </div>
+          <div class="menuw-card" onclick="showDialog('dialog-mytablets')">
+            <h3>Планшеты</h3>
+          </div>
+          <div class="menuw-card" onclick="showDialog('dialog-mypc')">
+            <h3>Основной ПК</h3>
+          </div>
+      </section>
+
+      <div id="dialog-aboutme" class="dialog">
+        <div class="dialog-content">
+          <span class="close" onclick="closeDialog('dialog-aboutme')">&times;</span>
+          <h1>Моя Биография</h1>
+          <br>
+          <hr noshade size="4" style="border-radius: 10px;">
+          <br>
+          <div class="container">
+            <h1>Привет!</h1>
+            <p>Меня зовут Герман (Мой псевдоним Rivixal, но некоторые знают меня как Maydilsiel), я создатель этого сайта. Данный сайт будет посвящен моему творчеству, моему контенту и многое другое.
+            В основном я выкладываю сюда свои приложения, свои веб-приложения. Также публикую различные прошивки для девайсов, которые подойдут на отлично на ваше устройство и все что связанное с контентом.</p><br>
+            <p>Еще я занимаюсь версткой сайтов, учусь на программиста, учусь на Front-End.</p>
+            <p>Также я пишу различные программы на языке C# и делаю полезные программки, я их тщательно тестирую чтобы можно использовать их в повседневной жизни, у меня очень много проектов так старых, так и новых. Помимо всего этого я делаю видео на ютубе о моих различных проектах и также различные эксперименты над различными девайсами, а также различными операционнами системами.</p>
+            <br>
+            <h1>С чего я начинал?</h1>
+            <p>Я начинал с самой банальщиной, по типу установки Windows и различными экспериментами, и с эволюциями windows ну и в том духе.</p>
+            <br>
+            <h1>Как появилась идея создать свой сайт?</h1>
+            <p>Идея создать свой собственный сайт зародилась у меня еще в 8-м классе. Я всегда мечтал о платформе, где мог бы делиться своими проектами и писать посты, связанные с моей жизнью и деятельностью. Этот сайт для меня не просто технический инструмент, а творческое пространство, созданное от души, чтобы делиться с вами своими работами и находками.</p>
+            <br>
+            <h1>Мои жизненные цели</h1>
+            <p>Одной из главных целей моей жизни является развитие навыков в создании разнообразных приложений, как для настольных платформ, так и для мобильных устройств. Я стремлюсь разрабатывать программное обеспечение, которое будет полезным и эффективным, будь то небольшие утилиты или крупные приложения с широкой функциональностью.
+              Помимо этого, я хочу углубиться в создание веб-сайтов и веб-приложений. Моя цель – стать профессионалом в этой области, изучая как клиентскую часть, так и бэк-энд. Я хочу разрабатывать веб-сайты с применением различных технологий серверной части, таких как PHP, Node.js, Python и другие, чтобы обрести всесторонние знания в разработке.
+              Для меня важно не просто уметь создавать приложения, но и понимать все аспекты программирования, начиная с проектирования архитектуры системы и заканчивая оптимизацией и безопасностью данных. Это включает в себя постоянное обучение новым технологиям, инструментам и языкам программирования.
+              Я также стремлюсь к тому, чтобы мои проекты были не просто технически грамотными, но и удобными для пользователей. Я верю, что хороший дизайн и продуманная функциональность играют ключевую роль в успешных продуктах.
+              В будущем я планирую не только разрабатывать программные продукты, но и делиться своими знаниями с другими. Возможно, я буду создавать учебные материалы или курсы, помогая начинающим программистам овладевать навыками, которые необходимы для успешной карьеры в IT-сфере. В конечном счете, моя цель – стать профессионалом в разработке приложений и веб-сайтов, который способен решать сложные задачи и создавать качественные продукты, которые принесут пользу многим людям.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="dialog-myfriends" class="dialog">
+        <div class="dialog-content">
+          <span class="close" onclick="closeDialog('dialog-myfriends')">&times;</span>
+          <h1>Мои друзья</h1>
+          <br>
+          <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
+          <br>
+          <div class="container">
+            <section class="universal">
+              <div class="universal-container">
+                <div class="universal-card" onclick="document.location='https://myslivets.com/'">
+                  <h3>Daniel Myslivets</h3>
+                  <p>Перейти на сайт</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://www.youtube.com/@Vladocik'">
+                  <h3>Vladocik 2.0</h3>
+                  <p>Перейти на Youtube канал</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://www.youtube.com/@NWin10'">
+                  <h3>NWin10</h3>
+                  <p>Перейти на Youtube канал</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://www.youtube.com/@CaptainStrannik/'">
+                  <h3>Capitan Strannik</h3>
+                  <p>Перейти на Youtube канал</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://lgrn-arts.ru/'">
+                  <h3>LGRN Arts</h3>
+                  <p>Перейти на сайт</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://ertorworld.com'">
+                  <h3>Ertorworld</h3>
+                  <p>Перейти на сайт</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://ds1nc.ru/'">
+                  <h3>DesConnect</h3>
+                  <p>Перейти на сайт</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://dsys1100.github.io/'">
+                  <h3>dsys1100</h3>
+                  <p>Перейти на сайт</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://ost-sys.github.io/'">
+                  <h3>OST</h3>
+                  <p>Перейти на сайт</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://www.youtube.com/@omagadtdw'">
+                  <h3>DanyaShagalin</h3>
+                  <p>Перейти на Youtube канал</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://www.youtube.com/@thewinmatvey'">
+                  <h3>TheWinMatvey</h3>
+                  <p>Перейти на Youtube канал</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://www.youtube.com/@artosik'">
+                  <h3>ArtOSik</h3>
+                  <p>Перейти на Youtube канал</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://www.youtube.com/@ivancomp_inside'">
+                  <h3>IVAN COMP</h3>
+                  <p>Перейти на Youtube канал</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://www.wave-save.com/'">
+                  <h3>Compuser</h3>
+                  <p>Перейти на сайт</p>
+                  <a href="https://www.youtube.com/@compuser1">Перейти на канал</a>
+                </div>
+                <div class="universal-card" onclick="document.location='https://tinelix.ru/'">
+                  <h3>Tinelix</h3>
+                  <p>Перейти на сайт</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://www.youtube.com/@Alloyd031'">
+                  <h3>Alloyd</h3>
+                  <p>Перейти на Youtube канал</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://www.youtube.com/@localhost_8000'">
+                  <h3>LocalHosted</h3>
+                  <p>Перейти на Youtube канал</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://www.youtube.com/@HappyWin8'">
+                  <h3>HappyWin8</h3>
+                  <p>Перейти на Youtube канал</p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div id="dialog-socialmedia" class="dialog">
+        <div class="dialog-content">
+          <span class="close" onclick="closeDialog('dialog-socialmedia')">&times;</span>
+          <h1>Социальные сети</h1>
+          <br>
+          <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
+          <br>
+          <div class="container">
+            <section class="universal">
+              <div class="universal-container">
+                <div class="universal-card leftandright" onclick="document.location='https://www.youtube.com/channel/UCuNQR4elLSBhAK7MWvAnP3Q'">
+                  <h3>Youtube</h3>
+                  <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+                </div>
+                <div class="universal-card leftandright" onclick="document.location='https://youtube.com/@rivixal'">
+                  <h3>Telegram</h3>
+                  <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+                </div>
+                <div class="universal-card leftandright" onclick="document.location='https://ovk.to/maydilsiel'">
+                  <h3>OpenVK</h3>
+                  <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div id="dialog-addbaner" class="dialog">
+        <div class="dialog-content">
+          <span class="close" onclick="closeDialog('dialog-addbaner')">&times;</span>
+          <h1>Добавить баннер на свой сайт</h1>
+          <br>
+          <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
+          <br>
+          <div class="container centerforbanner">
+            <div>
+              <h1>Наш собственный баннер!</h1>
+              <p><b>Вы можете добавить наш баннер на своем сайте :)</b></p>
+              <div class="outline"></div>
+              <br>
+              <a href="https://rivixal.github.io"><img class="img-fluid bg3" src="https://github.com/Rivixal/Rivixal-Screenshots/blob/main/banner/rivixalbanner.png?raw=true" alt="rivixal"></a>
+              <div class="outline"></div>
+              <br>
+              <textarea class="maystyletextaera touch" disabled="" rows="3" cols="60" name="text">&lt;a href="https://rivixal.github.io"&gt;&lt;img src="https://github.com/Rivixal/Rivixal-Screenshots/blob/main/banner/rivixalbanner.png?raw=true" width="88px" height="31px" alt="rivixal" /&gt;&lt;/a&gt;</textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="dialog-changelog" class="dialog">
+        <div class="dialog-content">
+          <span class="close" onclick="closeDialog('dialog-changelog')">&times;</span>
+          <h1>Список изменений</h1>
+          <br>
+          <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
+          <br>
+
+          <div class="container">
+            <h1>20.10.2024 | Версия сайта 1.3</h1>
+            <ul>
+              <li>
+                <h3>Знакомтесь, новые векторные иконки!</h3>
+                <p>Было принятно мной решения, добавить векторные иконки на сайт, и придать освеженный стиль и наилучший визуал.</p>
+              </li>
+              <li>
+                <h3>Новые баннеры!</h3>
+                <p>Теперь на главной странице, вы сможете увидеть мой главный проект, над которым я чаще всего работаю, также есть баннер на странице "Проекты"</p>
+              </li>
+              <li>
+                <h3>Обновленный вид бокового меню</h3>
+                <p>Теперь в боковом меню, вы можете наблюдать как все упорядочно распаложенно и плотно прилипают друг к другу</p>
+              </li>
+              <li>
+                <h3>Реконструкция</h3>
+                <p>Сайт был полностью реконструирован, теперь он более быстрый и изображения были перенесенны в отдельную репозитироий</p>
+              </li>
+              <li>
+                <h3>Обновленная биография</h3>
+                <p>Теперь есть возможность узнать обо мне больше и узнать о моем увлечений :)</p>
+              </li>
+            </ul>
+            <br>
+            <h1>24/09/2024 | Версия сайта 1.2</h1>
+            <br>
+            <ul>
+              <li>
+                <h3>Новый дизайн главной страницы</h3>
+                <p>Было принято решение кардинально изменить главную страницу: мы обновили главный баннер, теперь с левой стороны размещена информация, а справа – последнее видео с канала.</p>
+              </li>
+              <li>
+                <h3>Приятный шрифт</h3>
+                <p>Шрифт сайта был обновлён, теперь он имеет более официальной и строгий вид.</p>
+              </li>
+              <li>
+                <h3>Переосмысление постов</h3>
+                <p>Теперь посты сделаны не в виде диалоговых окон, а в виде отдельных страниц, где можно увидеть подробно всю информацию при этом, не захламлять общую страницу с блогами.</p>
+              </li>
+              <li>
+                <h3>Усовершенствованная темная тема</h3>
+                <p>Вместо переключателя, было принято решение сделать в виде списка, чтобы удобнее переключаться между темами. Также... теперь темы разделены на отдельные CSS.</p>
+              </li>
+              <li>
+                <h3>Сокращения ссылок</h3>
+                <p>Некоторые пустые ссылки с сайта были убраны, связанно с тем что не нашли связей для получений актуальных ссылок.</p>
+              </li>
+              <li>
+                <h3>Обновленные баннеры</h3>
+                <p>Было принято решение обновить баннеры, теперь они имеют более простой и понятный интерфейс, все вынесли по-центру экрана, и улучшили некоторые ссылки.</p>
+              </li>
+              <li>
+                <h3>Удалены настройки с мобильной адаптаций</h3>
+                <p>Было принято решение удалить настройки с мобильной адаптаций, поскольку появился новый метод смены темы страницы.</p>
+              </li>
+              <li>
+                <h3>Гайды удалены</h3>
+                <p>Было принято решение удалить страницу "Гайды" и перенести в страницу с блогами, так-как я решил что слишком лишняя страница и бессмысленная.</p>
+              </li>
+              <li>
+                <h3>Прошивки удалены</h3>
+                <p>Было принято решение удалить страницу "Прошивки" и перенести в страницу с софтом, так-как я решил что слишком лишняя страница и бессмысленная.</p>
+              </li>
+              <li>
+                <h3>Утилиты переименованны</h3>
+                <p>Было принято решение переименовать страницу "Утилиты" на "Софт", так-как я решил что не только будут храниться страница с утилитами а некоторые полезные приложения.</p>
+              </li>
+              <li>
+                <h3>Страница "Инфо" получила редизайн</h3>
+                <p>Было принято решение переделать страницу Инфо, для улучшений восприятий информаций. Главный баннер теперь имеет левый и правый блок. Влевом блоке показывается вся информация о сайте, а вправом показывается краткая биография обо мне. Также появились новые диалоговые окна о моей коллекций смартфонов и планшетов.</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="container">
+            <h1>17/03/2024 | Версия сайта 1.1.2</h1>
+            <br>
+            <ul>
+              <li>
+                <h3>Исправление и улучшение</h3>
+                <p>Были исправлены баги в интерфейсе</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="container">
+            <ul>
+              <h1>15/03/2024 | Версия сайта 1.1.1</h1>
+              <br>
+              <li>
+                <h3>Исправление и улучшение</h3>
+                <p>Были исправлены баги в интерфейсе и немного улучшили интерфейс</p>
+              </li>
+            </ul>
+          </div>
+          <div class="container">
+            <ul>
+              <h1>15/03/2024 | Версия сайта 1.1.0</h1>
+              <br>
+              <li>
+                <h3>Темная тема</h3>
+                <p>Теперь вместо светлой, вы можете выбрать темную и светлую тему</p>
+              </li>
+              <li>
+                <h3>Исправление и улучшение</h3>
+                <p>Были исправлены баги в интерфейсе и немного улучшили интерфейс</p>
+              </li>
+            </ul>
+          </div>
+          <div class="container">
+            <ul>
+              <h1>14/03/2024 | Версия сайта 1.0.0</h1>
+              <br>
+              <li>
+                <h3>Новый стиль!</h3>
+                <p>Весь дизайн страницы был переработан с нуля, с учетом оптимизации для устройств с ограниченными ресурсами и корректной адаптации под различные мобильные устройства.</p><br>
+                <p>Мы решили отказаться от использования синего и фиолетового как основных цветов в дизайне. Вместо этого мы выбрали более классические цвета - черный и белый, чтобы придать странице более универсальный и сбалансированный облик.</p><br>
+                <p>Мы оставили стандартный синий цвет для ссылок, чтобы обеспечить легкость их обнаружения пользователем.</p><br>
+                <p>Теперь диалоговые окна лишены прозрачности, а полосы прокрутки были оптимизированы. При переходе на страницу диалога автоматически скрывается основная полоса прокрутки, чтобы пользователи могли полностью сконцентрироваться на содержимом диалога.</p><br>
+                <p>Мы изменили стиль дизайна, уменьшив сгругления элементов, чтобы добавить строгости и солидности общему виду сайта.</p><br>
+                <p>Мы пересмотрели анимации карточек: теперь они взлетают в воздух при наведении курсора или нажатии, придавая интерактивности и динамизма пользовательскому опыту.</p><br>
+                <p>Мы создали новое меню для мобильных устройств, которое стало более простым и минималистичным, обеспечивая легкость использования и лаконичный внешний вид.</p><br>
+              </li>
+              <br>
+              <li>
+                <h2>Главная страница</h2>
+                <p>Мы переработали главную страницу, добавив на нее приветственный баннер, раздел с актуальными плейлистами с нашего YouTube-канала, блок с новостями с сайта, а также баннеры партнерских сайтов, обеспечивая более информативный и разнообразный контент для пользователей.</p>
+              </li>
+              <br>
+              <li>
+                <h2>Страница "Проекты"</h2>
+                <p>Страница "Проекты" была переработана: теперь вместо вертикальных блоков используются горизонтальные, при этом на мобильных устройствах блоки отображаются вертикально. Это обеспечивает более удобное просмотр и навигацию на различных устройствах.</p>
+              </li>
+              <br>
+              <li>
+                <h2>Новая страница "Блог"</h2>
+                <p>На странице "Блог" теперь будут размещаться видео с нашего канала.</p>
+              </li>
+              <br>
+              <li>
+                <h2>Новая страница "Прошивки"</h2>
+                <p>На странице "Прошивки" теперь будут размещаться прошивки которые снимались в видео.</p>
+              </li>
+              <br>
+              <li>
+                <h2>Страница "Инфо"</h2>
+                <p>Страница "Инфо" была обновлена: теперь она содержит четыре блока, расположенные горизонтально, но на мобильных устройствах блоки будут отображаться вертикально.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="dialog-mypc" class="dialog">
+        <div class="dialog-content">
+          <span class="close" onclick="closeDialog('dialog-mypc')">&times;</span>
+          <h1>Основной ПК</h1>
+          <br>
+          <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
+          <br>
+          <div class="container">
+            <h1>HP ENVY23 All-in-One</h1>
+            <br><br>
+            <h2>Intel Core i5-3330S 2.70Ghz</h2>
+            <p>Процессор</p>
+            <br>
+            <h2>8.0 GB</h2>
+            <p>Оперативная память</p>
+            <br>
+            <h2>1 TB</h2>
+            <p>Постоянная память</p>
+            <br>
+            <h2>Geforce GT 630M</h2>
+            <p>Видеокарта</p>
+            <br>
+            <h2>1920х1080</h2>
+            <p>Разрешение экрана</p>
+            <br>
+            <h2>23"</h2>
+            <p>Дюймов</p>
+            <br>
+            <h2>Windows 11 Enterprise IoT LTSC</h2>
+            <p>Операционная система</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="dialog-mydevices" class="dialog">
+        <div class="dialog-content">
+          <span class="close" onclick="closeDialog('dialog-mydevices')">&times;</span>
+          <h1>Телефоны</h1>
+          <br>
+          <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
+          <br>
+          <div class="container">
+            <ul>
+              <h1>Galaxy S20</h1>
+              <li>Оперативная память: 8ГБ</li>
+              <li>Постоянная память: 128ГБ</li>
+              <li>Процессор: Exynos 2.73 ГГц </li>
+              <li>Прошивка: Android 13 OneUI 5.1</li>
+            </ul>
+            <br>
+            <ul>
+              <h1>Galaxy A12</h1>
+              <li>Оперативная память: 4ГБ</li>
+              <li>Постоянная память: 64ГБ</li>
+              <li>Процессор: MediaTek Helio P35 2.30 ГГц </li>
+              <li>Прошивка: Android 12 OneUI Core 4.1</li>
+            </ul>
+              <br>
+              <ul>
+                <h1>Redmi 9A</h1>
+                <li>Оперативная память: 2ГБ</li>
+                <li>Постоянная память: 32ГБ</li>
+                <li>Процессор: MediaTek Helio G25 2 ГГц</li>
+                <li>Прошивка: Android 11 MIUI 12.5.7.0 TCDMIXM</li>
+              </ul>
+              <br>
+              <ul>
+                <h1>Galaxy A11</h1>
+                <li>Оперативная память: 2ГБ</li>
+                <li>Постоянная память: 32ГБ</li>
+                <li>Процессор: Qualcomm Snapdragon 450 1.8 ГГц</li>
+                <li>Прошивка: Android 12 One UI 4.1 Core</li>
+              </ul>
+              <br>
+              <ul>
+                <h1>Galaxy A01</h1>
+                <li>Оперативная память: 2ГБ</li>
+                <li>Постоянная память: 16ГБ</li>
+                <li>Процессор: Qualcomm Snapdragon 425 2 ГГц</li>
+                <li>Прошивка: Android 12 One UI 4.1 Core</li>
+              </ul>
+              <br>
+              <ul>
+                <h1>Galaxy A9</h1>
+                <li>Оперативная память: 8ГБ</li>
+                <li>Постоянная память: 128ГБ</li>
+                <li>Процессор: Qualcomm Snapdragon 660 2.2 ГГц</li>
+                <li>Прошивка: Android 10 One UI 2.0</li>
+                <li>Утоплен</li>
+              </ul>
+              <br>
+              <ul>
+                <h1>Huawei Y6II</h1>
+                <li>Оперативная память: 2ГБ</li>
+                <li>Постоянная память: 16ГБ</li>
+                <li>Процессор: Hisilicon Kirin 620 1.2 ГГц</li>
+                <li>Прошивка: Android 6.0 EMUI 4.1.3</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="dialog-mytablets" class="dialog">
+        <div class="dialog-content">
+          <span class="close" onclick="closeDialog('dialog-mytablets')">&times;</span>
+          <h1>Планшеты</h1>
+          <br>
+          <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
+          <br>
+          <div class="container">
+            <ul>
+              <h1>Основной планшет: iPad Air 2</h2>
+              <li>Оперативная память: 2ГБ</li>
+              <li>Постоянная память: 64ГБ</li>
+              <li>Процессор: Apple A8X 1.5ГГц</li>
+              <li>Прошивка: iPadOS 15.8.2</li>
+            </ul>
+            <br>
+            <ul>
+              <h1>Huawei MediaPad T3 7</h1>
+              <li>Оперативная память: 1ГБ</li>
+              <li>Постоянная память: 16ГБ</li>
+              <li>Процессор: Spreadtrum SC7731G 1.3 ГГц</li>
+              <li>Прошивка: Android: 7.0 EMUI 5.1</li>
+            </ul>
+            <br>
+            <ul>
+              <h1>DEXP URSUS K17</h1>
+              <li>Оперативная память: 2ГБ</li>
+              <li>Постоянная память: 16ГБ</li>
+              <li>Процессор: Spreadtrum SC7731G 1.3 ГГц</li>
+              <li>Прошивка: Android: 10 Go</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="sidebar-group">
+          <a id="closeBtn" onclick="closeSidebar()" class="material-symbols-outlined navigation-list-name">close<span class="fontnav">Закрыть меню</span></a>
+        </div>
+        <br>
+        <div class="sidebar-group">
+          <a href="index.html" class="material-symbols-outlined navigation-list-name">home<span class="fontnav">Главная</span></a>
+          <a href="projects.html" class="material-symbols-outlined navigation-list-name">terminal<span class="fontnav">Проекты</span></a>
+          <a href="blog.html" class="material-symbols-outlined navigation-list-name">post<span class="fontnav">Блог</span></a>
+          <a href="soft.html" class="material-symbols-outlined navigation-list-name">view_cozy<span class="fontnav">Софт</span></a>
+          <a href="info.html" class="material-symbols-outlined navigation-list-name active">info<span class="fontnav">Инфо</span></a>
+        </div>
+        <br>
+        <div class="sidebar-group">
+          <a onclick="toggleTheme('light')" id="dark-theme-container" class="material-symbols-outlined navigation-list-name lmode">light_mode</span><span class="fontnav">Светлая тема</span></a>
+          <a onclick="toggleTheme('dark')" id="dark-theme-container" class="material-symbols-outlined navigation-list-name dmode">dark_mode</span><span class="fontnav">Темная тема</span></a>
+          <a onclick="autoTheme('auto')" id="auto-theme-container" class="material-symbols-outlined navigation-list-name">motion_photos_auto</span><span class="fontnav">Автоматичекский выбор</span></a>
+        </div>
+    </div>
+
+
+    <div id="dialog-settings" class="dialog-setttings">
+      <div class="dialog-content-settings">
+        <span class="close" onclick="closeDialog('dialog-settings')">&times;</span>
+        <h1>Настройки</h1>
+        <br>
+        <hr noshade size="4" style="border-radius: 10px; color: #ffffff;">
+        <br>
+        <div class="container">
+          <h1>Сменить тему</h1>
+          <section class="universal">
+            <div class="universal-container">
+              <div class="universal-card leftandright lmode" onclick="toggleTheme('light')" id="dark-theme-container">
+                <h3>Светлая тема</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright dmode" onclick="toggleTheme('dark')" id="dark-theme-container">
+                <h3>Темная тема</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+              <div class="universal-card leftandright" onclick="autoTheme('auto')" id="auto-theme-container">
+                <h3>Автоматический выбор</h3>
+                <h3><span class="material-symbols-outlined" style="vertical-align: -3px; margin-left: 5px;">arrow_forward_ios</span></h3>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="script/menu.js"></script>
+    <script src="script/themes.js"></script>
+    <script src="script/dialog.js"></script>
+    <script src="script/birthday.js"></script>
+  </main>
+  <footer>
+    <p>&copy; 2024 Rivixal. Все права защищены, исходный код в <a href="https://github.com/Rivixal/rivixal.github.io">Github</a></p>
+  </footer>
+</body>
+</html>

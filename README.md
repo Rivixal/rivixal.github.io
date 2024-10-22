@@ -1,1 +1,3 @@
-# maydilsiel.github.io
+# rivixal.github.io
+
+Страница разработчика ПО :)

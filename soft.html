@@ -67,17 +67,23 @@
     </section>
 
     <div class="sidebar">
-      <a id="closeBtn" onclick="closeSidebar()" class="material-symbols-outlined navigation-list-name">close<span class="fontnav">Закрыть меню</span></a>
+      <div class="sidebar-group">
+        <a id="closeBtn" onclick="closeSidebar()" class="material-symbols-outlined navigation-list-name">close<span class="fontnav">Закрыть меню</span></a>
+      </div>
       <br>
-      <a href="index.html" class="material-symbols-outlined navigation-list-name">home<span class="fontnav">Главная</span></a>
-      <a href="projects.html" class="material-symbols-outlined navigation-list-name">terminal<span class="fontnav">Проекты</span></a>
-      <a href="blog.html" class="material-symbols-outlined navigation-list-name">post<span class="fontnav">Блог</span></a>
-      <a href="soft.html" class="material-symbols-outlined navigation-list-name active">view_cozy<span class="fontnav">Софт</span></a>
-      <a href="info.html" class="material-symbols-outlined navigation-list-name">info<span class="fontnav">Инфо</span></a>
+      <div class="sidebar-group">
+        <a href="index.html" class="material-symbols-outlined navigation-list-name">home<span class="fontnav">Главная</span></a>
+        <a href="projects.html" class="material-symbols-outlined navigation-list-name">terminal<span class="fontnav">Проекты</span></a>
+        <a href="blog.html" class="material-symbols-outlined navigation-list-name">post<span class="fontnav">Блог</span></a>
+        <a href="soft.html" class="material-symbols-outlined navigation-list-name active">view_cozy<span class="fontnav">Софт</span></a>
+        <a href="info.html" class="material-symbols-outlined navigation-list-name">info<span class="fontnav">Инфо</span></a>
+      </div>
       <br>
-      <a onclick="toggleTheme('light')" id="dark-theme-container" class="material-symbols-outlined navigation-list-name lmode">light_mode</span><span class="fontnav">Светлая тема</span></a>
-      <a onclick="toggleTheme('dark')" id="dark-theme-container" class="material-symbols-outlined navigation-list-name dmode">dark_mode</span><span class="fontnav">Темная тема</span></a>
-      <a onclick="autoTheme('auto')" id="auto-theme-container" class="material-symbols-outlined navigation-list-name">motion_photos_auto</span><span class="fontnav">Автоматичекский выбор</span></a>
+      <div class="sidebar-group">
+        <a onclick="toggleTheme('light')" id="dark-theme-container" class="material-symbols-outlined navigation-list-name lmode">light_mode</span><span class="fontnav">Светлая тема</span></a>
+        <a onclick="toggleTheme('dark')" id="dark-theme-container" class="material-symbols-outlined navigation-list-name dmode">dark_mode</span><span class="fontnav">Темная тема</span></a>
+        <a onclick="autoTheme('auto')" id="auto-theme-container" class="material-symbols-outlined navigation-list-name">motion_photos_auto</span><span class="fontnav">Автоматичекский выбор</span></a>
+    </div>
   </div>
 
     <!--Window--->

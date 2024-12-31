@@ -82,13 +82,15 @@ html {
 
 .infobanner .left-section {
   box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.1);
-  background-color: #434343;
+  background-color: #434343b5;
+  backdrop-filter: blur(5px);
   border-radius: 10px;
 }
 
 .infobanner .right-section {
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-  background-color: #434343;
+  background-color: #434343b5;
+  backdrop-filter: blur(5px);
   border-radius: 10px;
 }
 
@@ -276,9 +278,10 @@ margin: 0 3px 0%  0;
 
 /* Боковое меню */
 .sidebar {
-background-color: #1f1f1f;
+background-color: #1f1f1fa6;
+backdrop-filter: blur(10px);
 box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
-transition: right 0.3s ease-in-out;
+transition: right 0.3s ease;
 color: #ffffff;
 }
 
@@ -388,22 +391,22 @@ background-color: #1f1f1f;
 
 .dialog {
 background-color: #1f1f1f;
-animation: fadeIn 0.5s ease-in-out;
+animation: fadeIn 0.5s ease;
 }
 
 .dialog-setttings {
   background-color: rgba(0, 0, 0, 0.733);
-  animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 0.5s ease;
 }
 
 .dialog-content {
 background-color: #1f1f1f;
-animation: slideIn 0.3s ease-in-out;
+animation: slideIn 0.3s ease;
 }
 
 .dialog-content-settings {
   background-color: #1f1f1f;
-  animation: slideIn 0.3s ease-in-out;
+  animation: slideIn 0.3s ease;
   border: 1px solid #303030;
 }
 
@@ -453,6 +456,7 @@ color: #fff !important;
 .bg3 {
 transition: 0.3s;
 border: solid 1px #ffffff00;
+box-shadow: 0 0 0 1px rgba(0, 0, 0, 0), 0 0 13px rgba(15, 15, 15, 0);
 }
 
 .centerforbanner {
@@ -462,7 +466,8 @@ transition: 0.3s;
 }
 
 .bg3:hover {
-border: solid 1px #fff;
+border: solid 1px rgb(27, 142, 250);
+box-shadow: 0 0 0 1px rgb(27, 142, 250), 0 0 13px rgb(27, 142, 250);
 }
 
 .slider {
@@ -514,7 +519,8 @@ box-shadow: 0 0 1px #2196F3;
 
 .infobanner .left-section {
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #434343;
+  background-color: #434343b5;
+  backdrop-filter: blur(5px);
   border-radius: 10px;
 }
 
@@ -522,7 +528,8 @@ box-shadow: 0 0 1px #2196F3;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 30px;
   flex-basis: 45%;
-  background-color: #434343;
+  background-color: #434343b5;
+  backdrop-filter: blur(5px);
   border-radius: 10px;
 }
 
@@ -552,7 +559,7 @@ box-shadow: 0 0 1px #2196F3;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-20px);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease;
   position: relative;
   margin-bottom: 20px;
 }

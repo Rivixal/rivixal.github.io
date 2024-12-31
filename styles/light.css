@@ -77,13 +77,15 @@ background: #4b4b4b;
 
 .infobanner .left-section {
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #e5e5e5;
+  background-color: #e5e5e58f;
+  backdrop-filter: blur(5px);
   border-radius: 10px;
 }
 
 .infobanner .right-section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #e5e5e5;
+  background-color: #e5e5e58f;
+  backdrop-filter: blur(5px);
   border-radius: 10px;
 }
 
@@ -281,9 +283,10 @@ margin: 0 3px 0%  0;
 
 /* Боковое меню */
 .sidebar {
-background-color: #f0f0f0;
+background-color: #f0f0f0a6;
+backdrop-filter: blur(10px);
 box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
-transition: right 0.3s ease-in-out;
+transition: right 0.3s ease;
 color: #000000;
 }
 
@@ -380,12 +383,12 @@ background-color: #fff;
 
 .dialog {
 background-color: rgb(255, 255, 255);
-animation: fadeIn 0.5s ease-in-out;
+animation: fadeIn 0.5s ease;
 }
 
 .dialog-content {
 background-color: #fefefe;
-animation: slideIn 0.3s ease-in-out;
+animation: slideIn 0.3s ease;
 }
 
 
@@ -433,6 +436,7 @@ border: solid #000 2px;
 .bg3 {
 transition: 0.3s;
 border: solid 1px #ffffff00;
+box-shadow: 0 0 0 1px rgba(0, 0, 0, 0), 0 0 13px rgba(15, 15, 15, 0);
 }
 
 .centerforbanner {
@@ -442,7 +446,8 @@ transition: 0.3s;
 }
 
 .bg3:hover {
-border: solid 1px #000000;
+border: solid 1px rgb(27, 142, 250);
+box-shadow: 0 0 0 1px rgb(27, 142, 250), 0 0 13px rgb(27, 142, 250);
 }
 
 .slider {
@@ -547,12 +552,12 @@ box-shadow: 0 0 1px #2196F3;
 
 .dialog-setttings {
   background-color: rgba(0, 0, 0, 0.733);
-  animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 0.5s ease;
 }
 
 .dialog-content-settings {
   background-color: #fefefe;
-  animation: slideIn 0.3s ease-in-out;
+  animation: slideIn 0.3s ease;
   border: 1px solid #888;
 }
 

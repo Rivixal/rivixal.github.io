@@ -147,6 +147,31 @@
   justify-content: space-between;
 }
 
+
+.coloraboutversion {
+  font-size: 30px; /* Размер текста */
+  font-weight: bold;
+  background: linear-gradient(90deg, #775fff, #7ba9fe, #9bccfa, #60b4ec);
+  background-size: 300% 300%; /* Увеличиваем размер градиента */
+  -webkit-background-clip: text; /* Применяем градиент только к тексту */
+  -webkit-text-fill-color: transparent; /* Делаем текст прозрачным */
+  animation: gradient-animation 6s ease infinite; /* Анимация смены градиента */
+}
+
+/* Анимация движения градиента */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
 .homebanner .left-section {
   flex-grow: 1;
   padding: 40px; /* Расстояние между элементами */
@@ -174,7 +199,7 @@
 .homebanner iframe:hover {
   width: 100%; /* Заполнение всей доступной ширины */
   border: none; /* Убираем рамку у iframe */
-  transform: rotateY(0deg); /* Поворачиваем iframe по оси Y на -10 градусов */
+  transform: rotateY(0deg) !important; /* Поворачиваем iframe по оси Y на -10 градусов */
   transform-origin: right center; /* Определяем точку применения трансформации */
 }
 
@@ -232,7 +257,7 @@
 .infobanner iframe:hover {
   width: 100%; /* Заполнение всей доступной ширины */
   border: none; /* Убираем рамку у iframe */
-  transform: rotateY(0deg); /* Поворачиваем iframe по оси Y на -10 градусов */
+  transform: rotateY(0deg) !important; /* Поворачиваем iframe по оси Y на -10 градусов */
   transform-origin: right center; /* Определяем точку применения трансформации */
 }
 
@@ -436,12 +461,12 @@ footer {
   background-color: #e3e3e3;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease !important;
   cursor: pointer;
 }
 
 .news-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px) !important;
 }
 
 .news-card h3 {
@@ -482,12 +507,12 @@ footer {
   background-color: #e3e0e0;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease !important;
   cursor: pointer;
 }
 
 .playlists-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px) !important;
 }
 
 .playlists-card h3 {
@@ -571,7 +596,7 @@ footer {
   background-color: #ffffff;
   padding: 1rem;
   box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
-  transition: right 0.3s ease-in-out;
+  transition: right 0.3s ease;
   z-index: 100000;
   color: #000000;
   overflow: auto;
@@ -588,7 +613,7 @@ footer {
   padding: 10px;
   font-weight: bold;
   border-bottom: 1px solid #c5c5c5;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -729,12 +754,12 @@ a {
   background-color: #e3e0e0;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease !important;
   cursor: pointer;
 }
 
 .projects-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px) !important;
 }
 
 .projects-card h3 {
@@ -771,12 +796,12 @@ a {
   background-color: #e3e0e0;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease !important;
   cursor: pointer;
 }
 
 .firmware-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px) !important;
 }
 
 .firmware-card h3 {
@@ -841,7 +866,7 @@ iframe {
   height: 100%;
   overflow: auto;
   background-color: rgb(255, 255, 255);
-  animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 0.5s ease;
 }
 
 .dialog-setttings {
@@ -854,7 +879,7 @@ iframe {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.733);
-  animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 0.5s ease;
 }
 
 .dialog-message {
@@ -867,7 +892,7 @@ iframe {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.733);
-  animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 0.5s ease;
 }
 
 .dmessage {
@@ -877,7 +902,7 @@ iframe {
   border: 1px solid #888;
   width: 400px;
   height: 250px;
-  animation: slideIn 0.3s ease-in-out;
+  animation: slideIn 0.3s ease;
   border-radius: 25px;
   text-align: center;
   align-items: center;
@@ -911,7 +936,7 @@ iframe {
   /*padding: 20px;*/
   /*border: 1px solid #888;*/
   width: 90%;
-  animation: slideIn 0.3s ease-in-out;
+  animation: slideIn 0.3s ease;
   /*border-radius: 25px;*/
 }
 
@@ -921,7 +946,7 @@ iframe {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  animation: slideIn 0.3s ease-in-out;
+  animation: slideIn 0.3s ease;
   border-radius: 25px;
 }
 
@@ -1000,7 +1025,7 @@ iframe {
 }
 
 .universal-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px) !important;
 }
 
 .universal-card h3 {
@@ -1036,12 +1061,12 @@ iframe {
   background-color: #e3e3e3;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease !important;
   cursor: pointer;
 }
 
 .universalex-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px) !important;
 }
 
 .universalex-card h3 {
@@ -1183,6 +1208,31 @@ input:checked + .slider:before {
   margin: auto;
 }
 
+.softwallpaper {
+  background: rgb(16,186,222);
+  background: radial-gradient(circle at top, rgba(16,186,222,1) 0%, rgba(0,0,0,0), rgba(0,0,0,0) 120%);
+}
+
+.blogwallpaper {
+  background: rgb(181, 16, 222);
+  background: radial-gradient(circle at top, rgb(140, 16, 222) 0%, rgba(0,0,0,0), rgba(0,0,0,0) 120%);
+}
+
+.projectwallpaper {
+  background: rgb(81, 170, 253);
+  background: radial-gradient(circle at top, rgb(76, 81, 145) 0%, rgba(0,0,0,0), rgba(0,0,0,0) 120%);
+}
+
+.mainwallpaper {
+  background: rgba(131, 30, 86, 0.486);
+  background: radial-gradient(circle at top, rgb(250, 140, 250) 0%, rgb(158, 203, 255) 0%, rgba(0,0,0,0), rgba(0,0,0,0) 120%);
+}
+
+.aboutwallpaper {
+  background: rgba(131, 30, 86, 0.486);
+  background: radial-gradient(circle at top, rgb(155, 173, 255) 0%, rgb(139, 141, 253) 25%, rgba(0,0,0,0), rgba(0,0,0,0) 120%);
+}
+
 .infoblock img {
   width: 200px;
   height: 200px;
@@ -1215,7 +1265,7 @@ input:checked + .slider:before {
 
 .left-animation {
   overflow: hidden !important;
-  animation: leftMove 2s ease-in-out forwards;
+  animation: leftMove 2s ease forwards;
 }
 
 /* Анимация для появления элемента справа */
@@ -1232,7 +1282,7 @@ input:checked + .slider:before {
 
 .right-animation {
   overflow: hidden !important;
-  animation: rightMove 2s ease-in-out forwards;
+  animation: rightMove 2s ease forwards;
 }
 
 /* Анимация для появления элемента сверху */
@@ -1249,7 +1299,7 @@ input:checked + .slider:before {
 
 .top-animation {
   overflow: hidden !important;
-  animation: topMove 2s ease-in-out forwards;
+  animation: topMove 2s ease forwards;
 }
 
 .posttitle {
@@ -1275,7 +1325,7 @@ input:checked + .slider:before {
 
 .bottom-animation {
   overflow: hidden !important;
-  animation: bottomMove 2s ease-in-out forwards;
+  animation: bottomMove 2s ease forwards;
 }
 
 @keyframes opcanimation {
@@ -1289,7 +1339,7 @@ input:checked + .slider:before {
 
 .opacity-animation {
   overflow: hidden !important;
-  animation: opcanimation 0.5s ease-in-out forwards;
+  animation: opcanimation 0.5s ease forwards;
 }
 
 .overflow-hidden {
@@ -1348,7 +1398,7 @@ input:checked + .slider:before {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-20px);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease;
   position: relative;
   margin-bottom: 20px;
 }
@@ -1398,6 +1448,98 @@ input:checked + .slider:before {
 .logo img:hover {
   filter: invert(100%); /* Инвертировать цвета изображения при наведении */
 }
+
+.gd {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  backdrop-filter: blur(10px) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+  overflow: hidden;
+}
+
+/*Обновленная панель для проектов - БЕТА*/
+
+.ppanel {
+  position: sticky !important;
+  top: 0 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e2e2e2; /* Темный фон */
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #000000;
+  font-family: Arial, sans-serif;
+}
+
+.ppanel .panel-left {
+  display: flex;
+  align-items: center;
+}
+
+.ppanel .icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.ppanel img {
+  height: 100px !important;
+  width: 100px !important;
+}
+
+.ppanel .panel-right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2px; /* Промежуток между кнопками */
+}
+
+.ppanel .dropdown-btn {
+  background-color: #002872; /* Светлая кнопка */
+  border: none;
+  color: #ffffff; 
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ppanel .close-btn {
+  background-color: #ff5c5c; /* Красная кнопка */
+  border: none;
+  color: #ffffff;
+  padding: 5px !important;
+  border-radius: 5px !important;
+  cursor: pointer;
+}
+
+.ppanel .dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+}
+
+.ppanel .dropdown-menu li {
+  padding: 8px 12px;
+}
+
+.ppanel .dropdown-menu li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.ppanel .dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+
 
 /*Адаптация под мобильные устройства*/
 

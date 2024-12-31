@@ -1,0 +1,75 @@
+ <section class="universal">
+              <div class="universal-container">
+                <div class="universal-card" onclick="document.location='https://myslivets.com/'">
+                  <h3>Daniel Myslivets</h3>
+                  <p>Перейти на сайт</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://www.youtube.com/@Vladocik'">
+                  <h3>Vladocik 2.0</h3>
+                  <p>Перейти на Youtube канал</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://www.youtube.com/@NWin10'">
+                  <h3>NWin10</h3>
+                  <p>Перейти на Youtube канал</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://www.youtube.com/@CaptainStrannik/'">
+                  <h3>Capitan Strannik</h3>
+                  <p>Перейти на Youtube канал</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://lgrn-arts.ru/'">
+                  <h3>LGRN Arts</h3>
+                  <p>Перейти на сайт</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://ertorworld.com'">
+                  <h3>Ertorworld</h3>
+                  <p>Перейти на сайт</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://ds1nc.ru/'">
+                  <h3>DesConnect</h3>
+                  <p>Перейти на сайт</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://dsys1100.github.io/'">
+                  <h3>dsys1100</h3>
+                  <p>Перейти на сайт</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://ost-sys.github.io/'">
+                  <h3>OST</h3>
+                  <p>Перейти на сайт</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://www.youtube.com/@omagadtdw'">
+                  <h3>DanyaShagalin</h3>
+                  <p>Перейти на Youtube канал</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://www.youtube.com/@thewinmatvey'">
+                  <h3>TheWinMatvey</h3>
+                  <p>Перейти на Youtube канал</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://www.youtube.com/@artosik'">
+                  <h3>ArtOSik</h3>
+                  <p>Перейти на Youtube канал</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://www.youtube.com/@ivancomp_inside'">
+                  <h3>IVAN COMP</h3>
+                  <p>Перейти на Youtube канал</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://www.wave-save.com/'">
+                  <h3>Compuser</h3>
+                  <p>Перейти на сайт</p>
+                  <a href="https://www.youtube.com/@compuser1">Перейти на канал</a>
+                </div>
+                <div class="universal-card" onclick="document.location='https://tinelix.ru/'">
+                  <h3>Tinelix</h3>
+                  <p>Перейти на сайт</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://www.youtube.com/@Alloyd031'">
+                  <h3>Alloyd</h3>
+                  <p>Перейти на Youtube канал</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://www.youtube.com/@localhost_8000'">
+                  <h3>LocalHosted</h3>
+                  <p>Перейти на Youtube канал</p>
+                </div>
+                <div class="universal-card" onclick="document.location='https://www.youtube.com/@HappyWin8'">
+                  <h3>HappyWin8</h3>
+                  <p>Перейти на Youtube канал</p>
+                </div>
